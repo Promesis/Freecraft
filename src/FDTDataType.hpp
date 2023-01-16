@@ -4,15 +4,15 @@
 
 enum class FDTDataTag
 {
-    FDTShortInteger,
-    FDTInteger,
-    FDTLongInteger,
-    FDTLongLongInteger,
+    FDTShort,
+    FDTInt,
+    FDTLong,
+    FDTLongLong,
 
-    FDTUnsignedShortInteger,
-    FDTUnsignedInteger,
-    FDTUnsignedLongInteger,
-    FDTUnsignedLongLongInteger,
+    FDTUnsignedShort,
+    FDTUnsignedInt,
+    FDTUnsignedLong,
+    FDTUnsignedLongLong,
 
     FDTFloat,
     FDTDouble,
@@ -26,8 +26,7 @@ enum class FDTDataTag
 class FDTData
 {
 
-}
-
+};
 
 
 #endif
