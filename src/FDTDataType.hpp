@@ -32,9 +32,10 @@ class FDTData
 {
 private:
     FDTDataTag _tag;
+    /*
     union
     {
-        /* data */
+        // data
         unsigned short _us;
         unsigned int _ui;
         unsigned long _ul;
@@ -56,13 +57,15 @@ private:
         //unsigned wchar_t _uwc;
         //unsigned char16_t _uc16;
     };
+    */
     
 public:
-    virtual FDTDataTag getTag(void);
+    virtual FDTDataTag getTag(void) = 0;
     FDTData(const FDTData &dat);
     FDTData(FDTData &&datR);
-    FDTData(FDTDataTag tag=FDTDataTag::FDTNone);
-
+    //FDTData(FDTDataTag tag=FDTDataTag::FDTNone);
+    virtual ~FDTData(void);
+    virtual const FDTData &operator=(const FDTData &dat) = 0;
 };
 
 
