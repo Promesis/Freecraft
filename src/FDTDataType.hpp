@@ -15,7 +15,7 @@ enum class FDTDataTag
     FDTUnsignedLongLongInteger,
 
     FDTFloat,
-    FDTDouble,
+    FDTDouble
 };
 
 /**
@@ -26,7 +26,7 @@ enum class FDTDataTag
 class FDTData
 {
 
-}
+};
 
 
 
