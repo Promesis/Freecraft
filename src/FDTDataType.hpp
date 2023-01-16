@@ -19,6 +19,7 @@ enum class FDTDataTag
     FDTDouble,
 
     FDTChar,
+    FDTWchar,
     FDTChar16,
     FDTChar32
 };
@@ -26,7 +27,10 @@ enum class FDTDataTag
 
 class FDTData
 {
-
+private:
+    FDTDataTag tag;
+public:
+    virtual FDTDataTag getTag(void);
 };
 
 
