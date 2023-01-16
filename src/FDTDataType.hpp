@@ -5,6 +5,8 @@
 //Tags of data.
 enum class FDTDataTag
 {
+    FDTNone,
+
     FDTShort,
     FDTInt,
     FDTLong,
@@ -19,7 +21,8 @@ enum class FDTDataTag
     FDTDouble,
 
     FDTChar,
-    FDTWchar,
+    FDTUnsignedChar,
+    FDTWChar,
     FDTChar16,
     FDTChar32
 };
@@ -28,9 +31,38 @@ enum class FDTDataTag
 class FDTData
 {
 private:
-    FDTDataTag tag;
+    FDTDataTag _tag;
+    union
+    {
+        /* data */
+        unsigned short _us;
+        unsigned int _ui;
+        unsigned long _ul;
+        unsigned long long _ull;
+        short _s;
+        int _i;
+        long _l;
+        long _ll;
+
+        float _f;
+        double _d;
+
+        char _c;
+        wchar_t _wc;
+        char16_t _c16;
+        char32_t _c32;
+
+        unsigned char _uc;
+        //unsigned wchar_t _uwc;
+        //unsigned char16_t _uc16;
+    };
+    
 public:
     virtual FDTDataTag getTag(void);
+    FDTData(const FDTData &dat);
+    FDTData(FDTData &&datR);
+    FDTData(FDTDataTag tag=FDTDataTag::FDTNone);
+
 };
 
 
