@@ -25,6 +25,7 @@ enum class FDTDataTag
     FDTWChar,
     FDTChar16,
     FDTChar32
+
 };
 
 
