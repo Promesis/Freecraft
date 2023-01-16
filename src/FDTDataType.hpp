@@ -31,7 +31,7 @@ enum class FDTDataTag
 
 class FDTData
 {
-private:
+protected:
     FDTDataTag _tag;
     /*
     union
@@ -67,6 +67,18 @@ public:
     //FDTData(FDTDataTag tag=FDTDataTag::FDTNone);
     virtual ~FDTData(void);
     virtual const FDTData &operator=(const FDTData &dat) = 0;
+
+    virtual const FDTData &getData(void) const = 0;
+    virtual void setData(const FDTData &dat) = 0;
+
+};
+
+class FDTInt : virtual public FDTData
+{
+protected:
+    int data;
+public:
+    
 };
 
 
