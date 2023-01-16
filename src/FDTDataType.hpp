@@ -2,6 +2,7 @@
 #define FDTDataType_hpp
 
 
+//Tags of data.
 enum class FDTDataTag
 {
     FDTShort,
@@ -16,12 +17,12 @@ enum class FDTDataTag
 
     FDTFloat,
     FDTDouble,
+
+    FDTChar,
+    FDTChar16,
+    FDTChar32
 };
 
-/**
- * @author Promesis 
- * defines FDT(Freecraft Data type)
- */
 
 class FDTData
 {
