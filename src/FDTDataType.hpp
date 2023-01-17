@@ -65,6 +65,7 @@ public:
     FDTData(const FDTData &dat);
     FDTData(FDTData &&datR);
     //FDTData(FDTDataTag tag=FDTDataTag::FDTNone);
+    FDTData(void);
     virtual ~FDTData(void);
     virtual const FDTData &operator=(const FDTData &dat) = 0;
 
@@ -73,12 +74,38 @@ public:
 
 };
 
-class FDTInt : virtual public FDTData
+class FDTInt :public FDTData
 {
 protected:
     int data;
 public:
-    
+    FDTDataTag getTag(void);
+    ~FDTInt(void);
+    FDTInt(int _int=0);
+    FDTInt(const FDTInt &_int);
+    FDTInt(FDTInt &&_intR);
+    const FDTInt &operator=(const FDTInt &_int);
+    const FDTInt &operator=(FDTInt &&_intR);
+    const FDTInt &getData(void) const;
+    void setData(const FDTInt &dat);
+    operator int(void) const;
+};
+
+class FDTShort : public FDTData
+{
+protected:
+    short data;
+public:
+    FDTDataTag getTag(void);
+    ~FDTShort(void);
+    FDTShort(short _short=0);
+    FDTShort(const FDTShort &_short);
+    FDTShort(FDTShort &&_shortR);
+    const FDTShort &operator=(const FDTShort &_short);
+    const FDTShort &operator=(FDTShort &&_shortR);
+    const FDTShort&getData(void) const;
+    void setData(const FDTShort &dat);
+    operator short(void) const;
 };
 
 
