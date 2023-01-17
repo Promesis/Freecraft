@@ -74,7 +74,7 @@ public:
 
 };
 
-class FDTInt :public FDTData
+class FDTInt : public FDTData
 {
 protected:
     int data;
