@@ -1,0 +1,158 @@
+.TH "FDTShort" 3 "Tue Jan 17 2023" "Version 00.01a03-dbg" "Freecraft" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+FDTShort
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <FDTDataType\&.hpp>\fP
+.PP
+Inherits \fBFDTData\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFDTDataTag\fP \fBgetTag\fP (void)"
+.br
+.RI "Get the Tag of object\&. "
+.ti -1c
+.RI "\fB~FDTShort\fP (void)"
+.br
+.ti -1c
+.RI "\fBFDTShort\fP (short _short=0)"
+.br
+.ti -1c
+.RI "\fBFDTShort\fP (const \fBFDTShort\fP &_short)"
+.br
+.ti -1c
+.RI "\fBFDTShort\fP (\fBFDTShort\fP &&_shortR)"
+.br
+.ti -1c
+.RI "const \fBFDTShort\fP & \fBoperator=\fP (const \fBFDTShort\fP &_short)"
+.br
+.ti -1c
+.RI "const \fBFDTShort\fP & \fBoperator=\fP (\fBFDTShort\fP &&_shortR)"
+.br
+.ti -1c
+.RI "const \fBFDTShort\fP & \fBgetData\fP (void) const"
+.br
+.RI "Get the Data\&. "
+.ti -1c
+.RI "void \fBsetData\fP (const \fBFDTShort\fP &dat)"
+.br
+.ti -1c
+.RI "\fBoperator short\fP (void) const"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBFDTData\fP
+.in +1c
+.ti -1c
+.RI "virtual \fBFDTDataTag\fP \fBgetTag\fP (void)=0"
+.br
+.RI "Get the Tag of object\&. "
+.ti -1c
+.RI "\fBFDTData\fP (const \fBFDTData\fP &dat)"
+.br
+.RI "Construct a new \fBFDTData\fP object(copy ctor)\&. "
+.ti -1c
+.RI "\fBFDTData\fP (\fBFDTData\fP &&datR)"
+.br
+.RI "Construct a new \fBFDTData\fP object(move ctor)\&. "
+.ti -1c
+.RI "\fBFDTData\fP (void)"
+.br
+.RI "Construct a new \fBFDTData\fP object(default ctor)\&. "
+.ti -1c
+.RI "virtual \fB~FDTData\fP (void)"
+.br
+.RI "Destroy the \fBFDTData\fP object\&. "
+.ti -1c
+.RI "virtual const \fBFDTData\fP & \fBoperator=\fP (const \fBFDTData\fP &dat)=0"
+.br
+.RI "copy assignmemt operator\&. "
+.ti -1c
+.RI "virtual const \fBFDTData\fP & \fBgetData\fP (void) const =0"
+.br
+.RI "Get the Data\&. "
+.ti -1c
+.RI "virtual void \fBsetData\fP (const \fBFDTData\fP &dat)=0"
+.br
+.RI "Set the Data\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "short \fBdata\fP"
+.br
+.in -1c
+
+Protected Attributes inherited from \fBFDTData\fP
+.in +1c
+.ti -1c
+.RI "\fBFDTDataTag\fP \fB_tag\fP"
+.br
+.RI "tag of current data\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB212\fP of file \fBFDTDataType\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "FDTShort::~FDTShort (void)"
+
+.SS "FDTShort::FDTShort (short _short = \fC0\fP)"
+
+.SS "FDTShort::FDTShort (const \fBFDTShort\fP & _short)"
+
+.SS "FDTShort::FDTShort (\fBFDTShort\fP && _shortR)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "const \fBFDTShort\fP & FDTShort::getData (void) const\fC [virtual]\fP"
+
+.PP
+Get the Data\&. pure virtual function\&.
+.PP
+\fBReturns\fP
+.RS 4
+const \fBFDTData\fP& 
+.RE
+.PP
+
+.PP
+Implements \fBFDTData\fP\&.
+.SS "\fBFDTDataTag\fP FDTShort::getTag (void)\fC [virtual]\fP"
+
+.PP
+Get the Tag of object\&. pure virtual function\&. 
+.PP
+\fBReturns\fP
+.RS 4
+FDTDataTag 
+.RE
+.PP
+
+.PP
+Implements \fBFDTData\fP\&.
+.SS "FDTShort::operator short (void) const"
+
+.SS "const \fBFDTShort\fP & FDTShort::operator= (const \fBFDTShort\fP & _short)"
+
+.SS "const \fBFDTShort\fP & FDTShort::operator= (\fBFDTShort\fP && _shortR)"
+
+.SS "void FDTShort::setData (const \fBFDTShort\fP & dat)"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "short FDTShort::data\fC [protected]\fP"
+
+.PP
+Definition at line \fB215\fP of file \fBFDTDataType\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Freecraft from the source code\&.

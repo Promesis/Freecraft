@@ -100,7 +100,7 @@
   <option  id='ENABLED_SECTIONS' default='yes' type='stringlist'>
   </option>
   <option  id='MAX_INITIALIZER_LINES' default='yes' type='int'><value>30</value></option>
-  <option  id='SHOW_USED_FILES' default='yes' type='bool'><value>YES</value></option>
+  <option  id='SHOW_USED_FILES' default='no' type='bool'><value>NO</value></option>
   <option  id='SHOW_FILES' default='yes' type='bool'><value>YES</value></option>
   <option  id='SHOW_NAMESPACES' default='yes' type='bool'><value>YES</value></option>
   <option  id='FILE_VERSION_FILTER' default='yes' type='string'><value><![CDATA[]]></value></option>
@@ -119,7 +119,8 @@
   <option  id='WARN_LINE_FORMAT' default='yes' type='string'><value><![CDATA["at line $line of file $file"]]></value></option>
   <option  id='WARN_LOGFILE' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='INPUT' default='no' type='stringlist'>
-    <value><![CDATA[C:/Users/M3149/Documents/Freecraft]]></value>
+    <value><![CDATA[C:/Users/M3149/Documents/Freecraft/src]]></value>
+    <value><![CDATA[C:/Users/M3149/Documents/Freecraft/shader]]></value>
   </option>
   <option  id='INPUT_ENCODING' default='yes' type='string'><value><![CDATA[UTF-8]]></value></option>
   <option  id='INPUT_FILE_ENCODING' default='yes' type='stringlist'>
@@ -223,7 +224,7 @@
   </option>
   <option  id='HTML_EXTRA_FILES' default='yes' type='stringlist'>
   </option>
-  <option  id='HTML_COLORSTYLE' default='yes' type='string'><value>AUTO_LIGHT</value></option>
+  <option  id='HTML_COLORSTYLE' default='no' type='string'><value>LIGHT</value></option>
   <option  id='HTML_COLORSTYLE_HUE' default='no' type='int'><value>114</value></option>
   <option  id='HTML_COLORSTYLE_SAT' default='no' type='int'><value>72</value></option>
   <option  id='HTML_COLORSTYLE_GAMMA' default='no' type='int'><value>78</value></option>
@@ -254,14 +255,14 @@
   <option  id='QHG_LOCATION' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='GENERATE_ECLIPSEHELP' default='yes' type='bool'><value>NO</value></option>
   <option  id='ECLIPSE_DOC_ID' default='yes' type='string'><value><![CDATA[org.doxygen.Project]]></value></option>
-  <option  id='DISABLE_INDEX' default='yes' type='bool'><value>NO</value></option>
+  <option  id='DISABLE_INDEX' default='no' type='bool'><value>YES</value></option>
   <option  id='GENERATE_TREEVIEW' default='no' type='bool'><value>YES</value></option>
   <option  id='FULL_SIDEBAR' default='yes' type='bool'><value>NO</value></option>
   <option  id='ENUM_VALUES_PER_LINE' default='yes' type='int'><value>4</value></option>
   <option  id='TREEVIEW_WIDTH' default='yes' type='int'><value>250</value></option>
   <option  id='EXT_LINKS_IN_WINDOW' default='yes' type='bool'><value>NO</value></option>
   <option  id='OBFUSCATE_EMAILS' default='yes' type='bool'><value>YES</value></option>
-  <option  id='HTML_FORMULA_FORMAT' default='yes' type='string'><value>png</value></option>
+  <option  id='HTML_FORMULA_FORMAT' default='no' type='string'><value>svg</value></option>
   <option  id='FORMULA_FONTSIZE' default='yes' type='int'><value>10</value></option>
   <option  id='FORMULA_MACROFILE' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='USE_MATHJAX' default='yes' type='bool'><value>NO</value></option>
@@ -301,17 +302,17 @@
   <option  id='LATEX_BIB_STYLE' default='yes' type='string'><value><![CDATA[plain]]></value></option>
   <option  id='LATEX_TIMESTAMP' default='yes' type='bool'><value>NO</value></option>
   <option  id='LATEX_EMOJI_DIRECTORY' default='yes' type='string'><value><![CDATA[]]></value></option>
-  <option  id='GENERATE_RTF' default='yes' type='bool'><value>NO</value></option>
+  <option  id='GENERATE_RTF' default='no' type='bool'><value>YES</value></option>
   <option  id='RTF_OUTPUT' default='yes' type='string'><value><![CDATA[rtf]]></value></option>
-  <option  id='COMPACT_RTF' default='yes' type='bool'><value>NO</value></option>
-  <option  id='RTF_HYPERLINKS' default='yes' type='bool'><value>NO</value></option>
+  <option  id='COMPACT_RTF' default='no' type='bool'><value>YES</value></option>
+  <option  id='RTF_HYPERLINKS' default='no' type='bool'><value>YES</value></option>
   <option  id='RTF_STYLESHEET_FILE' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='RTF_EXTENSIONS_FILE' default='yes' type='string'><value><![CDATA[]]></value></option>
-  <option  id='GENERATE_MAN' default='yes' type='bool'><value>NO</value></option>
+  <option  id='GENERATE_MAN' default='no' type='bool'><value>YES</value></option>
   <option  id='MAN_OUTPUT' default='yes' type='string'><value><![CDATA[man]]></value></option>
   <option  id='MAN_EXTENSION' default='yes' type='string'><value><![CDATA[.3]]></value></option>
   <option  id='MAN_SUBDIR' default='yes' type='string'><value><![CDATA[]]></value></option>
-  <option  id='MAN_LINKS' default='yes' type='bool'><value>NO</value></option>
+  <option  id='MAN_LINKS' default='no' type='bool'><value>YES</value></option>
   <option  id='GENERATE_XML' default='no' type='bool'><value>YES</value></option>
   <option  id='XML_OUTPUT' default='yes' type='string'><value><![CDATA[xml]]></value></option>
   <option  id='XML_PROGRAMLISTING' default='yes' type='bool'><value>YES</value></option>
@@ -346,9 +347,9 @@
   <option  id='HIDE_UNDOC_RELATIONS' default='yes' type='bool'><value>YES</value></option>
   <option  id='HAVE_DOT' default='no' type='bool'><value>YES</value></option>
   <option  id='DOT_NUM_THREADS' default='no' type='int'><value>2</value></option>
-  <option  id='DOT_COMMON_ATTR' default='yes' type='string'><value><![CDATA["fontname=Helvetica,fontsize=10"]]></value></option>
-  <option  id='DOT_EDGE_ATTR' default='yes' type='string'><value><![CDATA["labelfontname=Helvetica,labelfontsize=10"]]></value></option>
-  <option  id='DOT_NODE_ATTR' default='yes' type='string'><value><![CDATA["shape=box,height=0.2,width=0.4"]]></value></option>
+  <option  id='DOT_COMMON_ATTR' default='no' type='string'><value><![CDATA["fontname=Consolas,fontsize=10"]]></value></option>
+  <option  id='DOT_EDGE_ATTR' default='no' type='string'><value><![CDATA["labelfontname=Calibri,labelfontsize=10"]]></value></option>
+  <option  id='DOT_NODE_ATTR' default='no' type='string'><value><![CDATA["shape=box,height=0.2,width=0.4,style=rounded"]]></value></option>
   <option  id='DOT_FONTPATH' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='CLASS_GRAPH' default='yes' type='string'><value>YES</value></option>
   <option  id='COLLABORATION_GRAPH' default='yes' type='bool'><value>YES</value></option>
@@ -366,7 +367,7 @@
   <option  id='DIRECTORY_GRAPH' default='yes' type='bool'><value>YES</value></option>
   <option  id='DIR_GRAPH_MAX_DEPTH' default='yes' type='int'><value>1</value></option>
   <option  id='DOT_IMAGE_FORMAT' default='no' type='string'><value>svg</value></option>
-  <option  id='INTERACTIVE_SVG' default='yes' type='bool'><value>NO</value></option>
+  <option  id='INTERACTIVE_SVG' default='no' type='bool'><value>YES</value></option>
   <option  id='DOT_PATH' default='no' type='string'><value><![CDATA["C:/Program Files/Graphviz/bin"]]></value></option>
   <option  id='DOTFILE_DIRS' default='yes' type='stringlist'>
   </option>

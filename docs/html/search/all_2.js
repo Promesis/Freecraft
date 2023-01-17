@@ -18,6 +18,5 @@ var searchData=
   ['fdtunsignedlong_15',['FDTUnsignedLong',['../df/d5b/_f_d_t_data_type_8hpp.html#af9bab541d03027fc4165078590fe916aa44e41a911d61c4b9333a6989d20f4637',1,'FDTDataType.hpp']]],
   ['fdtunsignedlonglong_16',['FDTUnsignedLongLong',['../df/d5b/_f_d_t_data_type_8hpp.html#af9bab541d03027fc4165078590fe916aa60a00c1cb4c468c1ea0b781b03830d6e',1,'FDTDataType.hpp']]],
   ['fdtunsignedshort_17',['FDTUnsignedShort',['../df/d5b/_f_d_t_data_type_8hpp.html#af9bab541d03027fc4165078590fe916aa4d33443931e99751a97c4bbd4560dd20',1,'FDTDataType.hpp']]],
-  ['fdtwchar_18',['FDTWChar',['../df/d5b/_f_d_t_data_type_8hpp.html#af9bab541d03027fc4165078590fe916aa97addb344bcf0836c848d2cbf4cb6516',1,'FDTDataType.hpp']]],
-  ['freecraft_19',['Freecraft',['../d3/dcc/md__r_e_a_d_m_e.html',1,'']]]
+  ['fdtwchar_18',['FDTWChar',['../df/d5b/_f_d_t_data_type_8hpp.html#af9bab541d03027fc4165078590fe916aa97addb344bcf0836c848d2cbf4cb6516',1,'FDTDataType.hpp']]]
 ];

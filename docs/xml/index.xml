@@ -50,8 +50,6 @@
     <member refid="dc/deb/class_f_d_t_short_1ae3455564797c29c2ccc87f4bee6b8359" kind="function"><name>setData</name></member>
     <member refid="dc/deb/class_f_d_t_short_1a9ac90075fa0b632f3ed45d2f34058376" kind="function"><name>operator short</name></member>
   </compound>
-  <compound refid="d9/dd6/_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
-  </compound>
   <compound refid="df/d5b/_f_d_t_data_type_8hpp" kind="file"><name>FDTDataType.hpp</name>
     <member refid="df/d5b/_f_d_t_data_type_8hpp_1af9bab541d03027fc4165078590fe916a" kind="enum"><name>FDTDataTag</name></member>
     <member refid="df/d5b/_f_d_t_data_type_8hpp_1af9bab541d03027fc4165078590fe916aade71d7cd236f9da9de3c52f4b2649a53" kind="enumvalue"><name>FDTNone</name></member>
@@ -73,8 +71,6 @@
   </compound>
   <compound refid="df/d0a/main_8cpp" kind="file"><name>main.cpp</name>
     <member refid="df/d0a/main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
-  </compound>
-  <compound refid="d3/dcc/md__r_e_a_d_m_e" kind="page"><name>md_README</name>
   </compound>
   <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
   </compound>
