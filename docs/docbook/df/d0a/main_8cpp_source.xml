@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_main_8cpp_source" xml:lang="en-US">
+<title>main.cpp</title>
+<indexterm><primary>src/main.cpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_main_8cpp_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
+<anchor xml:id="_main_8cpp_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&lt;cstdlib&gt;</emphasis>
+<anchor xml:id="_main_8cpp_source_1l00003"/>00003 
+<anchor xml:id="_main_8cpp_source_1l00004"/><link linkend="_main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627">00004</link> <emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627">main</link>(<emphasis role="keywordtype">int</emphasis>&#32;argc,<emphasis role="keywordtype">char</emphasis>&#32;**argv)
+<anchor xml:id="_main_8cpp_source_1l00005"/>00005 {
+<anchor xml:id="_main_8cpp_source_1l00006"/>00006 &#32;&#32;&#32;&#32;<emphasis role="comment">//just&#32;an&#32;example</emphasis>
+<anchor xml:id="_main_8cpp_source_1l00007"/>00007 &#32;&#32;&#32;&#32;std::cout&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;hello&#32;world!&quot;</emphasis>&#32;&lt;&lt;&#32;std::endl;
+<anchor xml:id="_main_8cpp_source_1l00008"/>00008 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;EXIT_SUCCESS;
+<anchor xml:id="_main_8cpp_source_1l00009"/>00009 }
+</programlisting></section>

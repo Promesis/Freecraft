@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.6" xml:lang="en-US">
+  <compound refid="d3/d1f/class_f_d_t_data" kind="class"><name>FDTData</name>
+    <member refid="d3/d1f/class_f_d_t_data_1a28a5936c663c63bf4220934e683ed7e7" kind="variable"><name>_tag</name></member>
+    <member refid="d3/d1f/class_f_d_t_data_1a4843b4bbb4df8b151c1426fcbad9f39b" kind="function"><name>getTag</name></member>
+    <member refid="d3/d1f/class_f_d_t_data_1af8e5b5191b63ed01614997dc84a028f6" kind="function"><name>FDTData</name></member>
+    <member refid="d3/d1f/class_f_d_t_data_1a18ee00f41a26797e8aaf55eec5b92ebd" kind="function"><name>FDTData</name></member>
+    <member refid="d3/d1f/class_f_d_t_data_1a96b226deb1735ee644a91109721762b1" kind="function"><name>FDTData</name></member>
+    <member refid="d3/d1f/class_f_d_t_data_1a539599de61a73e87142abf704870676d" kind="function"><name>~FDTData</name></member>
+    <member refid="d3/d1f/class_f_d_t_data_1a09dbe9e44834ce88bb561ad0e0113b8c" kind="function"><name>operator=</name></member>
+    <member refid="d3/d1f/class_f_d_t_data_1a39698cb3437e7584d2fac080d6b0ecd1" kind="function"><name>getData</name></member>
+    <member refid="d3/d1f/class_f_d_t_data_1a67169a5963c0c675914bf27341898249" kind="function"><name>setData</name></member>
+  </compound>
+  <compound refid="df/db4/class_f_d_t_float" kind="class"><name>FDTFloat</name>
+    <member refid="df/db4/class_f_d_t_float_1acd82134803c5c82db324862ef6cdca20" kind="variable"><name>data</name></member>
+    <member refid="df/db4/class_f_d_t_float_1a78c0ff229ba58da36adef41c49136031" kind="function"><name>getTag</name></member>
+    <member refid="df/db4/class_f_d_t_float_1a5eb4972a2d1202a4ee0a14519dc59b27" kind="function"><name>~FDTFloat</name></member>
+    <member refid="df/db4/class_f_d_t_float_1a9b9018f3133019ddd0e0c8c709efe3ff" kind="function"><name>FDTFloat</name></member>
+    <member refid="df/db4/class_f_d_t_float_1a4e42b24f11829feb020717884e3c7e0c" kind="function"><name>FDTFloat</name></member>
+    <member refid="df/db4/class_f_d_t_float_1aa1a3aec678d206951d3629eb53310fbe" kind="function"><name>FDTFloat</name></member>
+    <member refid="df/db4/class_f_d_t_float_1a602f5028064e0b921b125a154112e6b9" kind="function"><name>operator=</name></member>
+    <member refid="df/db4/class_f_d_t_float_1a5d2e211c40b5192dcd174491a0251b65" kind="function"><name>operator=</name></member>
+    <member refid="df/db4/class_f_d_t_float_1acf8957458f33eb9e72dac9acb5ea4e72" kind="function"><name>getData</name></member>
+    <member refid="df/db4/class_f_d_t_float_1ad3dd7f0b1221143d69075227c6e6ba04" kind="function"><name>setData</name></member>
+    <member refid="df/db4/class_f_d_t_float_1aad40ba1457fd0b89d2549403c1cf6469" kind="function"><name>operator float</name></member>
+  </compound>
+  <compound refid="d2/d1e/class_f_d_t_int" kind="class"><name>FDTInt</name>
+    <member refid="d2/d1e/class_f_d_t_int_1a13b6ec93b57087c7c5d6244df1f0160d" kind="variable"><name>data</name></member>
+    <member refid="d2/d1e/class_f_d_t_int_1a70f584329908ed72416cb24f1b339124" kind="function"><name>getTag</name></member>
+    <member refid="d2/d1e/class_f_d_t_int_1a1f97cf07cc115ac6b64f55564dd88594" kind="function"><name>~FDTInt</name></member>
+    <member refid="d2/d1e/class_f_d_t_int_1a67a6c1078dde66f685927bcaca1bdb01" kind="function"><name>FDTInt</name></member>
+    <member refid="d2/d1e/class_f_d_t_int_1ae7e86869d4fbffb1052570b730a7194d" kind="function"><name>FDTInt</name></member>
+    <member refid="d2/d1e/class_f_d_t_int_1ace4db4530c5c9a1ce8986b8ee26eb2bc" kind="function"><name>FDTInt</name></member>
+    <member refid="d2/d1e/class_f_d_t_int_1a4b899cd0ac338fa2b62014b5d6118f4b" kind="function"><name>operator=</name></member>
+    <member refid="d2/d1e/class_f_d_t_int_1a659b6e1f409f43bd71a2c0317f4afe22" kind="function"><name>operator=</name></member>
+    <member refid="d2/d1e/class_f_d_t_int_1aafe752d82378197dbefb3b6c7d468e98" kind="function"><name>getData</name></member>
+    <member refid="d2/d1e/class_f_d_t_int_1a66c05f22130a8e53c855ee5be96ac916" kind="function"><name>setData</name></member>
+    <member refid="d2/d1e/class_f_d_t_int_1a856525653df8fcde8c7ff3719a406f1d" kind="function"><name>operator int</name></member>
+  </compound>
+  <compound refid="dc/deb/class_f_d_t_short" kind="class"><name>FDTShort</name>
+    <member refid="dc/deb/class_f_d_t_short_1ad6da1217aa36263a5ee2813588bfd935" kind="variable"><name>data</name></member>
+    <member refid="dc/deb/class_f_d_t_short_1a6d3b8e5ae3f3fab1f250741504f9514d" kind="function"><name>getTag</name></member>
+    <member refid="dc/deb/class_f_d_t_short_1a78a378e108975e166d2b54cd4fc8c170" kind="function"><name>~FDTShort</name></member>
+    <member refid="dc/deb/class_f_d_t_short_1a16bd5d972938511a7aeb220edf5a329d" kind="function"><name>FDTShort</name></member>
+    <member refid="dc/deb/class_f_d_t_short_1ae2f42522e6157f3fa8b7162e64b61582" kind="function"><name>FDTShort</name></member>
+    <member refid="dc/deb/class_f_d_t_short_1a11d7962b2bd6abee3a0e9c844146872a" kind="function"><name>FDTShort</name></member>
+    <member refid="dc/deb/class_f_d_t_short_1a82a95caf965406d3236119500c556bb1" kind="function"><name>operator=</name></member>
+    <member refid="dc/deb/class_f_d_t_short_1a983296d688ceda60c1104080ba10a863" kind="function"><name>operator=</name></member>
+    <member refid="dc/deb/class_f_d_t_short_1ae80fcb29b027adaed3a2a773470ba1c2" kind="function"><name>getData</name></member>
+    <member refid="dc/deb/class_f_d_t_short_1ae3455564797c29c2ccc87f4bee6b8359" kind="function"><name>setData</name></member>
+    <member refid="dc/deb/class_f_d_t_short_1a9ac90075fa0b632f3ed45d2f34058376" kind="function"><name>operator short</name></member>
+  </compound>
+  <compound refid="d9/dd6/_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="df/d5b/_f_d_t_data_type_8hpp" kind="file"><name>FDTDataType.hpp</name>
+    <member refid="df/d5b/_f_d_t_data_type_8hpp_1af9bab541d03027fc4165078590fe916a" kind="enum"><name>FDTDataTag</name></member>
+    <member refid="df/d5b/_f_d_t_data_type_8hpp_1af9bab541d03027fc4165078590fe916aade71d7cd236f9da9de3c52f4b2649a53" kind="enumvalue"><name>FDTNone</name></member>
+    <member refid="df/d5b/_f_d_t_data_type_8hpp_1af9bab541d03027fc4165078590fe916aabcf847294988f8be1e13135f29efb652" kind="enumvalue"><name>FDTShort</name></member>
+    <member refid="df/d5b/_f_d_t_data_type_8hpp_1af9bab541d03027fc4165078590fe916aa3d3f27350fcf9e21782b793ba25358a1" kind="enumvalue"><name>FDTInt</name></member>
+    <member refid="df/d5b/_f_d_t_data_type_8hpp_1af9bab541d03027fc4165078590fe916aa8ac91ba6bf82a70589738e454ad7cb70" kind="enumvalue"><name>FDTLong</name></member>
+    <member refid="df/d5b/_f_d_t_data_type_8hpp_1af9bab541d03027fc4165078590fe916aac64ffa104956fd2f63198e5b307508dd" kind="enumvalue"><name>FDTLongLong</name></member>
+    <member refid="df/d5b/_f_d_t_data_type_8hpp_1af9bab541d03027fc4165078590fe916aa4d33443931e99751a97c4bbd4560dd20" kind="enumvalue"><name>FDTUnsignedShort</name></member>
+    <member refid="df/d5b/_f_d_t_data_type_8hpp_1af9bab541d03027fc4165078590fe916aa7c109197a175ec26032eb61ec17942e1" kind="enumvalue"><name>FDTUnsignedInt</name></member>
+    <member refid="df/d5b/_f_d_t_data_type_8hpp_1af9bab541d03027fc4165078590fe916aa44e41a911d61c4b9333a6989d20f4637" kind="enumvalue"><name>FDTUnsignedLong</name></member>
+    <member refid="df/d5b/_f_d_t_data_type_8hpp_1af9bab541d03027fc4165078590fe916aa60a00c1cb4c468c1ea0b781b03830d6e" kind="enumvalue"><name>FDTUnsignedLongLong</name></member>
+    <member refid="df/d5b/_f_d_t_data_type_8hpp_1af9bab541d03027fc4165078590fe916aa1b9cd2ff35c10fbfe1b221053413e345" kind="enumvalue"><name>FDTFloat</name></member>
+    <member refid="df/d5b/_f_d_t_data_type_8hpp_1af9bab541d03027fc4165078590fe916aada6fbe635aecaad9aa77cb860c86d466" kind="enumvalue"><name>FDTDouble</name></member>
+    <member refid="df/d5b/_f_d_t_data_type_8hpp_1af9bab541d03027fc4165078590fe916aa5e5cc72c0a6869ab10824e8de0790bbf" kind="enumvalue"><name>FDTChar</name></member>
+    <member refid="df/d5b/_f_d_t_data_type_8hpp_1af9bab541d03027fc4165078590fe916aa4deb1feb915fdeefc689283129303e1b" kind="enumvalue"><name>FDTUnsignedChar</name></member>
+    <member refid="df/d5b/_f_d_t_data_type_8hpp_1af9bab541d03027fc4165078590fe916aa97addb344bcf0836c848d2cbf4cb6516" kind="enumvalue"><name>FDTWChar</name></member>
+    <member refid="df/d5b/_f_d_t_data_type_8hpp_1af9bab541d03027fc4165078590fe916aa5208313b51a76b70f7ba3751c563100e" kind="enumvalue"><name>FDTChar16</name></member>
+    <member refid="df/d5b/_f_d_t_data_type_8hpp_1af9bab541d03027fc4165078590fe916aa1720def3d51847e721d22528be93a4f8" kind="enumvalue"><name>FDTChar32</name></member>
+  </compound>
+  <compound refid="df/d0a/main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="df/d0a/main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="d3/dcc/md__r_e_a_d_m_e" kind="page"><name>md_README</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="d2/d1e/class_f_d_t_int" kind="class" language="C++" prot="public">
+    <compoundname>FDTInt</compoundname>
+    <basecompoundref refid="d3/d1f/class_f_d_t_data" prot="public" virt="non-virtual">FDTData</basecompoundref>
+    <includes refid="df/d5b/_f_d_t_data_type_8hpp" local="no">FDTDataType.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d2/d1e/class_f_d_t_int_1a13b6ec93b57087c7c5d6244df1f0160d" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FDTInt::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>FDTInt::data</qualifiedname>
+        <briefdescription>
+<para>data if this <ref refid="d2/d1e/class_f_d_t_int" kindref="compound">FDTInt</ref> instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/FDTDataType.hpp" line="147" column="9" bodyfile="src/FDTDataType.hpp" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d2/d1e/class_f_d_t_int_1a70f584329908ed72416cb24f1b339124" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="df/d5b/_f_d_t_data_type_8hpp_1af9bab541d03027fc4165078590fe916a" kindref="member">FDTDataTag</ref></type>
+        <definition>FDTDataTag FDTInt::getTag</definition>
+        <argsstring>(void)</argsstring>
+        <name>getTag</name>
+        <qualifiedname>FDTInt::getTag</qualifiedname>
+        <reimplements refid="d3/d1f/class_f_d_t_data_1a4843b4bbb4df8b151c1426fcbad9f39b">getTag</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get the Tag of object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>FDTDataTag </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/FDTDataType.hpp" line="154" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d1e/class_f_d_t_int_1a1f97cf07cc115ac6b64f55564dd88594" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FDTInt::~FDTInt</definition>
+        <argsstring>(void)</argsstring>
+        <name>~FDTInt</name>
+        <qualifiedname>FDTInt::~FDTInt</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Destroy the <ref refid="d2/d1e/class_f_d_t_int" kindref="compound">FDTInt</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/FDTDataType.hpp" line="159" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d1e/class_f_d_t_int_1a67a6c1078dde66f685927bcaca1bdb01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FDTInt::FDTInt</definition>
+        <argsstring>(int _int=0)</argsstring>
+        <name>FDTInt</name>
+        <qualifiedname>FDTInt::FDTInt</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>_int</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="d2/d1e/class_f_d_t_int" kindref="compound">FDTInt</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>default ctor.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to set. default is zero. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/FDTDataType.hpp" line="165" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d1e/class_f_d_t_int_1ae7e86869d4fbffb1052570b730a7194d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FDTInt::FDTInt</definition>
+        <argsstring>(const FDTInt &amp;_int)</argsstring>
+        <name>FDTInt</name>
+        <qualifiedname>FDTInt::FDTInt</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d1e/class_f_d_t_int" kindref="compound">FDTInt</ref> &amp;</type>
+          <declname>_int</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="d2/d1e/class_f_d_t_int" kindref="compound">FDTInt</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>copy ctor.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object to assign. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/FDTDataType.hpp" line="171" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d1e/class_f_d_t_int_1ace4db4530c5c9a1ce8986b8ee26eb2bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FDTInt::FDTInt</definition>
+        <argsstring>(FDTInt &amp;&amp;_intR)</argsstring>
+        <name>FDTInt</name>
+        <qualifiedname>FDTInt::FDTInt</qualifiedname>
+        <param>
+          <type><ref refid="d2/d1e/class_f_d_t_int" kindref="compound">FDTInt</ref> &amp;&amp;</type>
+          <declname>_intR</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="d2/d1e/class_f_d_t_int" kindref="compound">FDTInt</ref> object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>move ctor.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_intR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object to assign. right val. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/FDTDataType.hpp" line="177" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d1e/class_f_d_t_int_1a4b899cd0ac338fa2b62014b5d6118f4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="d2/d1e/class_f_d_t_int" kindref="compound">FDTInt</ref> &amp;</type>
+        <definition>const FDTInt &amp; FDTInt::operator=</definition>
+        <argsstring>(const FDTInt &amp;_int)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>FDTInt::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d1e/class_f_d_t_int" kindref="compound">FDTInt</ref> &amp;</type>
+          <declname>_int</declname>
+        </param>
+        <briefdescription>
+<para>copy assigent operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_int</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>value to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>const <ref refid="d2/d1e/class_f_d_t_int" kindref="compound">FDTInt</ref>&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/FDTDataType.hpp" line="184" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d1e/class_f_d_t_int_1a659b6e1f409f43bd71a2c0317f4afe22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="d2/d1e/class_f_d_t_int" kindref="compound">FDTInt</ref> &amp;</type>
+        <definition>const FDTInt &amp; FDTInt::operator=</definition>
+        <argsstring>(FDTInt &amp;&amp;_intR)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>FDTInt::operator=</qualifiedname>
+        <param>
+          <type><ref refid="d2/d1e/class_f_d_t_int" kindref="compound">FDTInt</ref> &amp;&amp;</type>
+          <declname>_intR</declname>
+        </param>
+        <briefdescription>
+<para>move assignment operator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>_intR</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>right value to set. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>const <ref refid="d2/d1e/class_f_d_t_int" kindref="compound">FDTInt</ref>&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/FDTDataType.hpp" line="191" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d1e/class_f_d_t_int_1aafe752d82378197dbefb3b6c7d468e98" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const <ref refid="d2/d1e/class_f_d_t_int" kindref="compound">FDTInt</ref> &amp;</type>
+        <definition>const FDTInt &amp; FDTInt::getData</definition>
+        <argsstring>(void) const</argsstring>
+        <name>getData</name>
+        <qualifiedname>FDTInt::getData</qualifiedname>
+        <reimplements refid="d3/d1f/class_f_d_t_data_1a39698cb3437e7584d2fac080d6b0ecd1">getData</reimplements>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Get the Data of object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>const <ref refid="d2/d1e/class_f_d_t_int" kindref="compound">FDTInt</ref>&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/FDTDataType.hpp" line="197" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d1e/class_f_d_t_int_1a66c05f22130a8e53c855ee5be96ac916" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FDTInt::setData</definition>
+        <argsstring>(const FDTInt &amp;dat)</argsstring>
+        <name>setData</name>
+        <qualifiedname>FDTInt::setData</qualifiedname>
+        <param>
+          <type>const <ref refid="d2/d1e/class_f_d_t_int" kindref="compound">FDTInt</ref> &amp;</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>Set the Data of object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="d2/d1e/class_f_d_t_int" kindref="compound">FDTInt</ref> instance. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="d2/d1e/class_f_d_t_int" kindref="compound">FDTInt</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/FDTDataType.hpp" line="204" column="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d2/d1e/class_f_d_t_int_1a856525653df8fcde8c7ff3719a406f1d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FDTInt::operator int</definition>
+        <argsstring>(void) const</argsstring>
+        <name>operator int</name>
+        <qualifiedname>FDTInt::operator int</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>conversation function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/FDTDataType.hpp" line="209" column="5"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>FDTData</label>
+        <link refid="d3/d1f/class_f_d_t_data"/>
+      </node>
+      <node id="1">
+        <label>FDTInt</label>
+        <link refid="d2/d1e/class_f_d_t_int"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>FDTData</label>
+        <link refid="d3/d1f/class_f_d_t_data"/>
+      </node>
+      <node id="1">
+        <label>FDTInt</label>
+        <link refid="d2/d1e/class_f_d_t_int"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/FDTDataType.hpp" line="140" column="1" bodyfile="src/FDTDataType.hpp" bodystart="141" bodyend="210"/>
+    <listofallmembers>
+      <member refid="d3/d1f/class_f_d_t_data_1a28a5936c663c63bf4220934e683ed7e7" prot="protected" virt="non-virtual"><scope>FDTInt</scope><name>_tag</name></member>
+      <member refid="d2/d1e/class_f_d_t_int_1a13b6ec93b57087c7c5d6244df1f0160d" prot="protected" virt="non-virtual"><scope>FDTInt</scope><name>data</name></member>
+      <member refid="d3/d1f/class_f_d_t_data_1af8e5b5191b63ed01614997dc84a028f6" prot="public" virt="non-virtual"><scope>FDTInt</scope><name>FDTData</name></member>
+      <member refid="d3/d1f/class_f_d_t_data_1a18ee00f41a26797e8aaf55eec5b92ebd" prot="public" virt="non-virtual"><scope>FDTInt</scope><name>FDTData</name></member>
+      <member refid="d3/d1f/class_f_d_t_data_1a96b226deb1735ee644a91109721762b1" prot="public" virt="non-virtual"><scope>FDTInt</scope><name>FDTData</name></member>
+      <member refid="d2/d1e/class_f_d_t_int_1a67a6c1078dde66f685927bcaca1bdb01" prot="public" virt="non-virtual"><scope>FDTInt</scope><name>FDTInt</name></member>
+      <member refid="d2/d1e/class_f_d_t_int_1ae7e86869d4fbffb1052570b730a7194d" prot="public" virt="non-virtual"><scope>FDTInt</scope><name>FDTInt</name></member>
+      <member refid="d2/d1e/class_f_d_t_int_1ace4db4530c5c9a1ce8986b8ee26eb2bc" prot="public" virt="non-virtual"><scope>FDTInt</scope><name>FDTInt</name></member>
+      <member refid="d2/d1e/class_f_d_t_int_1aafe752d82378197dbefb3b6c7d468e98" prot="public" virt="virtual"><scope>FDTInt</scope><name>getData</name></member>
+      <member refid="d2/d1e/class_f_d_t_int_1a70f584329908ed72416cb24f1b339124" prot="public" virt="virtual"><scope>FDTInt</scope><name>getTag</name></member>
+      <member refid="d2/d1e/class_f_d_t_int_1a856525653df8fcde8c7ff3719a406f1d" prot="public" virt="non-virtual"><scope>FDTInt</scope><name>operator int</name></member>
+      <member refid="d2/d1e/class_f_d_t_int_1a4b899cd0ac338fa2b62014b5d6118f4b" prot="public" virt="non-virtual"><scope>FDTInt</scope><name>operator=</name></member>
+      <member refid="d2/d1e/class_f_d_t_int_1a659b6e1f409f43bd71a2c0317f4afe22" prot="public" virt="non-virtual"><scope>FDTInt</scope><name>operator=</name></member>
+      <member refid="d3/d1f/class_f_d_t_data_1a09dbe9e44834ce88bb561ad0e0113b8c" prot="public" virt="pure-virtual" ambiguityscope="FDTData::"><scope>FDTInt</scope><name>operator=</name></member>
+      <member refid="d2/d1e/class_f_d_t_int_1a66c05f22130a8e53c855ee5be96ac916" prot="public" virt="non-virtual"><scope>FDTInt</scope><name>setData</name></member>
+      <member refid="d3/d1f/class_f_d_t_data_1a67169a5963c0c675914bf27341898249" prot="public" virt="pure-virtual" ambiguityscope="FDTData::"><scope>FDTInt</scope><name>setData</name></member>
+      <member refid="d3/d1f/class_f_d_t_data_1a539599de61a73e87142abf704870676d" prot="public" virt="virtual"><scope>FDTInt</scope><name>~FDTData</name></member>
+      <member refid="d2/d1e/class_f_d_t_int_1a1f97cf07cc115ac6b64f55564dd88594" prot="public" virt="non-virtual"><scope>FDTInt</scope><name>~FDTInt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

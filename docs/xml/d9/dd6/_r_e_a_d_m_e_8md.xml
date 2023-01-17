@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="d9/dd6/_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Freecraft</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![freecraftSocial.jpg](https://s2.loli.net/2023/01/15/Ztu48beVmDMGCfn.jpg)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**this<sp/>project<sp/>is<sp/>active!!<sp/>i<sp/>will<sp/>modifie<sp/>changes<sp/>and<sp/>push<sp/>to<sp/>github<sp/>one<sp/>day.**</highlight></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

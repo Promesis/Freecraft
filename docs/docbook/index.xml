@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>Freecraft</title>
+    </info>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="d3/d1f/class_f_d_t_data.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="df/db4/class_f_d_t_float.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d2/d1e/class_f_d_t_int.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dc/deb/class_f_d_t_short.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="d9/dd6/_r_e_a_d_m_e_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="df/d5b/_f_d_t_data_type_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="df/d5b/_f_d_t_data_type_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="df/d0a/main_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="df/d0a/main_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>
