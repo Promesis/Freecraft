@@ -3,7 +3,7 @@
 
 /**
  * @author Promesis
- *
+ * @brief declares FDT(Freecraft Data tags).
  */
 
 /**
@@ -53,7 +53,7 @@ enum class FDTDataTag
  */
 class FDTData
 {
-protected:
+    protected:
     /**
      * @brief tag of current data.
      * 
@@ -86,7 +86,7 @@ protected:
     };
     */
     
-public:
+    public:
     /**
      * @brief Get the Tag of object. pure virtual function.
      * @return FDTDataTag 
@@ -143,13 +143,13 @@ public:
  */
 class FDTInt : public FDTData
 {
-protected:
+    protected:
     /**
      * @brief data of this FDTInt instance.
      * 
      */
     int data;
-public:
+    public:
     /**
      * @brief Get the Tag of object.
      * 
@@ -219,13 +219,13 @@ public:
  */
 class FDTShort : public FDTData
 {
-protected:
+    protected:
     /**
      * @brief data of this FDTShort instance.
      * 
      */
     short data;
-public:
+    public:
     /**
      * @brief Get the Tag of object
      * 
@@ -289,18 +289,28 @@ public:
 };
 
 /**
+ * @brief long int value wrapped in the class.
+ * 
+ */
+class FDTLong : public FDTData
+{
+    protected:
+    long data;
+};
+
+/**
  * @brief float fractional value wrapped in a class.
  * 
  */
 class FDTFloat : public FDTData
 {
-protected:
+    protected:
     /**
      * @brief data of object.
      * 
      */
     float data;
-public:
+    public:
     /**
      * @brief Get the Tag of object.
      * 
