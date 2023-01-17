@@ -108,5 +108,21 @@ public:
     operator short(void) const;
 };
 
+class FDTFloat : public FDTData
+{
+protected:
+    float data;
+public:
+    FDTDataTag getTag(void);
+    ~FDTFloat(void);
+    FDTFloat(short _float=0);
+    FDTFloat(const FDTFloat &_float);
+    FDTFloat(FDTFloat &&_floatR);
+    const FDTFloat &operator=(const FDTFloat &_float);
+    const FDTFloat &operator=(FDTFloat &&_floatR);
+    const FDTFloat &getData(void) const;
+    void setData(const FDTFloat &dat);
+    operator float(void) const;
+};
 
 #endif
