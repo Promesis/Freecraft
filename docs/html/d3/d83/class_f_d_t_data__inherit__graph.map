@@ -1,6 +1,6 @@
 <map id="FDTData" name="FDTData">
-<area shape="rect" id="node1" title="base class of data." alt="" coords="149,5,251,185"/>
-<area shape="rect" id="node2" href="$df/db4/class_f_d_t_float.html" title=" " alt="" coords="5,233,123,443"/>
-<area shape="rect" id="node3" href="$d2/d1e/class_f_d_t_int.html" title=" " alt="" coords="147,233,253,443"/>
-<area shape="rect" id="node4" href="$dc/deb/class_f_d_t_short.html" title=" " alt="" coords="277,233,400,443"/>
+<area shape="rect" id="node1" title="base class of data." alt="" coords="209,5,402,273"/>
+<area shape="rect" id="node2" href="$df/db4/class_f_d_t_float.html" title=" " alt="" coords="5,321,192,633"/>
+<area shape="rect" id="node3" href="$d2/d1e/class_f_d_t_int.html" title=" " alt="" coords="216,329,395,626"/>
+<area shape="rect" id="node4" href="$dc/deb/class_f_d_t_short.html" title=" " alt="" coords="419,321,608,633"/>
 </map>

@@ -9,7 +9,7 @@ Inheritance diagram for FDTShort:<para>
     <informalfigure>
         <mediaobject>
             <imageobject>
-                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d9/dc2/class_f_d_t_short__inherit__graph.png"></imagedata>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d9/dc2/class_f_d_t_short__inherit__graph.svg"></imagedata>
             </imageobject>
         </mediaobject>
     </informalfigure>
@@ -18,7 +18,7 @@ Collaboration diagram for FDTShort:<para>
     <informalfigure>
         <mediaobject>
             <imageobject>
-                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../db/d8a/class_f_d_t_short__coll__graph.png"></imagedata>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../db/d8a/class_f_d_t_short__coll__graph.svg"></imagedata>
             </imageobject>
         </mediaobject>
     </informalfigure>

@@ -9,7 +9,7 @@ Inheritance diagram for FDTInt:<para>
     <informalfigure>
         <mediaobject>
             <imageobject>
-                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d2/dc1/class_f_d_t_int__inherit__graph.png"></imagedata>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d2/dc1/class_f_d_t_int__inherit__graph.svg"></imagedata>
             </imageobject>
         </mediaobject>
     </informalfigure>
@@ -18,7 +18,7 @@ Collaboration diagram for FDTInt:<para>
     <informalfigure>
         <mediaobject>
             <imageobject>
-                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d4/de8/class_f_d_t_int__coll__graph.png"></imagedata>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d4/de8/class_f_d_t_int__coll__graph.svg"></imagedata>
             </imageobject>
         </mediaobject>
     </informalfigure>

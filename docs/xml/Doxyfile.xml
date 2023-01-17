@@ -4,7 +4,7 @@
   <option  id='PROJECT_NAME' default='no' type='string'><value><![CDATA[Freecraft]]></value></option>
   <option  id='PROJECT_NUMBER' default='no' type='string'><value><![CDATA[00.01a03-dbg]]></value></option>
   <option  id='PROJECT_BRIEF' default='no' type='string'><value><![CDATA["open source remake of Minecraft in C++ with Lua language support."]]></value></option>
-  <option  id='PROJECT_LOGO' default='no' type='string'><value><![CDATA[C:/Users/M3149/Documents/Freecraft/social/7122492_transparent_cube_icon.png]]></value></option>
+  <option  id='PROJECT_LOGO' default='no' type='string'><value><![CDATA[C:/Users/M3149/Documents/Freecraft/social/icon64_glass.png]]></value></option>
   <option  id='OUTPUT_DIRECTORY' default='no' type='string'><value><![CDATA[C:/Users/M3149/Documents/Freecraft/docs]]></value></option>
   <option  id='CREATE_SUBDIRS' default='no' type='bool'><value>YES</value></option>
   <option  id='CREATE_SUBDIRS_LEVEL' default='yes' type='int'><value>8</value></option>
@@ -224,9 +224,9 @@
   <option  id='HTML_EXTRA_FILES' default='yes' type='stringlist'>
   </option>
   <option  id='HTML_COLORSTYLE' default='yes' type='string'><value>AUTO_LIGHT</value></option>
-  <option  id='HTML_COLORSTYLE_HUE' default='no' type='int'><value>233</value></option>
-  <option  id='HTML_COLORSTYLE_SAT' default='no' type='int'><value>254</value></option>
-  <option  id='HTML_COLORSTYLE_GAMMA' default='no' type='int'><value>40</value></option>
+  <option  id='HTML_COLORSTYLE_HUE' default='no' type='int'><value>114</value></option>
+  <option  id='HTML_COLORSTYLE_SAT' default='no' type='int'><value>72</value></option>
+  <option  id='HTML_COLORSTYLE_GAMMA' default='no' type='int'><value>78</value></option>
   <option  id='HTML_TIMESTAMP' default='yes' type='bool'><value>NO</value></option>
   <option  id='HTML_DYNAMIC_MENUS' default='yes' type='bool'><value>YES</value></option>
   <option  id='HTML_DYNAMIC_SECTIONS' default='yes' type='bool'><value>NO</value></option>
@@ -342,10 +342,10 @@
   <option  id='ALLEXTERNALS' default='yes' type='bool'><value>NO</value></option>
   <option  id='EXTERNAL_GROUPS' default='yes' type='bool'><value>YES</value></option>
   <option  id='EXTERNAL_PAGES' default='yes' type='bool'><value>YES</value></option>
-  <option  id='DIA_PATH' default='yes' type='string'><value><![CDATA[]]></value></option>
+  <option  id='DIA_PATH' default='no' type='string'><value><![CDATA[C:/Users/M3149/Documents/Freecraft/docs/diagrams]]></value></option>
   <option  id='HIDE_UNDOC_RELATIONS' default='yes' type='bool'><value>YES</value></option>
   <option  id='HAVE_DOT' default='no' type='bool'><value>YES</value></option>
-  <option  id='DOT_NUM_THREADS' default='yes' type='int'><value>0</value></option>
+  <option  id='DOT_NUM_THREADS' default='no' type='int'><value>2</value></option>
   <option  id='DOT_COMMON_ATTR' default='yes' type='string'><value><![CDATA["fontname=Helvetica,fontsize=10"]]></value></option>
   <option  id='DOT_EDGE_ATTR' default='yes' type='string'><value><![CDATA["labelfontname=Helvetica,labelfontsize=10"]]></value></option>
   <option  id='DOT_NODE_ATTR' default='yes' type='string'><value><![CDATA["shape=box,height=0.2,width=0.4"]]></value></option>
@@ -355,7 +355,7 @@
   <option  id='GROUP_GRAPHS' default='yes' type='bool'><value>YES</value></option>
   <option  id='UML_LOOK' default='no' type='bool'><value>YES</value></option>
   <option  id='UML_LIMIT_NUM_FIELDS' default='yes' type='int'><value>10</value></option>
-  <option  id='DOT_UML_DETAILS' default='yes' type='string'><value>NO</value></option>
+  <option  id='DOT_UML_DETAILS' default='no' type='string'><value>YES</value></option>
   <option  id='DOT_WRAP_THRESHOLD' default='yes' type='int'><value>17</value></option>
   <option  id='TEMPLATE_RELATIONS' default='yes' type='bool'><value>NO</value></option>
   <option  id='INCLUDE_GRAPH' default='yes' type='bool'><value>YES</value></option>
@@ -365,7 +365,7 @@
   <option  id='GRAPHICAL_HIERARCHY' default='yes' type='bool'><value>YES</value></option>
   <option  id='DIRECTORY_GRAPH' default='yes' type='bool'><value>YES</value></option>
   <option  id='DIR_GRAPH_MAX_DEPTH' default='yes' type='int'><value>1</value></option>
-  <option  id='DOT_IMAGE_FORMAT' default='yes' type='string'><value>png</value></option>
+  <option  id='DOT_IMAGE_FORMAT' default='no' type='string'><value>svg</value></option>
   <option  id='INTERACTIVE_SVG' default='yes' type='bool'><value>NO</value></option>
   <option  id='DOT_PATH' default='no' type='string'><value><![CDATA["C:/Program Files/Graphviz/bin"]]></value></option>
   <option  id='DOTFILE_DIRS' default='yes' type='stringlist'>
