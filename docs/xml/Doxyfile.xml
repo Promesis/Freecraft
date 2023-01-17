@@ -228,9 +228,9 @@
   <option  id='HTML_COLORSTYLE_HUE' default='no' type='int'><value>114</value></option>
   <option  id='HTML_COLORSTYLE_SAT' default='no' type='int'><value>72</value></option>
   <option  id='HTML_COLORSTYLE_GAMMA' default='no' type='int'><value>78</value></option>
-  <option  id='HTML_TIMESTAMP' default='yes' type='bool'><value>NO</value></option>
+  <option  id='HTML_TIMESTAMP' default='no' type='bool'><value>YES</value></option>
   <option  id='HTML_DYNAMIC_MENUS' default='yes' type='bool'><value>YES</value></option>
-  <option  id='HTML_DYNAMIC_SECTIONS' default='yes' type='bool'><value>NO</value></option>
+  <option  id='HTML_DYNAMIC_SECTIONS' default='no' type='bool'><value>YES</value></option>
   <option  id='HTML_INDEX_NUM_ENTRIES' default='yes' type='int'><value>100</value></option>
   <option  id='GENERATE_DOCSET' default='yes' type='bool'><value>NO</value></option>
   <option  id='DOCSET_FEEDNAME' default='yes' type='string'><value><![CDATA["Doxygen generated docs"]]></value></option>
@@ -260,7 +260,7 @@
   <option  id='FULL_SIDEBAR' default='yes' type='bool'><value>NO</value></option>
   <option  id='ENUM_VALUES_PER_LINE' default='yes' type='int'><value>4</value></option>
   <option  id='TREEVIEW_WIDTH' default='yes' type='int'><value>250</value></option>
-  <option  id='EXT_LINKS_IN_WINDOW' default='yes' type='bool'><value>NO</value></option>
+  <option  id='EXT_LINKS_IN_WINDOW' default='no' type='bool'><value>YES</value></option>
   <option  id='OBFUSCATE_EMAILS' default='yes' type='bool'><value>YES</value></option>
   <option  id='HTML_FORMULA_FORMAT' default='no' type='string'><value>svg</value></option>
   <option  id='FORMULA_FONTSIZE' default='yes' type='int'><value>10</value></option>
@@ -349,7 +349,7 @@
   <option  id='DOT_NUM_THREADS' default='no' type='int'><value>2</value></option>
   <option  id='DOT_COMMON_ATTR' default='no' type='string'><value><![CDATA["fontname=Consolas,fontsize=10"]]></value></option>
   <option  id='DOT_EDGE_ATTR' default='no' type='string'><value><![CDATA["labelfontname=Calibri,labelfontsize=10"]]></value></option>
-  <option  id='DOT_NODE_ATTR' default='no' type='string'><value><![CDATA["shape=box,height=0.2,width=0.4,style=rounded"]]></value></option>
+  <option  id='DOT_NODE_ATTR' default='no' type='string'><value><![CDATA["shape=box,height=0.2,width=0.8"]]></value></option>
   <option  id='DOT_FONTPATH' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='CLASS_GRAPH' default='yes' type='string'><value>YES</value></option>
   <option  id='COLLABORATION_GRAPH' default='yes' type='bool'><value>YES</value></option>

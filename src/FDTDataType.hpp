@@ -137,11 +137,15 @@ public:
 
 };
 
+/**
+ * @brief int value wrapped in a FDT class.
+ * 
+ */
 class FDTInt : public FDTData
 {
 protected:
     /**
-     * @brief data if this FDTInt instance.
+     * @brief data of this FDTInt instance.
      * 
      */
     int data;
@@ -166,13 +170,13 @@ public:
     /**
      * @brief Construct a new FDTInt object. copy ctor.
      * 
-     * @param _int object to assign.
+     * @param _int object to copy.
      */
     FDTInt(const FDTInt &_int);
     /**
      * @brief Construct a new FDTInt object. move ctor.
      * 
-     * @param _intR object to assign. right val.
+     * @param _intR object to move. right val.
      */
     FDTInt(FDTInt &&_intR);
     /**
@@ -209,37 +213,153 @@ public:
     operator int(void) const;
 };
 
+/**
+ * @brief short int value wrapped in a class.
+ * 
+ */
 class FDTShort : public FDTData
 {
 protected:
+    /**
+     * @brief data of this FDTShort instance.
+     * 
+     */
     short data;
 public:
+    /**
+     * @brief Get the Tag of object
+     * 
+     * @return FDTDataTag 
+     */
     FDTDataTag getTag(void);
+    /**
+     * @brief Destroy the FDTShort object.
+     * 
+     */
     ~FDTShort(void);
+    /**
+     * @brief Construct a new FDTShort object. default ctor.
+     * 
+     * @param _short data to set. default is zero.
+     */
     FDTShort(short _short=0);
+    /**
+     * @brief Construct a new FDTShort object. copy ctor.
+     * 
+     * @param _short object to copy.
+     */
     FDTShort(const FDTShort &_short);
+    /**
+     * @brief Construct a new FDTShort object. move ctor.
+     * 
+     * @param _shortR object to move.
+     */
     FDTShort(FDTShort &&_shortR);
+    /**
+     * @brief copy assignment operator.
+     * 
+     * @param _short object to copy.
+     * @return const FDTShort& 
+     */
     const FDTShort &operator=(const FDTShort &_short);
+    /**
+     * @brief move assignment operator.
+     * 
+     * @param _shortR object to move.
+     * @return const FDTShort& 
+     */
     const FDTShort &operator=(FDTShort &&_shortR);
+    /**
+     * @brief Get the Data of object.
+     * 
+     * @return const FDTShort& 
+     */
     const FDTShort&getData(void) const;
+    /**
+     * @brief Set the Data of object
+     * 
+     * @param dat data to set.
+     */
     void setData(const FDTShort &dat);
+    /**
+     * @brief conversation function.
+     * 
+     */
     operator short(void) const;
 };
 
+/**
+ * @brief float fractional value wrapped in a class.
+ * 
+ */
 class FDTFloat : public FDTData
 {
 protected:
+    /**
+     * @brief data of object.
+     * 
+     */
     float data;
 public:
+    /**
+     * @brief Get the Tag of object.
+     * 
+     * @return FDTDataTag 
+     */
     FDTDataTag getTag(void);
+    /**
+     * @brief Destroy the FDTFloat object.
+     * 
+     */
     ~FDTFloat(void);
-    FDTFloat(short _float=0);
+    /**
+     * @brief Construct a new FDTFloat object. default ctor.
+     * 
+     * @param _float data to set. default is zero.
+     */
+    FDTFloat(short _float=0.0);
+    /**
+     * @brief Construct a new FDTFloat object. copy ctor.
+     * 
+     * @param _float object to copy.
+     */
     FDTFloat(const FDTFloat &_float);
+    /**
+     * @brief Construct a new FDTFloat object. move ctor.
+     * 
+     * @param _floatR object right val to move.
+     */
     FDTFloat(FDTFloat &&_floatR);
+    /**
+     * @brief copy assignment operator.
+     * 
+     * @param _float object to copy.
+     * @return const FDTFloat& 
+     */
     const FDTFloat &operator=(const FDTFloat &_float);
+    /**
+     * @brief move assignment operator.
+     * 
+     * @param _floatR object right val to move.
+     * @return const FDTFloat& 
+     */
     const FDTFloat &operator=(FDTFloat &&_floatR);
+    /**
+     * @brief Get the Data of object.
+     * 
+     * @return const FDTFloat& 
+     */
     const FDTFloat &getData(void) const;
+    /**
+     * @brief Set the Data of object.
+     * 
+     * @param dat data to set.
+     */
     void setData(const FDTFloat &dat);
+    /**
+     * @brief conversation function.
+     * 
+     */
     operator float(void) const;
 };
 
