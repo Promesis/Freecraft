@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.12)
 #cmake_cxx_standard_required()
 project(Freecraft)
-aux_source_directory(./ Freecraft_Sources)
+aux_source_directory(./src/ Freecraft_Sources)
 add_executable(Freecraft ${Freecraft_Sources})
