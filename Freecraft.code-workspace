@@ -9,6 +9,8 @@
 			"*.md": "markdown",
 			"ostream": "cpp"
 		},
-		"editor.cursorSmoothCaretAnimation": true
+		"editor.cursorSmoothCaretAnimation": true,
+		"cmake.buildTask": false,
+		"cmake.configureOnOpen": false
 	}
 }
