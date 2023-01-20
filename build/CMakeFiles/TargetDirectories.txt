@@ -1,3 +1,0 @@
-C:/Users/M3149/Documents/Freecraft/build/CMakeFiles/Freecraft.dir
-C:/Users/M3149/Documents/Freecraft/build/CMakeFiles/edit_cache.dir
-C:/Users/M3149/Documents/Freecraft/build/CMakeFiles/rebuild_cache.dir
