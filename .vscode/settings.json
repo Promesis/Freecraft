@@ -2,5 +2,6 @@
     "files.associations": {
         "*.md": "markdown",
         "ostream": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "disabled"
 }
