@@ -1,6 +1,7 @@
 #ifndef items_hpp
 #define items_hpp
 
+#include "json/json.h"
 
 /**
  * @brief defines items data structure. 
@@ -20,12 +21,12 @@ class fcitems
      * @brief unique identifier for current item.
      * 
      */
-    char UUID [16];
+    Json::String uuid;
     /**
      * @brief unique identifier for player has current item.
      * 
      */
-    char playerUUID [16];
+    Json::String playerUUID;
     /**
      * @brief UUID of current item type.
      * 
@@ -39,7 +40,7 @@ class fcitems
      */
     unsigned int cnt;
 
-    
+
 }
 
 
