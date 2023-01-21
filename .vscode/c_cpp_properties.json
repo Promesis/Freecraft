@@ -4,7 +4,8 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:\\msys64\\mingw64\\include\\**"
+                "C:\\msys64\\mingw64\\include\\**",
+                "${workspaceFolder}/include/**"
             ],
             "defines": [
                 "_DEBUG",
@@ -14,7 +15,7 @@
             "compilerPath": "C:\\msys64\\mingw64\\bin\\gcc.exe",
             "intelliSenseMode": "windows-gcc-x64",
             "cStandard": "c11",
-            "cppStandard": "c++14",
+            "cppStandard": "c++11",
             "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],

@@ -12,25 +12,29 @@ file ( GLOB_RECURSE root_header_files "${PROJECT_SOURCE_DIR}/src/*.h" "${PROJECT
 file ( GLOB_RECURSE root_src_files "${PROJECT_SOURCE_DIR}/src/*.cpp" "${PROJECT_SOURCE_DIR}/src/*.c" )
 
 
-set ( GL_INC "${PROJECT_SOURCE_DIR}/include/" )
-set ( GLFW_LIB "${PROJECT_SOURCE_DIR}/lib/glfw3.dll" )
+set ( INCLUDES "${PROJECT_SOURCE_DIR}/include/" )
+set ( GLFW_LIB "${PROJECT_SOURCE_DIR}/lib/glfw3.dll" )          #GLFW library
+set ( JSONCPP_LIB "${PROJECT_SOURCE_DIR}/lib/libjsoncpp.dll")   #jsoncpp library
 
 list ( APPEND PRJ_INCLUDE_DIRS . )
-list ( APPEND PRJ_INCLUDE_DIRS ${GL_INC} )
-#list ( APPEND PRJ_INCLUDE_DIRS "${PROJECT_SOURCE_DIR}/include/glad/" )
-#list ( APPEND PRJ_INCLUDE_DIRS "${PROJECT_SOURCE_DIR}/include/KHR" )
+list ( APPEND PRJ_INCLUDE_DIRS ${INCLUDES} )
 
+#custom appends header files we need
 list ( APPEND PRJ_SRC_LIST ${root_src_files} )
-list ( APPEND PRJ_LIBRARIES ${GLFW_LIB} )
 
+#custom appends libraries we need
+list ( APPEND PRJ_LIBRARIES ${GLFW_LIB} )
+list ( APPEND PRJ_LIBRARIES ${JSONCPP_LIB} )
 
 add_executable ( ${PROJECT_NAME} ${PRJ_SRC_LIST} )
 
+#includes
 target_include_directories ( ${PROJECT_NAME}
 	PRIVATE 
     ${PRJ_INCLUDE_DIRS}
 )
 
+#libraries
 target_link_libraries ( ${PROJECT_NAME} 
     PRIVATE 
     ${PRJ_LIBRARIES}
