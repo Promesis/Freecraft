@@ -6,7 +6,8 @@
 class block
 {
     protected:
-    Json::String customName;
-}
+    std::string customName;
+    
+};
 
 #endif

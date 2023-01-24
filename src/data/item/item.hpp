@@ -17,6 +17,7 @@
 #include "json/json.h"
 #include "glad/glad.h"
 #include "GLFW/glfw3.h"
+#include <string>
 
 #include "../uuid/uuid.hpp"
 
@@ -27,32 +28,35 @@
  */
 class fcitem
 {
-    public:
+    protected:
     /**
      * @brief name of current item.
      * 
      */
-    Json::String name;
+    std::string name;
     /**
-     * @brief unique identifier for current item.
+     * @brief namespace ID for current item.
      * 
      */
-    uuid itemUUID;
+    std::string itemID;
     /**
-     * @brief unique identifier for player has current item.
+     * @brief namespace ID of current item type.
      * 
      */
-    uuid ownerUUID;
-    /**
-     * @brief UUID of current item type.
-     * 
-     */
-    uuid categoryUUID;
+    std::string categoryID;
     /**
      * @brief count of item in inventory.
      * 
      */
     unsigned int count;
+
+    bool unbreakable;
+
+    unsigned int slot;//TODO : edit it when completed inventory part
+
+    
+    
+    public:
 
     /**
      * @brief convert to jsoncpp object.
