@@ -54,7 +54,7 @@ class fcitem
 
     unsigned int slot;//TODO : edit it when completed inventory part
 
-    
+
     
     public:
 
