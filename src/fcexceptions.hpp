@@ -12,7 +12,7 @@ class fcRuntimeException : public fcexception
     const char *why;
 
     public:
-    fcRuntimeException(const char *whyException = "runtime exception occured") : why(whyException);
+    fcRuntimeException(const char *whyException = "runtime exception occured") : why(whyException) {};
     const char *what();
 };
 
@@ -22,7 +22,7 @@ class fcRuntimeError : public fcexception
     const char *why;
 
     public:
-    fcRuntimeError(const char *whyError = "runtime error occured") : why(whyError);
+    fcRuntimeError(const char *whyError = "runtime error occured") : why(whyError) {};
 
     const char *what();
 };
@@ -34,25 +34,25 @@ class fcRuntimeError : public fcexception
 class fcCalcException : public fcRuntimeException
 {
     public:
-    fcCalcException(const char *whyException = "calculation gets errors") : fcRuntimeError(whyException);
+    fcCalcException(const char *whyException = "calculation gets errors") : fcRuntimeException(whyException) {};
 };
 
 class fcDivisionZeroException : public fcCalcException
 {
     public:
-    fcCalcException(const char *whyException = "calculation get errors when dividing a num with zero") : fcCalcException(whyException);
+    fcCalcException(const char *whyException = "calculation get errors when dividing a num with zero") : fcCalcException(whyException) {};
 };
 
 class fcSyntaxException : public fcRuntimeException
 {
     public:
-    fcSyntaxException(const char *whyException = "the syntax isn't right") : fcRuntimeException(whyException);
+    fcSyntaxException(const char *whyException = "the syntax isn't right") : fcRuntimeException(whyException) {};
 };
 
 class fcArrayIndexOutOfBoundsException : public fcRuntimeException
 {
     public:
-    fcArrayIndexOutOfBoundsException(const char *whyException = "the array index is out of bound.") : fcRuntimeException(whyException);
+    fcArrayIndexOutOfBoundsException(const char *whyException = "the array index is out of bound.") : fcRuntimeException(whyException) {};
 };
 
 #endif

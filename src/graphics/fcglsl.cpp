@@ -21,7 +21,7 @@ void fcgraphics::readGLSL(const char *filename, std::string &str)
         str += s+'\n';
 }
 
-void fcgraphics::compileGLSL(const char *GLSL, GLuint &shader, GLenum type)
+void fcgraphics::compileGLSL(const GLchar *GLSL, GLuint &shader, GLenum type)
 {
     shader = glCreateShader(type);
     glShaderSource(shader, 1, GLSL, NULL);
@@ -33,8 +33,8 @@ void fcgraphics::compileGLSL(const char *GLSL, GLuint &shader, GLenum type)
     if( !success )
     {
         glGetShaderInfoLog(shader, 512, NULL, infoLog);
-        std::cout << "OpenGL shader failed" << endl  
-                  << infoLog << endl;
+        std::cout << "OpenGL shader failed" << std::endl  
+                  << infoLog << std::endl;
         return;
     }
     

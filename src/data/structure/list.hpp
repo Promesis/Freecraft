@@ -41,7 +41,7 @@ class fclist
      * @brief length of list.
      * 
      */
-    unsigned int length;
+    unsigned int len;
     
     public:
     /**
@@ -77,17 +77,24 @@ class fclist
     /**
      * @brief item at where pos selected.
      * 
-     * @param pos where item.
+     * @param pos where.
      * @return type& 
-     * @exception throw fcArrayIndexOutOfBoundsException class when array index out of bounds.
+     * @throw fcArrayIndexOutOfBoundsException array index is out of bound.
      */
     type &at(unsigned int pos);
     /**
-     * @brief 
+     * @brief length of array.
      * 
      * @return unsigned int 
      */
     unsigned int length(void) const;
+    /**
+     * @brief item at where pos selected.
+     * 
+     * @param pos where.
+     * @return type& 
+     * @throw fcArrayIndexOutOfBoundsException array index is out of bound.
+     */
     type &operator[](int pos);
 };
 
