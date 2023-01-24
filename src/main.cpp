@@ -1,7 +1,7 @@
 //test if glfw can be compiled.
 #include "glad/glad.h"
 #include "glfw/glfw3.h"
-#include "graphics/fcglsl.hpp"
+#include "./graphics/fcglsl.hpp"
 
 #include <iostream>
 

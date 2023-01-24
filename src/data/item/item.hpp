@@ -11,14 +11,14 @@
  */
 
 
-#ifndef items_hpp
-#define items_hpp
+#ifndef item_hpp
+#define item_hpp
 
 #include "json/json.h"
 #include "glad/glad.h"
 #include "GLFW/glfw3.h"
 
-#include "uuid.hpp"
+#include "../uuid/uuid.hpp"
 
 
 /**
