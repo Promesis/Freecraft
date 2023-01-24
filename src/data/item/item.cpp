@@ -15,9 +15,6 @@
 Json::Value fcitem::toJson(void) const
 {
     Json::Value retVal;
-    retVal["name"]=name;
-    retVal["itemUUID"]=itemUUID.data;
-    retVal["ownerUUID"]=ownerUUID.data;
-    retVal["categoryUUID"]=categoryUUID.data;
-    retVal["count"]=count;
+    //TODO : complete it
+    return retVal;
 }
