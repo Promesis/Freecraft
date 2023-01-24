@@ -47,6 +47,12 @@ class fcSyntaxException : public fcRuntimeException
 {
     public:
     fcSyntaxException(const char *whyException = "the syntax isn't right") : fcRuntimeException(whyException);
-}
+};
+
+class fcArrayIndexOutOfBoundsException : public fcRuntimeException
+{
+    public:
+    fcArrayIndexOutOfBoundsException(const char *whyException = "the array index is out of bound.") : fcRuntimeException(whyException);
+};
 
 #endif

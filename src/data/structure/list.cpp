@@ -60,7 +60,4 @@ fclist<type>::fclist(const fclist &ls)
 
         mycurr = mycurr->next;
     } while (lscurr = lscurr->next);
-    
-    //0->0->0->0|
-    //
 }
