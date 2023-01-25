@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_uuid_8cpp" xml:lang="zh">
+<title>src/data/uuid/uuid.cpp 文件参考</title>
+<indexterm><primary>src/data/uuid/uuid.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;uuid.hpp&quot;<?linebreak?>#include &lt;cctype&gt;<?linebreak?>#include &lt;stdexcept&gt;<?linebreak?></programlisting>uuid.cpp 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d7/ddd/uuid_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>函数    </title>
+        <itemizedlist>
+            <listitem><para>char <link linkend="_uuid_8cpp_1a43613b6633f421b8128a9407737df105">uitchex</link> (unsigned int i)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_uuid_8cpp_1a3efeef8ba54054f3fa430a9c0e21c07e">ishexnum</link> (char ch)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_uuid_8cpp_1a8429edbb20216a3072d6f6fc1617dae2">checksyntax</link> (const Json::String &amp;str)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_uuid_8cpp_1adb36eb924610352d2d838c1226d70b70">operator==</link> (const Json::String &amp;datL, const <link linkend="_classuuid">uuid</link> &amp;datR)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>函数说明</title>
+<anchor xml:id="_uuid_8cpp_1a8429edbb20216a3072d6f6fc1617dae2"/><section>
+    <title>checksyntax()</title>
+<indexterm><primary>checksyntax</primary><secondary>uuid.cpp</secondary></indexterm>
+<indexterm><primary>uuid.cpp</primary><secondary>checksyntax</secondary></indexterm>
+<para><computeroutput>bool checksyntax (const Json::String &amp; str)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_uuid_8cpp_source">uuid.cpp</link> 第 <link linkend="_uuid_8cpp_source_1l00072">72</link> 行定义.</para>
+<programlisting linenumbering="unnumbered">00073 {
+00074 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;i;
+00075 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(str.length()&#32;!=&#32;36)
+00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+00077 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>(i=0;&#32;i&#32;&lt;=&#32;7;&#32;++i)
+00078 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(!<link linkend="_uuid_8cpp_1a3efeef8ba54054f3fa430a9c0e21c07e">ishexnum</link>(str[i]))
+00079 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+00080 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(str[8]!=<emphasis role="charliteral">&apos;-&apos;</emphasis>)&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+00081 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>(i=9;&#32;i&#32;&lt;=&#32;12;&#32;++i)
+00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(!<link linkend="_uuid_8cpp_1a3efeef8ba54054f3fa430a9c0e21c07e">ishexnum</link>(str[i]))
+00083 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+00084 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(str[13]!=<emphasis role="charliteral">&apos;-&apos;</emphasis>)&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+00085 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>(i=14;&#32;i&#32;&lt;=&#32;17;&#32;++i)
+00086 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(!<link linkend="_uuid_8cpp_1a3efeef8ba54054f3fa430a9c0e21c07e">ishexnum</link>(str[i]))
+00087 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+00088 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(str[18]!=<emphasis role="charliteral">&apos;-&apos;</emphasis>)&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+00089 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>(i=19;&#32;i&#32;&lt;=&#32;22;&#32;++i)
+00090 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(!<link linkend="_uuid_8cpp_1a3efeef8ba54054f3fa430a9c0e21c07e">ishexnum</link>(str[i]))
+00091 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+00092 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(str[23]!=<emphasis role="charliteral">&apos;-&apos;</emphasis>)&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+00093 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>(i=24;&#32;i&#32;&lt;=&#32;35;&#32;++i)
+00094 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(!<link linkend="_uuid_8cpp_1a3efeef8ba54054f3fa430a9c0e21c07e">ishexnum</link>(str[i]))
+00095 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">false</emphasis>;
+00096 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">true</emphasis>;
+00097 }
+</programlisting>函数调用图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../db/d37/uuid_8cpp_a8429edbb20216a3072d6f6fc1617dae2_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../db/d37/uuid_8cpp_a8429edbb20216a3072d6f6fc1617dae2_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_uuid_8cpp_1a3efeef8ba54054f3fa430a9c0e21c07e"/><section>
+    <title>ishexnum()</title>
+<indexterm><primary>ishexnum</primary><secondary>uuid.cpp</secondary></indexterm>
+<indexterm><primary>uuid.cpp</primary><secondary>ishexnum</secondary></indexterm>
+<para><computeroutput>bool ishexnum (char ch)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_uuid_8cpp_source">uuid.cpp</link> 第 <link linkend="_uuid_8cpp_source_1l00029">29</link> 行定义.</para>
+<programlisting linenumbering="unnumbered">00030 {
+00031 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;c=tolower(ch);
+00032 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;(c==<emphasis role="charliteral">&apos;0&apos;</emphasis>&#32;||&#32;c==<emphasis role="charliteral">&apos;1&apos;</emphasis>&#32;||&#32;c==<emphasis role="charliteral">&apos;2&apos;</emphasis>&#32;||&#32;c==<emphasis role="charliteral">&apos;3&apos;</emphasis>&#32;||&#32;c==<emphasis role="charliteral">&apos;4&apos;</emphasis>&#32;||&#32;c==<emphasis role="charliteral">&apos;5&apos;</emphasis>&#32;||&#32;c==<emphasis role="charliteral">&apos;6&apos;</emphasis>&#32;||&#32;c==<emphasis role="charliteral">&apos;7&apos;</emphasis>&#32;||&#32;c==<emphasis role="charliteral">&apos;8&apos;</emphasis>&#32;||&#32;c==<emphasis role="charliteral">&apos;9&apos;</emphasis>&#32;
+00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;||&#32;c==<emphasis role="charliteral">&apos;a&apos;</emphasis>&#32;||&#32;c==<emphasis role="charliteral">&apos;b&apos;</emphasis>&#32;||&#32;c==<emphasis role="charliteral">&apos;c&apos;</emphasis>&#32;||&#32;c==<emphasis role="charliteral">&apos;d&apos;</emphasis>&#32;||&#32;c==<emphasis role="charliteral">&apos;e&apos;</emphasis>&#32;||&#32;c==<emphasis role="charliteral">&apos;f&apos;</emphasis>);
+00034 }
+</programlisting>这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../db/d37/uuid_8cpp_a3efeef8ba54054f3fa430a9c0e21c07e_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_uuid_8cpp_1adb36eb924610352d2d838c1226d70b70"/><section>
+    <title>operator==()</title>
+<indexterm><primary>operator==</primary><secondary>uuid.cpp</secondary></indexterm>
+<indexterm><primary>uuid.cpp</primary><secondary>operator==</secondary></indexterm>
+<para><computeroutput>bool operator== (const Json::String &amp; datL, const <link linkend="_classuuid">uuid</link> &amp; datR)</computeroutput></para>
+<para>reversed.</para>
+
+<para>
+                <formalpara>
+                    <title>
+参数</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>dat</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>dat</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>返回</title>
+
+<para>true </para>
+
+<para>false </para>
+</formalpara>
+</para>
+<para>
+在文件 <link linkend="_uuid_8cpp_source">uuid.cpp</link> 第 <link linkend="_uuid_8cpp_source_1l00118">118</link> 行定义.</para>
+<programlisting linenumbering="unnumbered">00119 {
+00120 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;datR.<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>&#32;==&#32;datL;
+00121 }
+</programlisting></section>
+<anchor xml:id="_uuid_8cpp_1a43613b6633f421b8128a9407737df105"/><section>
+    <title>uitchex()</title>
+<indexterm><primary>uitchex</primary><secondary>uuid.cpp</secondary></indexterm>
+<indexterm><primary>uuid.cpp</primary><secondary>uitchex</secondary></indexterm>
+<para><computeroutput>char uitchex (unsigned int i)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_uuid_8cpp_source">uuid.cpp</link> 第 <link linkend="_uuid_8cpp_source_1l00005">5</link> 行定义.</para>
+<programlisting linenumbering="unnumbered">00006 {
+00007 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">switch</emphasis>(i)
+00008 &#32;&#32;&#32;&#32;{
+00009 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;0:&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="charliteral">&apos;0&apos;</emphasis>;&#32;<emphasis role="keywordflow">break</emphasis>;
+00010 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;1:&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="charliteral">&apos;1&apos;</emphasis>;&#32;<emphasis role="keywordflow">break</emphasis>;
+00011 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;2:&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="charliteral">&apos;2&apos;</emphasis>;&#32;<emphasis role="keywordflow">break</emphasis>;
+00012 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;3:&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="charliteral">&apos;3&apos;</emphasis>;&#32;<emphasis role="keywordflow">break</emphasis>;
+00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;4:&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="charliteral">&apos;4&apos;</emphasis>;&#32;<emphasis role="keywordflow">break</emphasis>;
+00014 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;5:&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="charliteral">&apos;5&apos;</emphasis>;&#32;<emphasis role="keywordflow">break</emphasis>;
+00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;6:&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="charliteral">&apos;6&apos;</emphasis>;&#32;<emphasis role="keywordflow">break</emphasis>;
+00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;7:&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="charliteral">&apos;7&apos;</emphasis>;&#32;<emphasis role="keywordflow">break</emphasis>;
+00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;8:&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="charliteral">&apos;8&apos;</emphasis>;&#32;<emphasis role="keywordflow">break</emphasis>;
+00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;9:&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="charliteral">&apos;9&apos;</emphasis>;&#32;<emphasis role="keywordflow">break</emphasis>;
+00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;10:&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="charliteral">&apos;a&apos;</emphasis>;&#32;<emphasis role="keywordflow">break</emphasis>;
+00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;11:&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="charliteral">&apos;b&apos;</emphasis>;&#32;<emphasis role="keywordflow">break</emphasis>;
+00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;12:&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="charliteral">&apos;c&apos;</emphasis>;&#32;<emphasis role="keywordflow">break</emphasis>;
+00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;13:&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="charliteral">&apos;d&apos;</emphasis>;&#32;<emphasis role="keywordflow">break</emphasis>;
+00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;14:&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="charliteral">&apos;e&apos;</emphasis>;&#32;<emphasis role="keywordflow">break</emphasis>;
+00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">case</emphasis>&#32;15:&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="charliteral">&apos;f&apos;</emphasis>;&#32;<emphasis role="keywordflow">break</emphasis>;
+00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">default</emphasis>:&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="charliteral">&apos;\0&apos;</emphasis>;&#32;<emphasis role="keywordflow">break</emphasis>;
+00026 &#32;&#32;&#32;&#32;}
+00027 }
+</programlisting>这是这个函数的调用关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../db/d37/uuid_8cpp_a43613b6633f421b8128a9407737df105_icgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+</section>

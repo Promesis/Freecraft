@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="zh">
+  <compounddef id="dir_8102366fe802bf7b0bdcf67ea8d3daab" kind="dir">
+    <compoundname>src/data/file</compoundname>
+    <innerfile refid="d9/d90/gamesave_8hpp">gamesave.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/data/file/"/>
+  </compounddef>
+</doxygen>

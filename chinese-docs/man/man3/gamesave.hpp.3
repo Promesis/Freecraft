@@ -1,0 +1,92 @@
+.TH "src/data/file/gamesave.hpp" 3 "2023年 一月 25日 星期三" "Version 00.01a07-dbg" "Freecraft" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/data/file/gamesave.hpp \- deal with filesystem\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <filesystem>\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <cstdlib>\fP
+.br
+\fC#include <fstream>\fP
+.br
+
+.SS "类"
+
+.in +1c
+.ti -1c
+.RI "struct \fBgamesave\fP"
+.br
+.in -1c
+.SS "宏定义"
+
+.in +1c
+.ti -1c
+.RI "#define \fBgamesave_hpp\fP"
+.br
+.in -1c
+.SS "枚举"
+
+.in +1c
+.ti -1c
+.RI "enum struct \fBfcGamesaveMode\fP { \fBbinary\fP, \fBjson\fP }"
+.br
+.in -1c
+.SH "详细描述"
+.PP 
+deal with filesystem\&. 
+
+
+.PP
+\fB作者\fP
+.RS 4
+Promesis (m3149154722@outlook.com) 
+.RE
+.PP
+\fB版本\fP
+.RS 4
+0\&.1 
+.RE
+.PP
+\fB日期\fP
+.RS 4
+2023-01-24
+.RE
+.PP
+Promesis 2023 the Freecraft dev 
+.PP
+在文件 \fBgamesave\&.hpp\fP 中定义\&.
+.SH "宏定义说明"
+.PP 
+.SS "#define gamesave_hpp"
+
+.PP
+在文件 \fBgamesave\&.hpp\fP 第 \fB13\fP 行定义\&.
+.SH "枚举类型说明"
+.PP 
+.SS "enum struct \fBfcGamesaveMode\fP\fC [strong]\fP"
+
+.PP
+\fB枚举值\fP
+.in +1c
+.TP
+\fB\fIbinary \fP\fP
+.TP
+\fB\fIjson \fP\fP
+.PP
+在文件 \fBgamesave\&.hpp\fP 第 \fB20\fP 行定义\&..PP
+.nf
+21 {
+22     binary,
+23     json
+24 };
+.fi
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 Freecraft 的 源代码自动生成\&.

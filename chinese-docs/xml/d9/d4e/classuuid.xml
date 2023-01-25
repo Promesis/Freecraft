@@ -1,0 +1,283 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="zh">
+  <compounddef id="d9/d4e/classuuid" kind="class" language="C++" prot="public">
+    <compoundname>uuid</compoundname>
+    <includes refid="d7/db4/uuid_8hpp" local="no">uuid.hpp</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="d9/d4e/classuuid_1aad814226a0ef1188e55780c0d6b4ca13" prot="protected" static="no" mutable="no">
+        <type>char</type>
+        <definition>char uuid::data[37]</definition>
+        <argsstring>[37]</argsstring>
+        <name>data</name>
+        <qualifiedname>uuid::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/data/uuid/uuid.hpp" line="14" column="10" bodyfile="src/data/uuid/uuid.hpp" bodystart="14" bodyend="-1"/>
+        <referencedby refid="d9/d4e/classuuid_1a070227fb137d354bf8b909d87a06af14" compoundref="db/d37/uuid_8cpp" startline="123" endline="127">operator=</referencedby>
+        <referencedby refid="d7/db4/uuid_8hpp_1adb36eb924610352d2d838c1226d70b70" compoundref="db/d37/uuid_8cpp" startline="118" endline="121">operator==</referencedby>
+        <referencedby refid="d9/d4e/classuuid_1ad65f173ce0d832fdd8689174007be1cb" compoundref="db/d37/uuid_8cpp" startline="113" endline="116">operator==</referencedby>
+        <referencedby refid="d9/d4e/classuuid_1a26da1fd9a1991859c54aceb9f88492e2" compoundref="db/d37/uuid_8cpp" startline="39" endline="58">setrandomly</referencedby>
+        <referencedby refid="d9/d4e/classuuid_1acde47d8530b0858c2b48a7a54766b739" compoundref="db/d37/uuid_8cpp" startline="66" endline="70">uuid</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d9/d4e/classuuid_1a26da1fd9a1991859c54aceb9f88492e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void uuid::setrandomly</definition>
+        <argsstring>(void)</argsstring>
+        <name>setrandomly</name>
+        <qualifiedname>uuid::setrandomly</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>set uuid randomly. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/data/uuid/uuid.hpp" line="20" column="10" bodyfile="src/data/uuid/uuid.cpp" bodystart="39" bodyend="58"/>
+        <references refid="d9/d4e/classuuid_1aad814226a0ef1188e55780c0d6b4ca13" compoundref="d7/db4/uuid_8hpp" startline="14">data</references>
+        <references refid="db/d37/uuid_8cpp_1a43613b6633f421b8128a9407737df105" compoundref="db/d37/uuid_8cpp" startline="5" endline="27">uitchex</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4e/classuuid_1ab1dafae8a5a3a3efc326afaf607a4747" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>uuid::uuid</definition>
+        <argsstring>(void)</argsstring>
+        <name>uuid</name>
+        <qualifiedname>uuid::uuid</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Construct a new uuid object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/data/uuid/uuid.hpp" line="25" column="5" bodyfile="src/data/uuid/uuid.cpp" bodystart="60" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4e/classuuid_1acde47d8530b0858c2b48a7a54766b739" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>uuid::uuid</definition>
+        <argsstring>(const uuid &amp;dat)</argsstring>
+        <name>uuid</name>
+        <qualifiedname>uuid::uuid</qualifiedname>
+        <param>
+          <type>const <ref refid="d9/d4e/classuuid" kindref="compound">uuid</ref> &amp;</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new uuid object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/data/uuid/uuid.hpp" line="31" column="5" bodyfile="src/data/uuid/uuid.cpp" bodystart="66" bodyend="70"/>
+        <references refid="d9/d4e/classuuid_1aad814226a0ef1188e55780c0d6b4ca13" compoundref="d7/db4/uuid_8hpp" startline="14">data</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4e/classuuid_1a1306d76a4a807950b7ba1bd9e2f6f8e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>uuid::uuid</definition>
+        <argsstring>(const Json::String &amp;str)</argsstring>
+        <name>uuid</name>
+        <qualifiedname>uuid::uuid</qualifiedname>
+        <param>
+          <type>const Json::String &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new uuid object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/data/uuid/uuid.hpp" line="37" column="5" bodyfile="src/data/uuid/uuid.cpp" bodystart="99" bodyend="106"/>
+        <references refid="db/d37/uuid_8cpp_1a8429edbb20216a3072d6f6fc1617dae2" compoundref="db/d37/uuid_8cpp" startline="72" endline="97">checksyntax</references>
+        <references refid="d9/d4e/classuuid_1aad814226a0ef1188e55780c0d6b4ca13" compoundref="d7/db4/uuid_8hpp" startline="14">data</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4e/classuuid_1a070227fb137d354bf8b909d87a06af14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="d9/d4e/classuuid" kindref="compound">uuid</ref> &amp;</type>
+        <definition>const uuid &amp; uuid::operator=</definition>
+        <argsstring>(const uuid &amp;dat)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>uuid::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="d9/d4e/classuuid" kindref="compound">uuid</ref> &amp;</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>assignment operator overloading. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>uuid to assign. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>const uuid&amp; </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/data/uuid/uuid.hpp" line="44" column="16" bodyfile="src/data/uuid/uuid.cpp" bodystart="123" bodyend="127"/>
+        <references refid="d9/d4e/classuuid_1aad814226a0ef1188e55780c0d6b4ca13" compoundref="d7/db4/uuid_8hpp" startline="14">data</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4e/classuuid_1ad65f173ce0d832fdd8689174007be1cb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool uuid::operator==</definition>
+        <argsstring>(const uuid &amp;dat) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>uuid::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="d9/d4e/classuuid" kindref="compound">uuid</ref> &amp;</type>
+          <declname>dat</declname>
+        </param>
+        <briefdescription>
+<para>check if two uuids is equal. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true equal. </para>
+</simplesect>
+<simplesect kind="return"><para>false not equal. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/data/uuid/uuid.hpp" line="52" column="10" bodyfile="src/data/uuid/uuid.cpp" bodystart="113" bodyend="116"/>
+        <references refid="d9/d4e/classuuid_1aad814226a0ef1188e55780c0d6b4ca13" compoundref="d7/db4/uuid_8hpp" startline="14">data</references>
+      </memberdef>
+      <memberdef kind="function" id="d9/d4e/classuuid_1a8dfc88410c5724700833169dc0293763" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>uuid::operator Json::String</definition>
+        <argsstring>(void) const</argsstring>
+        <name>operator Json::String</name>
+        <qualifiedname>uuid::String</qualifiedname>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>conversation function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/data/uuid/uuid.hpp" line="68" column="5" bodyfile="src/data/uuid/uuid.cpp" bodystart="108" bodyend="111"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="d9/d4e/classuuid_1adb36eb924610352d2d838c1226d70b70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const Json::String &amp;datL, const uuid &amp;datR)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>uuid::operator==</qualifiedname>
+        <param>
+          <type>const Json::String &amp;</type>
+          <declname>datL</declname>
+        </param>
+        <param>
+          <type>const <ref refid="d9/d4e/classuuid" kindref="compound">uuid</ref> &amp;</type>
+          <declname>datR</declname>
+        </param>
+        <briefdescription>
+<para>same. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>reversed.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/data/uuid/uuid.hpp" line="61" column="17" bodyfile="src/data/uuid/uuid.cpp" bodystart="118" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>uuid</label>
+        <link refid="d9/d4e/classuuid"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/data/uuid/uuid.hpp" line="11" column="1" bodyfile="src/data/uuid/uuid.hpp" bodystart="12" bodyend="69"/>
+    <listofallmembers>
+      <member refid="d9/d4e/classuuid_1aad814226a0ef1188e55780c0d6b4ca13" prot="protected" virt="non-virtual"><scope>uuid</scope><name>data</name></member>
+      <member refid="d9/d4e/classuuid_1a8dfc88410c5724700833169dc0293763" prot="public" virt="non-virtual"><scope>uuid</scope><name>operator Json::String</name></member>
+      <member refid="d9/d4e/classuuid_1a070227fb137d354bf8b909d87a06af14" prot="public" virt="non-virtual"><scope>uuid</scope><name>operator=</name></member>
+      <member refid="d9/d4e/classuuid_1ad65f173ce0d832fdd8689174007be1cb" prot="public" virt="non-virtual"><scope>uuid</scope><name>operator==</name></member>
+      <member refid="d9/d4e/classuuid_1adb36eb924610352d2d838c1226d70b70" prot="public" virt="non-virtual"><scope>uuid</scope><name>operator==</name></member>
+      <member refid="d9/d4e/classuuid_1a26da1fd9a1991859c54aceb9f88492e2" prot="public" virt="non-virtual"><scope>uuid</scope><name>setrandomly</name></member>
+      <member refid="d9/d4e/classuuid_1ab1dafae8a5a3a3efc326afaf607a4747" prot="public" virt="non-virtual"><scope>uuid</scope><name>uuid</name></member>
+      <member refid="d9/d4e/classuuid_1acde47d8530b0858c2b48a7a54766b739" prot="public" virt="non-virtual"><scope>uuid</scope><name>uuid</name></member>
+      <member refid="d9/d4e/classuuid_1a1306d76a4a807950b7ba1bd9e2f6f8e0" prot="public" virt="non-virtual"><scope>uuid</scope><name>uuid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

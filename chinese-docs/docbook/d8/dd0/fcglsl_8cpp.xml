@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_fcglsl_8cpp" xml:lang="zh">
+<title>src/graphics/fcglsl.cpp 文件参考</title>
+<indexterm><primary>src/graphics/fcglsl.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;fcglsl.hpp&quot;<?linebreak?></programlisting>fcglsl.cpp 的引用(Include)关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../da/d86/fcglsl_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<section>
+<title>详细描述</title>
+
+<para><formalpara><title>作者</title>
+
+<para>Promesis (<link xlink:href="mailto:m3149154722@outlook.com">m3149154722@outlook.com</link>) </para>
+</formalpara>
+<formalpara><title>版本</title>
+
+<para>0.1 </para>
+</formalpara>
+<formalpara><title>日期</title>
+
+<para>2023-01-21</para>
+</formalpara>
+Promesis 2023 the Freecraft dev </para>
+<para>
+在文件 <link linkend="_fcglsl_8cpp_source">fcglsl.cpp</link> 中定义.</para>
+</section>
+</section>

@@ -1,0 +1,49 @@
+\hypertarget{item_8hpp_source}{}\doxysection{item.\+hpp}
+\label{item_8hpp_source}\index{src/data/item/item.hpp@{src/data/item/item.hpp}}
+\mbox{\hyperlink{item_8hpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00014}00014\ \textcolor{preprocessor}{\#ifndef\ item\_hpp}}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00015}00015\ \textcolor{preprocessor}{\#define\ item\_hpp}}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00017}00017\ \textcolor{preprocessor}{\#include\ "{}json/json.h"{}}}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00018}00018\ \textcolor{preprocessor}{\#include\ "{}glad/glad.h"{}}}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00019}00019\ \textcolor{preprocessor}{\#include\ "{}GLFW/glfw3.h"{}}}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00020}00020\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00022}00022\ \textcolor{preprocessor}{\#include\ "{}../uuid/uuid.hpp"{}}}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00023}00023\ \textcolor{comment}{//\ \#include\ "{}../structure/list.hpp"{}}}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00034}\mbox{\hyperlink{classfcitem}{00034}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classfcitem}{fcitem}}}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00035}00035\ \{}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00036}00036\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00041}\mbox{\hyperlink{classfcitem_a5d97bb8221ff088b0ddbac4e5213d2fa}{00041}}\ \ \ \ \ std::string\ \mbox{\hyperlink{classfcitem_a5d97bb8221ff088b0ddbac4e5213d2fa}{name}};}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00046}\mbox{\hyperlink{classfcitem_a3b48e4e8c3b82f9764b404cca6e64e45}{00046}}\ \ \ \ \ std::string\ \mbox{\hyperlink{classfcitem_a3b48e4e8c3b82f9764b404cca6e64e45}{itemID}};}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00051}\mbox{\hyperlink{classfcitem_a1d71357d57b49b41e839e1cce027d08f}{00051}}\ \ \ \ \ std::string\ \mbox{\hyperlink{classfcitem_a1d71357d57b49b41e839e1cce027d08f}{categoryID}};}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00056}\mbox{\hyperlink{classfcitem_a844c2e13d2593336e7a6b4c8f7bff5d3}{00056}}\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classfcitem_a844c2e13d2593336e7a6b4c8f7bff5d3}{count}};}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00061}\mbox{\hyperlink{classfcitem_a73ee276a1d2e8c24fea97bf6a3fa13d9}{00061}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classfcitem_a73ee276a1d2e8c24fea97bf6a3fa13d9}{unbreakable}};}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00066}\mbox{\hyperlink{classfcitem_a6a7ba1e3c75f6cbe0d5cf6c7d79691ae}{00066}}\ \ \ \ \ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classfcitem_a6a7ba1e3c75f6cbe0d5cf6c7d79691ae}{slot}};\textcolor{comment}{//TODO\ :\ edit\ it\ when\ completed\ inventory\ part}}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00071}\mbox{\hyperlink{classfcitem_ad72f88ebc4d1bf1c5f519f0b3f9ef819}{00071}}\ \textcolor{comment}{}\ \ \ \ Json::Value\ \mbox{\hyperlink{classfcitem_ad72f88ebc4d1bf1c5f519f0b3f9ef819}{tags}};}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00073}00073\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00080}00080\ \ \ \ \ \textcolor{keyword}{virtual}\ Json::Value\ \mbox{\hyperlink{classfcitem_ac04c1b39922605672368cf0efb59fcfc}{toJson}}(\textcolor{keywordtype}{void})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00081}00081\ \};}
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00082}00082\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00089}00089\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00090}00090\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{item_8hpp_source_l00092}00092\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

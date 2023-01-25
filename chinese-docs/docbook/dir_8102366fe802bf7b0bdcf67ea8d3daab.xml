@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_8102366fe802bf7b0bdcf67ea8d3daab" xml:lang="zh">
+<title>src/data/file 目录参考</title>
+<indexterm><primary>src/data/file 目录参考</primary></indexterm>
+file 的目录依赖关系图<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_8102366fe802bf7b0bdcf67ea8d3daab_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>文件    </title>
+        <itemizedlist>
+            <listitem><para>文件 <link linkend="_gamesave_8hpp">gamesave.hpp</link></para>
+
+<para>deal with filesystem. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

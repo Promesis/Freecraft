@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="zh">
+  <compounddef id="de/de4/item_8cpp" kind="file" language="C++">
+    <compoundname>item.cpp</compoundname>
+    <includes refid="d7/db7/item_8hpp" local="yes">item.hpp</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/data/item/item.cpp</label>
+        <link refid="de/de4/item_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>item.hpp</label>
+        <link refid="d7/db7/item_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>../uuid/uuid.hpp</label>
+        <link refid="d7/db4/uuid_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>fcenums.hpp</label>
+        <link refid="db/d91/fcenums_8hpp"/>
+      </node>
+      <node id="8">
+        <label>../../fcexceptions.hpp</label>
+        <link refid="d5/d89/fcexceptions_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="9">
+        <label>exception</label>
+      </node>
+      <node id="4">
+        <label>glad/glad.h</label>
+      </node>
+      <node id="3">
+        <label>json/json.h</label>
+      </node>
+      <node id="11">
+        <label>random</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d7/db7/item_8hpp" kindref="compound">item.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="d1/da7/classfcitem_1ac04c1b39922605672368cf0efb59fcfc" refkind="member"><highlight class="normal">Json::Value<sp/><ref refid="d1/da7/classfcitem_1ac04c1b39922605672368cf0efb59fcfc" kindref="member">fcitem::toJson</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="16"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>Json::Value<sp/>retVal;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO<sp/>:<sp/>complete<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>retVal;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="src/data/item/item.cpp"/>
+  </compounddef>
+</doxygen>

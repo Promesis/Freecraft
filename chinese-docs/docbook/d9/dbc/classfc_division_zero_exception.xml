@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classfc_division_zero_exception" xml:lang="zh">
+<title>fcDivisionZeroException类 参考</title>
+<indexterm><primary>fcDivisionZeroException</primary></indexterm>
+<para>
+<computeroutput>#include &lt;fcexceptions.hpp&gt;</computeroutput>
+</para>
+类 fcDivisionZeroException 继承关系图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../db/d7e/classfc_division_zero_exception__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+fcDivisionZeroException 的协作图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d1/d35/classfc_division_zero_exception__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public 成员函数    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classfc_division_zero_exception_1a23f798f5c877917dad2cb478eec9c552">fcDivisionZeroException</link> (const char *whyException=&quot;calculation get errors when dividing a num with zero&quot;)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public 成员函数 继承自 <link linkend="_classfc_calc_exception">fcCalcException</link>        <itemizedlist>
+            <listitem><para><link linkend="_classfc_calc_exception_1ae56902d3f8c5ed62de60b4c909492971">fcCalcException</link> (const char *whyException=&quot;calculation gets errors&quot;)</para>
+</listitem>
+        </itemizedlist>
+Public 成员函数 继承自 <link linkend="_classfc_runtime_exception">fcRuntimeException</link>        <itemizedlist>
+            <listitem><para><link linkend="_classfc_runtime_exception_1a264ae184e45fbc84cc58952ba062c5f5">fcRuntimeException</link> (const char *whyException=&quot;runtime exception occured&quot;)</para>
+</listitem>
+            <listitem><para>const char * <link linkend="_classfc_runtime_exception_1ac9faee48241584efdec3f0e2955623b1">what</link> ()</para>
+</listitem>
+        </itemizedlist>
+<section>
+<title>详细描述</title>
+<para>
+在文件 <link linkend="_fcexceptions_8hpp_source">fcexceptions.hpp</link> 第 <link linkend="_fcexceptions_8hpp_source_1l00040">40</link> 行定义.</para>
+</section>
+<section>
+<title>构造及析构函数说明</title>
+<anchor xml:id="_classfc_division_zero_exception_1a23f798f5c877917dad2cb478eec9c552"/><section>
+    <title>fcDivisionZeroException()</title>
+<indexterm><primary>fcDivisionZeroException</primary><secondary>fcDivisionZeroException</secondary></indexterm>
+<indexterm><primary>fcDivisionZeroException</primary><secondary>fcDivisionZeroException</secondary></indexterm>
+<para><computeroutput>fcDivisionZeroException::fcDivisionZeroException (const char * whyException = <computeroutput>&quot;calculation&#160;get&#160;errors&#160;when&#160;dividing&#160;a&#160;num&#160;with&#160;zero&quot;</computeroutput>
+)<computeroutput>[inline]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_fcexceptions_8hpp_source">fcexceptions.hpp</link> 第 <link linkend="_fcexceptions_8hpp_source_1l00043">43</link> 行定义.</para>
+<programlisting linenumbering="unnumbered">00043 :&#32;<link linkend="_classfc_calc_exception">fcCalcException</link>(whyException)&#32;{};
+</programlisting></section>
+</section>
+</section>

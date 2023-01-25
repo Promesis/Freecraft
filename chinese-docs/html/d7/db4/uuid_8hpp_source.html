@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Freecraft: src/data/uuid/uuid.hpp 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="../../icon64_glass.png"/></td>
+  <td id="projectalign">
+   <div id="projectname">Freecraft<span id="projectnumber">&#160;00.01a07-dbg</span>
+   </div>
+   <div id="projectbrief">open source remake of Minecraft in C++ with Lua language support.</div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d7/db4/uuid_8hpp_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">uuid.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d7/db4/uuid_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef uuid_hpp</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define uuid_hpp</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;json/json.h&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;../../fcexceptions.hpp&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;random&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">//xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../d9/d4e/classuuid.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d9/d4e/classuuid.html">uuid</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>{</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="../../d9/d4e/classuuid.html#aad814226a0ef1188e55780c0d6b4ca13">   14</a></span>    <span class="keywordtype">char</span> <a class="code hl_variable" href="../../d9/d4e/classuuid.html#aad814226a0ef1188e55780c0d6b4ca13">data</a>[37];</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d4e/classuuid.html#a26da1fd9a1991859c54aceb9f88492e2">setrandomly</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_function" href="../../d9/d4e/classuuid.html#ab1dafae8a5a3a3efc326afaf607a4747">uuid</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <a class="code hl_function" href="../../d9/d4e/classuuid.html#ab1dafae8a5a3a3efc326afaf607a4747">uuid</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d4e/classuuid.html">uuid</a> &amp;dat);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <a class="code hl_function" href="../../d9/d4e/classuuid.html#ab1dafae8a5a3a3efc326afaf607a4747">uuid</a>(<span class="keyword">const</span> Json::String &amp;str);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d4e/classuuid.html">uuid</a> &amp;<a class="code hl_function" href="../../d9/d4e/classuuid.html#a070227fb137d354bf8b909d87a06af14">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d4e/classuuid.html">uuid</a> &amp;dat);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">bool</span> <a class="code hl_friend" href="../../d9/d4e/classuuid.html#adb36eb924610352d2d838c1226d70b70">operator==</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d9/d4e/classuuid.html">uuid</a> &amp;dat) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">friend</span> <span class="keywordtype">bool</span> <a class="code hl_friend" href="../../d9/d4e/classuuid.html#adb36eb924610352d2d838c1226d70b70">operator==</a>(<span class="keyword">const</span> Json::String &amp;datL, <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d4e/classuuid.html">uuid</a> &amp;datR);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="comment">//const Json::String &amp;getuuid(void) const;</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment"></span>    <span class="keyword">operator</span> Json::String(<span class="keywordtype">void</span>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>};</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keywordtype">bool</span> <a class="code hl_function" href="../../d7/db4/uuid_8hpp.html#adb36eb924610352d2d838c1226d70b70">operator==</a>(<span class="keyword">const</span> Json::String &amp;datL, <span class="keyword">const</span> <a class="code hl_class" href="../../d9/d4e/classuuid.html">uuid</a> &amp;datR);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassuuid_html"><div class="ttname"><a href="../../d9/d4e/classuuid.html">uuid</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d7/db4/uuid_8hpp_source.html#l00011">uuid.hpp:12</a></div></div>
+<div class="ttc" id="aclassuuid_html_a070227fb137d354bf8b909d87a06af14"><div class="ttname"><a href="../../d9/d4e/classuuid.html#a070227fb137d354bf8b909d87a06af14">uuid::operator=</a></div><div class="ttdeci">const uuid &amp; operator=(const uuid &amp;dat)</div><div class="ttdoc">assignment operator overloading.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d37/uuid_8cpp_source.html#l00123">uuid.cpp:123</a></div></div>
+<div class="ttc" id="aclassuuid_html_a26da1fd9a1991859c54aceb9f88492e2"><div class="ttname"><a href="../../d9/d4e/classuuid.html#a26da1fd9a1991859c54aceb9f88492e2">uuid::setrandomly</a></div><div class="ttdeci">void setrandomly(void)</div><div class="ttdoc">set uuid randomly.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d37/uuid_8cpp_source.html#l00039">uuid.cpp:39</a></div></div>
+<div class="ttc" id="aclassuuid_html_aad814226a0ef1188e55780c0d6b4ca13"><div class="ttname"><a href="../../d9/d4e/classuuid.html#aad814226a0ef1188e55780c0d6b4ca13">uuid::data</a></div><div class="ttdeci">char data[37]</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/db4/uuid_8hpp_source.html#l00014">uuid.hpp:14</a></div></div>
+<div class="ttc" id="aclassuuid_html_ab1dafae8a5a3a3efc326afaf607a4747"><div class="ttname"><a href="../../d9/d4e/classuuid.html#ab1dafae8a5a3a3efc326afaf607a4747">uuid::uuid</a></div><div class="ttdeci">uuid(void)</div><div class="ttdoc">Construct a new uuid object.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d37/uuid_8cpp_source.html#l00060">uuid.cpp:60</a></div></div>
+<div class="ttc" id="aclassuuid_html_adb36eb924610352d2d838c1226d70b70"><div class="ttname"><a href="../../d9/d4e/classuuid.html#adb36eb924610352d2d838c1226d70b70">uuid::operator==</a></div><div class="ttdeci">friend bool operator==(const Json::String &amp;datL, const uuid &amp;datR)</div><div class="ttdoc">same.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d37/uuid_8cpp_source.html#l00118">uuid.cpp:118</a></div></div>
+<div class="ttc" id="auuid_8hpp_html_adb36eb924610352d2d838c1226d70b70"><div class="ttname"><a href="../../d7/db4/uuid_8hpp.html#adb36eb924610352d2d838c1226d70b70">operator==</a></div><div class="ttdeci">bool operator==(const Json::String &amp;datL, const uuid &amp;datR)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d37/uuid_8cpp_source.html#l00061">uuid.cpp:118</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_c1be8d27e7f84178e95f152701110b19.html">data</a></li><li class="navelem"><a class="el" href="../../dir_06bde3aa094373782f478dac85588db7.html">uuid</a></li><li class="navelem"><a class="el" href="../../d7/db4/uuid_8hpp.html">uuid.hpp</a></li>
+    <li class="footer">生成于 2023年 一月 25日 星期三 12:41:27 , 为 Freecraft使用  <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_fcenums_8hpp_source" xml:lang="zh">
+<title>fcenums.hpp</title>
+<indexterm><primary>src/fcenums.hpp</primary></indexterm>
+浏览该文件的文档.<programlisting linenumbering="unnumbered"><anchor xml:id="_fcenums_8hpp_source_1l00001"/>00001 <emphasis role="preprocessor">#ifndef&#32;fcenums_hpp</emphasis>
+<anchor xml:id="_fcenums_8hpp_source_1l00002"/>00002 <emphasis role="preprocessor">#define&#32;fcenums_hpp</emphasis>
+<anchor xml:id="_fcenums_8hpp_source_1l00003"/>00003 
+<anchor xml:id="_fcenums_8hpp_source_1l00004"/><link linkend="_fcenums_8hpp_1a8e157762b53e9739cece73388653451f">00004</link> <emphasis role="keyword">enum&#32;class</emphasis>&#32;<link linkend="_fcenums_8hpp_1a8e157762b53e9739cece73388653451f">fcEnum</link>
+<anchor xml:id="_fcenums_8hpp_source_1l00005"/>00005 {
+<anchor xml:id="_fcenums_8hpp_source_1l00006"/>00006 &#32;&#32;&#32;&#32;
+<anchor xml:id="_fcenums_8hpp_source_1l00007"/>00007 };
+<anchor xml:id="_fcenums_8hpp_source_1l00008"/>00008 
+<anchor xml:id="_fcenums_8hpp_source_1l00009"/>00009 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

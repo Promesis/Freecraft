@@ -1,0 +1,135 @@
+.TH "src/data/uuid/uuid.cpp" 3 "2023年 一月 25日 星期三" "Version 00.01a07-dbg" "Freecraft" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/data/uuid/uuid.cpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'uuid\&.hpp'\fP
+.br
+\fC#include <cctype>\fP
+.br
+\fC#include <stdexcept>\fP
+.br
+
+.SS "函数"
+
+.in +1c
+.ti -1c
+.RI "char \fBuitchex\fP (unsigned int i)"
+.br
+.ti -1c
+.RI "bool \fBishexnum\fP (char ch)"
+.br
+.ti -1c
+.RI "bool \fBchecksyntax\fP (const Json::String &str)"
+.br
+.ti -1c
+.RI "bool \fBoperator==\fP (const Json::String &datL, const \fBuuid\fP &datR)"
+.br
+.in -1c
+.SH "函数说明"
+.PP 
+.SS "bool checksyntax (const Json::String & str)\fC [inline]\fP"
+
+.PP
+在文件 \fBuuid\&.cpp\fP 第 \fB72\fP 行定义\&..PP
+.nf
+73 {
+74     int i;
+75     if(str\&.length() != 36)
+76         return false;
+77     for(i=0; i <= 7; ++i)
+78         if(!ishexnum(str[i]))
+79             return false;
+80     if(str[8]!='\-') return false;
+81     for(i=9; i <= 12; ++i)
+82         if(!ishexnum(str[i]))
+83             return false;
+84     if(str[13]!='\-') return false;
+85     for(i=14; i <= 17; ++i)
+86         if(!ishexnum(str[i]))
+87             return false;
+88     if(str[18]!='\-') return false;
+89     for(i=19; i <= 22; ++i)
+90         if(!ishexnum(str[i]))
+91             return false;
+92     if(str[23]!='\-') return false;
+93     for(i=24; i <= 35; ++i)
+94         if(!ishexnum(str[i]))
+95             return false;
+96     return true;
+97 }
+.fi
+
+.SS "bool ishexnum (char ch)\fC [inline]\fP"
+
+.PP
+在文件 \fBuuid\&.cpp\fP 第 \fB29\fP 行定义\&..PP
+.nf
+30 {
+31     char c=tolower(ch);
+32     return (c=='0' || c=='1' || c=='2' || c=='3' || c=='4' || c=='5' || c=='6' || c=='7' || c=='8' || c=='9' 
+33          || c=='a' || c=='b' || c=='c' || c=='d' || c=='e' || c=='f');
+34 }
+.fi
+
+.SS "bool operator== (const Json::String & datL, const \fBuuid\fP & datR)"
+reversed\&.
+.PP
+\fB参数\fP
+.RS 4
+\fIdat\fP 
+.br
+\fIdat\fP 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+true 
+.PP
+false 
+.RE
+.PP
+
+.PP
+在文件 \fBuuid\&.cpp\fP 第 \fB118\fP 行定义\&..PP
+.nf
+119 {
+120     return datR\&.data == datL;
+121 }
+.fi
+
+.SS "char uitchex (unsigned int i)\fC [inline]\fP"
+
+.PP
+在文件 \fBuuid\&.cpp\fP 第 \fB5\fP 行定义\&..PP
+.nf
+6 {
+7     switch(i)
+8     {
+9         case 0: return '0'; break;
+10         case 1: return '1'; break;
+11         case 2: return '2'; break;
+12         case 3: return '3'; break;
+13         case 4: return '4'; break;
+14         case 5: return '5'; break;
+15         case 6: return '6'; break;
+16         case 7: return '7'; break;
+17         case 8: return '8'; break;
+18         case 9: return '9'; break;
+19         case 10: return 'a'; break;
+20         case 11: return 'b'; break;
+21         case 12: return 'c'; break;
+22         case 13: return 'd'; break;
+23         case 14: return 'e'; break;
+24         case 15: return 'f'; break;
+25         default: return '\\0'; break;
+26     }
+27 }
+.fi
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 Freecraft 的 源代码自动生成\&.

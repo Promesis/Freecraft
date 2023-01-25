@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_953ade595e88858a65cb6b33ae6160b2" xml:lang="zh">
+<title>src/data/item 目录参考</title>
+<indexterm><primary>src/data/item 目录参考</primary></indexterm>
+item 的目录依赖关系图<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_953ade595e88858a65cb6b33ae6160b2_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>文件    </title>
+        <itemizedlist>
+            <listitem><para>文件 <link linkend="_item_8cpp">item.cpp</link></para>
+</listitem>
+            <listitem><para>文件 <link linkend="_item_8hpp">item.hpp</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

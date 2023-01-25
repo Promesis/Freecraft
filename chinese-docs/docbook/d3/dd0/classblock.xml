@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classblock" xml:lang="zh">
+<title>block类 参考</title>
+<indexterm><primary>block</primary></indexterm>
+<para>
+<computeroutput>#include &lt;block.hpp&gt;</computeroutput>
+</para>
+block 的协作图:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../df/df2/classblock__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Protected 属性    </title>
+        <itemizedlist>
+            <listitem><para>std::string <link linkend="_classblock_1ab8fd8471bcf4afb32c0e2e4db641b8c7">customName</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>详细描述</title>
+<para>
+在文件 <link linkend="_block_8hpp_source">block.hpp</link> 第 <link linkend="_block_8hpp_source_1l00006">6</link> 行定义.</para>
+</section>
+<section>
+<title>类成员变量说明</title>
+<anchor xml:id="_classblock_1ab8fd8471bcf4afb32c0e2e4db641b8c7"/><section>
+    <title>customName</title>
+<indexterm><primary>customName</primary><secondary>block</secondary></indexterm>
+<indexterm><primary>block</primary><secondary>customName</secondary></indexterm>
+<para><computeroutput>std::string block::customName<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+在文件 <link linkend="_block_8hpp_source">block.hpp</link> 第 <link linkend="_block_8hpp_source_1l00009">9</link> 行定义.</para>
+</section>
+</section>
+</section>

@@ -1,0 +1,56 @@
+.TH "fcRuntimeError" 3 "2023年 一月 25日 星期三" "Version 00.01a07-dbg" "Freecraft" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+fcRuntimeError
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <fcexceptions\&.hpp>\fP
+.PP
+继承自 fcexception \&.
+.SS "Public 成员函数"
+
+.in +1c
+.ti -1c
+.RI "\fBfcRuntimeError\fP (const char *whyError='runtime error occured')"
+.br
+.ti -1c
+.RI "const char * \fBwhat\fP ()"
+.br
+.in -1c
+.SS "Private 属性"
+
+.in +1c
+.ti -1c
+.RI "const char * \fBwhy\fP"
+.br
+.in -1c
+.SH "详细描述"
+.PP 
+在文件 \fBfcexceptions\&.hpp\fP 第 \fB19\fP 行定义\&.
+.SH "构造及析构函数说明"
+.PP 
+.SS "fcRuntimeError::fcRuntimeError (const char * whyError = \fC'runtime error occured'\fP)\fC [inline]\fP"
+
+.PP
+在文件 \fBfcexceptions\&.hpp\fP 第 \fB25\fP 行定义\&..PP
+.nf
+25 : why(whyError) {};
+.fi
+
+.SH "成员函数说明"
+.PP 
+.SS "const char * fcRuntimeError::what ()"
+
+.SH "类成员变量说明"
+.PP 
+.SS "const char* fcRuntimeError::why\fC [private]\fP"
+
+.PP
+在文件 \fBfcexceptions\&.hpp\fP 第 \fB22\fP 行定义\&.
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 Freecraft 的 源代码自动生成\&.

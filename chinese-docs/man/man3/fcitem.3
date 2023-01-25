@@ -1,0 +1,127 @@
+.TH "fcitem" 3 "2023年 一月 25日 星期三" "Version 00.01a07-dbg" "Freecraft" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+fcitem \- defines item\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <item\&.hpp>\fP
+.SS "Public 成员函数"
+
+.in +1c
+.ti -1c
+.RI "virtual Json::Value \fBtoJson\fP (void) const"
+.br
+.RI "convert to jsoncpp object\&. "
+.in -1c
+.SS "Protected 属性"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBname\fP"
+.br
+.RI "name of current item\&. "
+.ti -1c
+.RI "std::string \fBitemID\fP"
+.br
+.RI "namespace ID for current item\&. "
+.ti -1c
+.RI "std::string \fBcategoryID\fP"
+.br
+.RI "namespace ID of current item type\&. "
+.ti -1c
+.RI "unsigned int \fBcount\fP"
+.br
+.RI "count of item in inventory\&. "
+.ti -1c
+.RI "bool \fBunbreakable\fP"
+.br
+.RI "is this item unbreakable? "
+.ti -1c
+.RI "unsigned int \fBslot\fP"
+.br
+.RI "slot of item\&. "
+.ti -1c
+.RI "Json::Value \fBtags\fP"
+.br
+.RI "tags of item\&. "
+.in -1c
+.SH "详细描述"
+.PP 
+defines item\&. 
+.PP
+在文件 \fBitem\&.hpp\fP 第 \fB34\fP 行定义\&.
+.SH "成员函数说明"
+.PP 
+.SS "Json::Value fcitem::toJson (void) const\fC [virtual]\fP"
+
+.PP
+convert to jsoncpp object\&. 
+.PP
+\fB返回\fP
+.RS 4
+Json::value 
+.RE
+.PP
+
+.PP
+在文件 \fBitem\&.cpp\fP 第 \fB15\fP 行定义\&..PP
+.nf
+16 {
+17     Json::Value retVal;
+18     //TODO : complete it
+19     return retVal;
+20 }
+.fi
+
+.SH "类成员变量说明"
+.PP 
+.SS "std::string fcitem::categoryID\fC [protected]\fP"
+
+.PP
+namespace ID of current item type\&. 
+.PP
+在文件 \fBitem\&.hpp\fP 第 \fB51\fP 行定义\&.
+.SS "unsigned int fcitem::count\fC [protected]\fP"
+
+.PP
+count of item in inventory\&. 
+.PP
+在文件 \fBitem\&.hpp\fP 第 \fB56\fP 行定义\&.
+.SS "std::string fcitem::itemID\fC [protected]\fP"
+
+.PP
+namespace ID for current item\&. 
+.PP
+在文件 \fBitem\&.hpp\fP 第 \fB46\fP 行定义\&.
+.SS "std::string fcitem::name\fC [protected]\fP"
+
+.PP
+name of current item\&. 
+.PP
+在文件 \fBitem\&.hpp\fP 第 \fB41\fP 行定义\&.
+.SS "unsigned int fcitem::slot\fC [protected]\fP"
+
+.PP
+slot of item\&. 
+.PP
+在文件 \fBitem\&.hpp\fP 第 \fB66\fP 行定义\&.
+.SS "Json::Value fcitem::tags\fC [protected]\fP"
+
+.PP
+tags of item\&. 
+.PP
+在文件 \fBitem\&.hpp\fP 第 \fB71\fP 行定义\&.
+.SS "bool fcitem::unbreakable\fC [protected]\fP"
+
+.PP
+is this item unbreakable? 
+.PP
+在文件 \fBitem\&.hpp\fP 第 \fB61\fP 行定义\&.
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 Freecraft 的 源代码自动生成\&.

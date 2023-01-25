@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="zh">
+  <compounddef id="d0/d95/namespacefcg" kind="namespace" language="C++">
+    <compoundname>fcg</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d0/d95/namespacefcg_1ab374b1eaee281de96675946b7844b61d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fcg::readGLSL</definition>
+        <argsstring>(const char *fileName, std::string &amp;str)</argsstring>
+        <name>readGLSL</name>
+        <qualifiedname>fcg::readGLSL</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>fileName</declname>
+        </param>
+        <param>
+          <type>std::string &amp;</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/graphics/fcglsl.hpp" line="24" column="10" declfile="src/graphics/fcglsl.hpp" declline="24" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="d0/d95/namespacefcg_1a4f2c73fe6486fcc3913ebdc127fa39ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fcg::compileGLSL</definition>
+        <argsstring>(const GLchar *const *glsl, GLuint &amp;shader, GLenum type)</argsstring>
+        <name>compileGLSL</name>
+        <qualifiedname>fcg::compileGLSL</qualifiedname>
+        <param>
+          <type>const GLchar *const *</type>
+          <declname>glsl</declname>
+        </param>
+        <param>
+          <type>GLuint &amp;</type>
+          <declname>shader</declname>
+        </param>
+        <param>
+          <type>GLenum</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/graphics/fcglsl.hpp" line="25" column="10" declfile="src/graphics/fcglsl.hpp" declline="25" declcolumn="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/graphics/fcglsl.hpp" line="22" column="1"/>
+  </compounddef>
+</doxygen>

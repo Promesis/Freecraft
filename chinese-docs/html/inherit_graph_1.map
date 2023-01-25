@@ -1,0 +1,9 @@
+<map id="类继承关系图" name="类继承关系图">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,104,56"/>
+<area shape="rect" id="node2" href="$d7/d02/classfc_runtime_error.html" title=" " alt="" coords="166,5,286,31"/>
+<area shape="rect" id="node3" href="$da/de6/classfc_runtime_exception.html" title=" " alt="" coords="152,55,300,80"/>
+<area shape="rect" id="node4" href="$d2/d2a/classfc_array_index_out_of_bound_exception.html" title=" " alt="" coords="348,5,587,31"/>
+<area shape="rect" id="node5" href="$d5/df9/classfc_calc_exception.html" title=" " alt="" coords="404,55,531,80"/>
+<area shape="rect" id="node7" href="$dc/dc4/classfc_syntax_exception.html" title=" " alt="" coords="397,104,538,129"/>
+<area shape="rect" id="node6" href="$d9/dbc/classfc_division_zero_exception.html" title=" " alt="" coords="635,55,817,80"/>
+</map>

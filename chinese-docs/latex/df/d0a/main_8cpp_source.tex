@@ -1,0 +1,121 @@
+\hypertarget{main_8cpp_source}{}\doxysection{main.\+cpp}
+\label{main_8cpp_source}\index{src/main.cpp@{src/main.cpp}}
+\mbox{\hyperlink{main_8cpp}{浏览该文件的文档.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00001}00001\ \textcolor{comment}{//test\ if\ glfw\ can\ be\ compiled.}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}glad/glad.h"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}glfw/glfw3.h"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{fcglsl_8hpp}{./graphics/fcglsl.hpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00008}00008\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_ad6d843569f32c27dfe18045f65cfb06e}{framebufferSizeCallback}}(GLFWwindow\ *,\ \textcolor{keywordtype}{int},\ \textcolor{keywordtype}{int});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00009}00009\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_a8c653c7d0cb3661d19a644ef5ad0b255}{inputCallback}}(GLFWwindow\ *);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00011}\mbox{\hyperlink{main_8cpp_a57ce80b3e26f48b9731da8dded2f940c}{00011}}\ GLfloat\ \mbox{\hyperlink{main_8cpp_a57ce80b3e26f48b9731da8dded2f940c}{coords}}[]}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00012}00012\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00013}00013\ \ \ \ \ \ \ \ \ -\/0.5,\ -\/0.5,\ 0.0,}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00014}00014\ \ \ \ \ \ \ \ \ \ 0.5,\ -\/0.5,\ 0.0,}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00015}00015\ \ \ \ \ \ \ \ \ \ 0.5,\ \ 0.5,\ 0.0}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00016}00016\ \ \ \ \ \};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00018}\mbox{\hyperlink{main_8cpp_a30b1bd2dfe6289dd76b7c4e168393201}{00018}}\ \textcolor{keyword}{const}\ GLchar\ *\mbox{\hyperlink{main_8cpp_a30b1bd2dfe6289dd76b7c4e168393201}{fssrc}}=\textcolor{stringliteral}{"{}\#version\ 450\ core\(\backslash\)nout\ vec4\ color;\(\backslash\)nvoid\ main()\(\backslash\)n\{\(\backslash\)n\ \ \ \ color\ =\ vec4(1.0,\ 0.5,\ 0.2,\ 1.0);\(\backslash\)n\}"{}},}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00019}\mbox{\hyperlink{main_8cpp_af8ff29895c50897860901df3234fb9a9}{00019}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ *\mbox{\hyperlink{main_8cpp_af8ff29895c50897860901df3234fb9a9}{vssrc}}=\textcolor{stringliteral}{"{}\#version\ 450\ core\(\backslash\)nlayout\ (location=0)\ in\ vec3\ pos;\(\backslash\)nvoid\ main()\(\backslash\)n\{\(\backslash\)n\ \ \ \ gl\_Position\ =\ vec4(pos.x,\ pos.y,\ pos.z,\ 1.0);\(\backslash\)n\}"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00021}\mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{00021}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}\ **argv)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00022}00022\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00023}00023\ \ \ \ \ glfwInit();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00024}00024\ \ \ \ \ glfwWindowHint(GLFW\_CONTEXT\_VERSION\_MAJOR,\ 4);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00025}00025\ \ \ \ \ glfwWindowHint(GLFW\_CONTEXT\_VERSION\_MINOR,\ 5);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00026}00026\ \ \ \ \ glfwWindowHint(GLFW\_OPENGL\_PROFILE,\ GLFW\_OPENGL\_CORE\_PROFILE);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00027}00027\ \ \ \ \ \textcolor{comment}{//glfwWindowHint(GLFW\_OPENGL\_FORWARD\_COMPAT,\ GL\_TRUE);}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00028}00028\ \ \ \ \ GLFWwindow\ *window\ =\ glfwCreateWindow(800,600,\textcolor{stringliteral}{"{}test"{}},NULL,NULL);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00029}00029\ \ \ \ \ \textcolor{keywordflow}{if}\ (window\ ==\ NULL)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00030}00030\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00031}00031\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Failed\ to\ create\ GLFW\ window"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00032}00032\ \ \ \ \ \ \ \ \ glfwTerminate();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00033}00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00034}00034\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00035}00035\ \ \ \ \ glfwMakeContextCurrent(window);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00036}00036\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{glad_8c_af70e4674f75bd3bbfedf7979607c65ef}{gladLoadGLLoader}}((GLADloadproc)glfwGetProcAddress))}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00037}00037\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00038}00038\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Failed\ to\ initialize\ GLAD"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00039}00039\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00040}00040\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00041}00041\ \ \ \ \ glfwSetFramebufferSizeCallback(window,\ \mbox{\hyperlink{main_8cpp_ad6d843569f32c27dfe18045f65cfb06e}{framebufferSizeCallback}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00042}00042\ \ \ \ \ glViewport(0,\ 0,\ 800,\ 600);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00048}00048\ \ \ \ \ \textcolor{comment}{//compile\ shader}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00049}00049\ \ \ \ \ \textcolor{comment}{//GLuint\ fs,\ vs,\ program;}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00050}00050\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00051}00051\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00052}00052\ \textcolor{comment}{\ \ \ \ fcgraphics::readGLSL("{}./shaders/fsMain.glsl"{},\ fsrc);}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00053}00053\ \textcolor{comment}{\ \ \ \ fcgraphics::readGLSL("{}./shaders/vsMain.glsl"{},\ vsrc);}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00054}00054\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00055}00055\ \textcolor{comment}{\ \ \ \ fcgraphics::compileGLSL((const\ GLchar\ *const\ *)fsrc.c\_str(),\ fs,\ GL\_FRAGMENT\_SHADER);}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00056}00056\ \textcolor{comment}{\ \ \ \ fcgraphics::compileGLSL((const\ GLchar\ *const\ *)vsrc.c\_str(),\ vs,\ GL\_VERTEX\_SHADER);}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00057}00057\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00058}00058\ \ \ \ \ GLuint\ fs=glCreateShader(GL\_FRAGMENT\_SHADER),\ vs=glCreateShader(GL\_VERTEX\_SHADER);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00059}00059\ \ \ \ \ glShaderSource(fs,\ 1,\ (\textcolor{keyword}{const}\ GLchar\ *\textcolor{keyword}{const}\ *)\mbox{\hyperlink{main_8cpp_a30b1bd2dfe6289dd76b7c4e168393201}{fssrc}},\ NULL);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00060}00060\ \ \ \ \ glShaderSource(vs,\ 1,\ (\textcolor{keyword}{const}\ GLchar\ *\textcolor{keyword}{const}\ *)\mbox{\hyperlink{main_8cpp_af8ff29895c50897860901df3234fb9a9}{vssrc}},\ NULL);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00062}00062\ \ \ \ \ glCompileShader(fs);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00063}00063\ \ \ \ \ glCompileShader(vs);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00064}00064\ \ \ \ \ GLuint\ program\ =\ glCreateProgram();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00065}00065\ \ \ \ \ \textcolor{comment}{//attach\ shader}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00066}00066\ \ \ \ \ glAttachShader(program,\ fs);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00067}00067\ \ \ \ \ glAttachShader(program,\ vs);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00068}00068\ \ \ \ \ \textcolor{comment}{//link\ program}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00069}00069\ \ \ \ \ glLinkProgram(program);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00070}00070\ \ \ \ \ glUseProgram(program);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00072}00072\ \ \ \ \ glDeleteShader(fs);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00073}00073\ \ \ \ \ glDeleteShader(vs);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00076}00076\ \ \ \ \ GLuint\ vbo;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00077}00077\ \ \ \ \ glGenBuffers(1,\ \&vbo);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00078}00078\ \ \ \ \ GLuint\ vao;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00079}00079\ \ \ \ \ glGenVertexArrays(1,\ \&vao);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00080}00080\ \ \ \ \ glBindVertexArray(vao);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00081}00081\ \ \ \ \ glBindBuffer(GL\_ARRAY\_BUFFER,\ vbo);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00082}00082\ \ \ \ \ glBufferData(GL\_ARRAY\_BUFFER,\ \textcolor{keyword}{sizeof}(\mbox{\hyperlink{main_8cpp_a57ce80b3e26f48b9731da8dded2f940c}{coords}}),\ \mbox{\hyperlink{main_8cpp_a57ce80b3e26f48b9731da8dded2f940c}{coords}},\ GL\_STATIC\_DRAW);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00083}00083\ \ \ \ \ glVertexAttribPointer(0,\ 3,\ GL\_FLOAT,\ GL\_FALSE,\ 3\ *\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{float}),\ (\textcolor{keywordtype}{void}\ *)\ 0);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00084}00084\ \ \ \ \ \textcolor{comment}{//location\ is\ 0\ so\ first\ arg\ is\ 0,\ vertex\ attribute\ is\ a\ vec3\ so\ 2nd\ arg\ is\ 3,\ type\ is\ float,\ not\ normalized\ so\ false,\ the\ }}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00085}00085\ \ \ \ \ \textcolor{comment}{//distance\ between\ vertexs\ and\ attributes\ are\ 3\ sizes\ of\ floats,\ the\ offset\ is\ 0\ because\ the\ vbo\ is\ declared\ before.}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00086}00086\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00087}00087\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00088}00088\ \ \ \ \ \textcolor{keywordflow}{while}(\ !glfwWindowShouldClose(window)\ )\ \textcolor{comment}{//\ basic\ render\ loop(actually\ i\ rendered\ nothing)}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00089}00089\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00090}00090\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a8c653c7d0cb3661d19a644ef5ad0b255}{inputCallback}}(window);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00092}00092\ \ \ \ \ \ \ \ \ glEnableVertexAttribArray(0);\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00094}00094\ \ \ \ \ \ \ \ \ glDrawArrays(GL\_TRIANGLES,\ 0,\ 3);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00096}00096\ \ \ \ \ \ \ \ \ glfwSwapBuffers(window);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00097}00097\ \ \ \ \ \ \ \ \ glfwPollEvents();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00098}00098\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00100}00100\ \ \ \ \ glfwTerminate();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00101}00101\ \ \ \ \ \textcolor{keywordflow}{return}\ EXIT\_SUCCESS;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00102}00102\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00103}00103\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00104}\mbox{\hyperlink{main_8cpp_ad6d843569f32c27dfe18045f65cfb06e}{00104}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_ad6d843569f32c27dfe18045f65cfb06e}{framebufferSizeCallback}}(GLFWwindow\ *window,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00105}00105\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00106}00106\ \ \ \ \ glViewport(0,\ 0,\ width,\ height);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00107}00107\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00109}\mbox{\hyperlink{main_8cpp_a8c653c7d0cb3661d19a644ef5ad0b255}{00109}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_a8c653c7d0cb3661d19a644ef5ad0b255}{inputCallback}}(GLFWwindow\ *window)}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00110}00110\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00111}00111\ \ \ \ \ \textcolor{keywordflow}{if}(\ glfwGetKey(window,\ GLFW\_KEY\_ESCAPE)\ ==\ GLFW\_PRESS\ )}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00112}00112\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00113}00113\ \ \ \ \ \ \ \ \ glfwSetWindowShouldClose(window,\ \textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00114}00114\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00115}00115\ \}}
+
+\end{DoxyCode}

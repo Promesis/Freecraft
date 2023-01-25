@@ -1,0 +1,233 @@
+\hypertarget{main_8cpp}{}\doxysection{src/main.cpp 文件参考}
+\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+{\ttfamily \#include \char`\"{}glad/glad.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}glfw/glfw3.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}./graphics/fcglsl.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+main.\+cpp 的引用(Include)关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{da/dce/main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{函数}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_ad6d843569f32c27dfe18045f65cfb06e}{framebuffer\+Size\+Callback}} (GLFWwindow $\ast$, int, int)
+\item 
+void \mbox{\hyperlink{main_8cpp_a8c653c7d0cb3661d19a644ef5ad0b255}{input\+Callback}} (GLFWwindow $\ast$)
+\item 
+int \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\doxysubsection*{变量}
+\begin{DoxyCompactItemize}
+\item 
+GLfloat \mbox{\hyperlink{main_8cpp_a57ce80b3e26f48b9731da8dded2f940c}{coords}} \mbox{[}$\,$\mbox{]}
+\item 
+const GLchar $\ast$ \mbox{\hyperlink{main_8cpp_a30b1bd2dfe6289dd76b7c4e168393201}{fssrc}} =\char`\"{}\#version 450 core\textbackslash{}nout vec4 color;\textbackslash{}nvoid \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}}()\textbackslash{}n\{\textbackslash{}n color = vec4(1.\+0, 0.\+5, 0.\+2, 1.\+0);\textbackslash{}n\}\char`\"{}
+\item 
+const GLchar $\ast$ \mbox{\hyperlink{main_8cpp_af8ff29895c50897860901df3234fb9a9}{vssrc}} =\char`\"{}\#version 450 core\textbackslash{}nlayout (location=0) in vec3 pos;\textbackslash{}nvoid \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}}()\textbackslash{}n\{\textbackslash{}n gl\+\_\+\+Position = vec4(pos.\+x, pos.\+y, pos.\+z, 1.\+0);\textbackslash{}n\}\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{函数说明}
+\mbox{\Hypertarget{main_8cpp_ad6d843569f32c27dfe18045f65cfb06e}\label{main_8cpp_ad6d843569f32c27dfe18045f65cfb06e}} 
+\index{main.cpp@{main.cpp}!framebufferSizeCallback@{framebufferSizeCallback}}
+\index{framebufferSizeCallback@{framebufferSizeCallback}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{framebufferSizeCallback()}{framebufferSizeCallback()}}
+{\footnotesize\ttfamily void framebuffer\+Size\+Callback (\begin{DoxyParamCaption}\item[{GLFWwindow $\ast$}]{window,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}} 第 \mbox{\hyperlink{main_8cpp_source_l00104}{104}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00105\ \{}
+\DoxyCodeLine{00106\ \ \ \ \ glViewport(0,\ 0,\ width,\ height);}
+\DoxyCodeLine{00107\ \}}
+
+\end{DoxyCode}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=291pt]{df/d0a/main_8cpp_ad6d843569f32c27dfe18045f65cfb06e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_a8c653c7d0cb3661d19a644ef5ad0b255}\label{main_8cpp_a8c653c7d0cb3661d19a644ef5ad0b255}} 
+\index{main.cpp@{main.cpp}!inputCallback@{inputCallback}}
+\index{inputCallback@{inputCallback}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{inputCallback()}{inputCallback()}}
+{\footnotesize\ttfamily void input\+Callback (\begin{DoxyParamCaption}\item[{GLFWwindow $\ast$}]{window }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}} 第 \mbox{\hyperlink{main_8cpp_source_l00109}{109}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00110\ \{}
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordflow}{if}(\ glfwGetKey(window,\ GLFW\_KEY\_ESCAPE)\ ==\ GLFW\_PRESS\ )}
+\DoxyCodeLine{00112\ \ \ \ \ \{}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ glfwSetWindowShouldClose(window,\ \textcolor{keyword}{true});}
+\DoxyCodeLine{00114\ \ \ \ \ \}}
+\DoxyCodeLine{00115\ \}}
+
+\end{DoxyCode}
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{df/d0a/main_8cpp_a8c653c7d0cb3661d19a644ef5ad0b255_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+在文件 \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}} 第 \mbox{\hyperlink{main_8cpp_source_l00021}{21}} 行定义.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ glfwInit();}
+\DoxyCodeLine{00024\ \ \ \ \ glfwWindowHint(GLFW\_CONTEXT\_VERSION\_MAJOR,\ 4);}
+\DoxyCodeLine{00025\ \ \ \ \ glfwWindowHint(GLFW\_CONTEXT\_VERSION\_MINOR,\ 5);}
+\DoxyCodeLine{00026\ \ \ \ \ glfwWindowHint(GLFW\_OPENGL\_PROFILE,\ GLFW\_OPENGL\_CORE\_PROFILE);}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{comment}{//glfwWindowHint(GLFW\_OPENGL\_FORWARD\_COMPAT,\ GL\_TRUE);}}
+\DoxyCodeLine{00028\ \ \ \ \ GLFWwindow\ *window\ =\ glfwCreateWindow(800,600,\textcolor{stringliteral}{"{}test"{}},NULL,NULL);}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordflow}{if}\ (window\ ==\ NULL)}
+\DoxyCodeLine{00030\ \ \ \ \ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Failed\ to\ create\ GLFW\ window"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ glfwTerminate();}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00034\ \ \ \ \ \}}
+\DoxyCodeLine{00035\ \ \ \ \ glfwMakeContextCurrent(window);}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{glad_8c_af70e4674f75bd3bbfedf7979607c65ef}{gladLoadGLLoader}}((GLADloadproc)glfwGetProcAddress))}
+\DoxyCodeLine{00037\ \ \ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Failed\ to\ initialize\ GLAD"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/1;}
+\DoxyCodeLine{00040\ \ \ \ \ \}}
+\DoxyCodeLine{00041\ \ \ \ \ glfwSetFramebufferSizeCallback(window,\ \mbox{\hyperlink{main_8cpp_ad6d843569f32c27dfe18045f65cfb06e}{framebufferSizeCallback}});}
+\DoxyCodeLine{00042\ \ \ \ \ glViewport(0,\ 0,\ 800,\ 600);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{comment}{//compile\ shader}}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{comment}{//GLuint\ fs,\ vs,\ program;}}
+\DoxyCodeLine{00050\ \ \ \ \ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{00052\ \textcolor{comment}{\ \ \ \ fcgraphics::readGLSL("{}./shaders/fsMain.glsl"{},\ fsrc); }}
+\DoxyCodeLine{00053\ \textcolor{comment}{\ \ \ \ fcgraphics::readGLSL("{}./shaders/vsMain.glsl"{},\ vsrc); }}
+\DoxyCodeLine{00054\ \textcolor{comment}{}}
+\DoxyCodeLine{00055\ \textcolor{comment}{\ \ \ \ fcgraphics::compileGLSL((const\ GLchar\ *const\ *)fsrc.c\_str(),\ fs,\ GL\_FRAGMENT\_SHADER); }}
+\DoxyCodeLine{00056\ \textcolor{comment}{\ \ \ \ fcgraphics::compileGLSL((const\ GLchar\ *const\ *)vsrc.c\_str(),\ vs,\ GL\_VERTEX\_SHADER); }}
+\DoxyCodeLine{00057\ \textcolor{comment}{\ \ \ \ */}}
+\DoxyCodeLine{00058\ \ \ \ \ GLuint\ fs=glCreateShader(GL\_FRAGMENT\_SHADER),\ vs=glCreateShader(GL\_VERTEX\_SHADER);}
+\DoxyCodeLine{00059\ \ \ \ \ glShaderSource(fs,\ 1,\ (\textcolor{keyword}{const}\ GLchar\ *\textcolor{keyword}{const}\ *)\mbox{\hyperlink{main_8cpp_a30b1bd2dfe6289dd76b7c4e168393201}{fssrc}},\ NULL);}
+\DoxyCodeLine{00060\ \ \ \ \ glShaderSource(vs,\ 1,\ (\textcolor{keyword}{const}\ GLchar\ *\textcolor{keyword}{const}\ *)\mbox{\hyperlink{main_8cpp_af8ff29895c50897860901df3234fb9a9}{vssrc}},\ NULL);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ glCompileShader(fs);}
+\DoxyCodeLine{00063\ \ \ \ \ glCompileShader(vs);}
+\DoxyCodeLine{00064\ \ \ \ \ GLuint\ program\ =\ glCreateProgram();}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{comment}{//attach\ shader}}
+\DoxyCodeLine{00066\ \ \ \ \ glAttachShader(program,\ fs);}
+\DoxyCodeLine{00067\ \ \ \ \ glAttachShader(program,\ vs);}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{comment}{//link\ program}}
+\DoxyCodeLine{00069\ \ \ \ \ glLinkProgram(program);}
+\DoxyCodeLine{00070\ \ \ \ \ glUseProgram(program);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ \ \ \ \ glDeleteShader(fs);}
+\DoxyCodeLine{00073\ \ \ \ \ glDeleteShader(vs);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00076\ \ \ \ \ GLuint\ vbo;}
+\DoxyCodeLine{00077\ \ \ \ \ glGenBuffers(1,\ \&vbo);}
+\DoxyCodeLine{00078\ \ \ \ \ GLuint\ vao;}
+\DoxyCodeLine{00079\ \ \ \ \ glGenVertexArrays(1,\ \&vao);}
+\DoxyCodeLine{00080\ \ \ \ \ glBindVertexArray(vao);}
+\DoxyCodeLine{00081\ \ \ \ \ glBindBuffer(GL\_ARRAY\_BUFFER,\ vbo);}
+\DoxyCodeLine{00082\ \ \ \ \ glBufferData(GL\_ARRAY\_BUFFER,\ \textcolor{keyword}{sizeof}(\mbox{\hyperlink{main_8cpp_a57ce80b3e26f48b9731da8dded2f940c}{coords}}),\ \mbox{\hyperlink{main_8cpp_a57ce80b3e26f48b9731da8dded2f940c}{coords}},\ GL\_STATIC\_DRAW);}
+\DoxyCodeLine{00083\ \ \ \ \ glVertexAttribPointer(0,\ 3,\ GL\_FLOAT,\ GL\_FALSE,\ 3\ *\ \textcolor{keyword}{sizeof}(\textcolor{keywordtype}{float}),\ (\textcolor{keywordtype}{void}\ *)\ 0);}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{comment}{//location\ is\ 0\ so\ first\ arg\ is\ 0,\ vertex\ attribute\ is\ a\ vec3\ so\ 2nd\ arg\ is\ 3,\ type\ is\ float,\ not\ normalized\ so\ false,\ the\ }}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{comment}{//distance\ between\ vertexs\ and\ attributes\ are\ 3\ sizes\ of\ floats,\ the\ offset\ is\ 0\ because\ the\ vbo\ is\ declared\ before.}}
+\DoxyCodeLine{00086\ \ \ \ \ }
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keywordflow}{while}(\ !glfwWindowShouldClose(window)\ )\ \textcolor{comment}{//\ basic\ render\ loop(actually\ i\ rendered\ nothing)}}
+\DoxyCodeLine{00089\ \ \ \ \ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a8c653c7d0cb3661d19a644ef5ad0b255}{inputCallback}}(window);}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ glEnableVertexAttribArray(0);\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ glDrawArrays(GL\_TRIANGLES,\ 0,\ 3);}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ glfwSwapBuffers(window);}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ glfwPollEvents();}
+\DoxyCodeLine{00098\ \ \ \ \ \}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ glfwTerminate();}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordflow}{return}\ EXIT\_SUCCESS;}
+\DoxyCodeLine{00102\ \}}
+
+\end{DoxyCode}
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{df/d0a/main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{变量说明}
+\mbox{\Hypertarget{main_8cpp_a57ce80b3e26f48b9731da8dded2f940c}\label{main_8cpp_a57ce80b3e26f48b9731da8dded2f940c}} 
+\index{main.cpp@{main.cpp}!coords@{coords}}
+\index{coords@{coords}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{coords}{coords}}
+{\footnotesize\ttfamily GLfloat coords\mbox{[}$\,$\mbox{]}}
+
+{\bfseries 初始值\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ -\/0.5,\ -\/0.5,\ 0.0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ 0.5,\ -\/0.5,\ 0.0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ 0.5,\ \ 0.5,\ 0.0}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+
+
+在文件 \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}} 第 \mbox{\hyperlink{main_8cpp_source_l00011}{11}} 行定义.
+
+\mbox{\Hypertarget{main_8cpp_a30b1bd2dfe6289dd76b7c4e168393201}\label{main_8cpp_a30b1bd2dfe6289dd76b7c4e168393201}} 
+\index{main.cpp@{main.cpp}!fssrc@{fssrc}}
+\index{fssrc@{fssrc}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{fssrc}{fssrc}}
+{\footnotesize\ttfamily const GLchar$\ast$ fssrc =\char`\"{}\#version 450 core\textbackslash{}nout vec4 color;\textbackslash{}nvoid \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}}()\textbackslash{}n\{\textbackslash{}n color = vec4(1.\+0, 0.\+5, 0.\+2, 1.\+0);\textbackslash{}n\}\char`\"{}}
+
+
+
+在文件 \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}} 第 \mbox{\hyperlink{main_8cpp_source_l00018}{18}} 行定义.
+
+\mbox{\Hypertarget{main_8cpp_af8ff29895c50897860901df3234fb9a9}\label{main_8cpp_af8ff29895c50897860901df3234fb9a9}} 
+\index{main.cpp@{main.cpp}!vssrc@{vssrc}}
+\index{vssrc@{vssrc}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{vssrc}{vssrc}}
+{\footnotesize\ttfamily const GLchar $\ast$ vssrc =\char`\"{}\#version 450 core\textbackslash{}nlayout (location=0) in vec3 pos;\textbackslash{}nvoid \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}}()\textbackslash{}n\{\textbackslash{}n gl\+\_\+\+Position = vec4(pos.\+x, pos.\+y, pos.\+z, 1.\+0);\textbackslash{}n\}\char`\"{}}
+
+
+
+在文件 \mbox{\hyperlink{main_8cpp_source}{main.\+cpp}} 第 \mbox{\hyperlink{main_8cpp_source_l00019}{19}} 行定义.
+

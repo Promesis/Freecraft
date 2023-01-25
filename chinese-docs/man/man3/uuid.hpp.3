@@ -1,0 +1,62 @@
+.TH "src/data/uuid/uuid.hpp" 3 "2023年 一月 25日 星期三" "Version 00.01a07-dbg" "Freecraft" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/data/uuid/uuid.hpp
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'json/json\&.h'\fP
+.br
+\fC#include '\&.\&./\&.\&./fcexceptions\&.hpp'\fP
+.br
+\fC#include <string>\fP
+.br
+\fC#include <random>\fP
+.br
+
+.SS "类"
+
+.in +1c
+.ti -1c
+.RI "class \fBuuid\fP"
+.br
+.in -1c
+.SS "函数"
+
+.in +1c
+.ti -1c
+.RI "bool \fBoperator==\fP (const Json::String &datL, const \fBuuid\fP &datR)"
+.br
+.in -1c
+.SH "函数说明"
+.PP 
+.SS "bool operator== (const Json::String & datL, const \fBuuid\fP & datR)"
+reversed\&.
+.PP
+\fB参数\fP
+.RS 4
+\fIdat\fP 
+.br
+\fIdat\fP 
+.RE
+.PP
+\fB返回\fP
+.RS 4
+true 
+.PP
+false 
+.RE
+.PP
+
+.PP
+在文件 \fBuuid\&.cpp\fP 第 \fB61\fP 行定义\&..PP
+.nf
+119 {
+120     return datR\&.data == datL;
+121 }
+.fi
+
+.SH "作者"
+.PP 
+由 Doyxgen 通过分析 Freecraft 的 源代码自动生成\&.

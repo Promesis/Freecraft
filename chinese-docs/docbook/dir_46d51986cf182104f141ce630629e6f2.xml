@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_46d51986cf182104f141ce630629e6f2" xml:lang="zh">
+<title>src/glad 目录参考</title>
+<indexterm><primary>src/glad 目录参考</primary></indexterm>
+glad 的目录依赖关系图<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_46d51986cf182104f141ce630629e6f2_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>文件    </title>
+        <itemizedlist>
+            <listitem><para>文件 <link linkend="_glad_8c">glad.c</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

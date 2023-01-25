@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="zh">
+  <compounddef id="d5/df9/classfc_calc_exception" kind="class" language="C++" prot="public">
+    <compoundname>fcCalcException</compoundname>
+    <basecompoundref refid="da/de6/classfc_runtime_exception" prot="public" virt="non-virtual">fcRuntimeException</basecompoundref>
+    <derivedcompoundref refid="d9/dbc/classfc_division_zero_exception" prot="public" virt="non-virtual">fcDivisionZeroException</derivedcompoundref>
+    <includes refid="d5/d89/fcexceptions_8hpp" local="no">fcexceptions.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/df9/classfc_calc_exception_1ae56902d3f8c5ed62de60b4c909492971" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>fcCalcException::fcCalcException</definition>
+        <argsstring>(const char *whyException=&quot;calculation gets errors&quot;)</argsstring>
+        <name>fcCalcException</name>
+        <qualifiedname>fcCalcException::fcCalcException</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>whyException</declname>
+          <defval>&quot;calculation gets errors&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fcexceptions.hpp" line="37" column="5" bodyfile="src/fcexceptions.hpp" bodystart="37" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>fcCalcException</label>
+        <link refid="d5/df9/classfc_calc_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>fcDivisionZeroException</label>
+        <link refid="d9/dbc/classfc_division_zero_exception"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fcRuntimeException</label>
+        <link refid="da/de6/classfc_runtime_exception"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>fcexception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>fcCalcException</label>
+        <link refid="d5/df9/classfc_calc_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fcRuntimeException</label>
+        <link refid="da/de6/classfc_runtime_exception"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>fcexception</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/fcexceptions.hpp" line="34" column="1" bodyfile="src/fcexceptions.hpp" bodystart="35" bodyend="38"/>
+    <listofallmembers>
+      <member refid="d5/df9/classfc_calc_exception_1ae56902d3f8c5ed62de60b4c909492971" prot="public" virt="non-virtual"><scope>fcCalcException</scope><name>fcCalcException</name></member>
+      <member refid="da/de6/classfc_runtime_exception_1a264ae184e45fbc84cc58952ba062c5f5" prot="public" virt="non-virtual"><scope>fcCalcException</scope><name>fcRuntimeException</name></member>
+      <member refid="da/de6/classfc_runtime_exception_1ac9faee48241584efdec3f0e2955623b1" prot="public" virt="non-virtual"><scope>fcCalcException</scope><name>what</name></member>
+      <member refid="da/de6/classfc_runtime_exception_1a9ff8cb869b4a75cf3c5f6660d3d5e109" prot="private" virt="non-virtual"><scope>fcCalcException</scope><name>why</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

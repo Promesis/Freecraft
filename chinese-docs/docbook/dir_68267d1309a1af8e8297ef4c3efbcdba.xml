@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_68267d1309a1af8e8297ef4c3efbcdba" xml:lang="zh">
+<title>src 目录参考</title>
+<indexterm><primary>src 目录参考</primary></indexterm>
+src 的目录依赖关系图<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_68267d1309a1af8e8297ef4c3efbcdba_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>目录    </title>
+        <itemizedlist>
+            <listitem><para>目录 <link linkend="_dir_c1be8d27e7f84178e95f152701110b19">data</link></para>
+</listitem>
+            <listitem><para>目录 <link linkend="_dir_46d51986cf182104f141ce630629e6f2">glad</link></para>
+</listitem>
+            <listitem><para>目录 <link linkend="_dir_560415a5d2bc4999842279f4fc1debef">graphics</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>文件    </title>
+        <itemizedlist>
+            <listitem><para>文件 <link linkend="_fcenums_8hpp">fcenums.hpp</link></para>
+</listitem>
+            <listitem><para>文件 <link linkend="_fcexceptions_8hpp">fcexceptions.hpp</link></para>
+</listitem>
+            <listitem><para>文件 <link linkend="_main_8cpp">main.cpp</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>
