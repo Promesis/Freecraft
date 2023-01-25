@@ -1,8 +1,0 @@
-<map id="fcRuntimeException" name="fcRuntimeException">
-<area shape="rect" id="node1" title=" " alt="" coords="294,131,519,252"/>
-<area shape="rect" id="node3" href="$d2/d2a/classfc_array_index_out_of_bound_exception.html" title=" " alt="" coords="5,300,259,407"/>
-<area shape="rect" id="node4" href="$d5/df9/classfc_calc_exception.html" title=" " alt="" coords="283,300,530,407"/>
-<area shape="rect" id="node6" href="$dc/dc4/classfc_syntax_exception.html" title=" " alt="" coords="554,300,758,407"/>
-<area shape="rect" id="node2" title=" " alt="" coords="357,5,456,83"/>
-<area shape="rect" id="node5" href="$d9/dbc/classfc_division_zero_exception.html" title=" " alt="" coords="283,455,530,576"/>
-</map>
