@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_fcexceptions_8hpp_source" xml:lang="en-US">
+<title>fcexceptions.hpp</title>
+<indexterm><primary>src/fcexceptions.hpp</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="_fcexceptions_8hpp_source_1l00001"/>00001 <emphasis role="preprocessor">#ifndef&#32;fcexceptions_hpp</emphasis>
+<anchor xml:id="_fcexceptions_8hpp_source_1l00002"/>00002 <emphasis role="preprocessor">#define&#32;fcexceptions_hpp</emphasis>
+<anchor xml:id="_fcexceptions_8hpp_source_1l00003"/>00003 
+<anchor xml:id="_fcexceptions_8hpp_source_1l00004"/>00004 <emphasis role="preprocessor">#include&#32;&lt;exception&gt;</emphasis>
+<anchor xml:id="_fcexceptions_8hpp_source_1l00005"/>00005 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_fcenums_8hpp">fcenums.hpp</link>&quot;</emphasis>
+<anchor xml:id="_fcexceptions_8hpp_source_1l00006"/>00006 
+<anchor xml:id="_fcexceptions_8hpp_source_1l00007"/><link linkend="_fcexceptions_8hpp_1a1ef7e03c22e6fee717ac6498e42a716c">00007</link> <emphasis role="keyword">typedef</emphasis>&#32;std::exception&#32;<link linkend="_fcexceptions_8hpp_1a1ef7e03c22e6fee717ac6498e42a716c">fcexception</link>;
+<anchor xml:id="_fcexceptions_8hpp_source_1l00008"/>00008 
+<anchor xml:id="_fcexceptions_8hpp_source_1l00009"/><link linkend="_classfc_runtime_exception">00009</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classfc_runtime_exception">fcRuntimeException</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_fcexceptions_8hpp_1a1ef7e03c22e6fee717ac6498e42a716c">fcexception</link>
+<anchor xml:id="_fcexceptions_8hpp_source_1l00010"/>00010 {
+<anchor xml:id="_fcexceptions_8hpp_source_1l00011"/>00011 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_fcexceptions_8hpp_source_1l00012"/><link linkend="_classfc_runtime_exception_1a9ff8cb869b4a75cf3c5f6660d3d5e109">00012</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;*<link linkend="_classfc_runtime_exception_1a9ff8cb869b4a75cf3c5f6660d3d5e109">why</link>;
+<anchor xml:id="_fcexceptions_8hpp_source_1l00013"/>00013 
+<anchor xml:id="_fcexceptions_8hpp_source_1l00014"/>00014 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_fcexceptions_8hpp_source_1l00015"/><link linkend="_classfc_runtime_exception_1a264ae184e45fbc84cc58952ba062c5f5">00015</link> &#32;&#32;&#32;&#32;<link linkend="_classfc_runtime_exception_1a264ae184e45fbc84cc58952ba062c5f5">fcRuntimeException</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;*whyException&#32;=&#32;<emphasis role="stringliteral">&quot;runtime&#32;exception&#32;occured&quot;</emphasis>)&#32;:&#32;<link linkend="_classfc_runtime_exception_1a9ff8cb869b4a75cf3c5f6660d3d5e109">why</link>(whyException)&#32;{};
+<anchor xml:id="_fcexceptions_8hpp_source_1l00016"/><link linkend="_classfc_runtime_exception_1ac9faee48241584efdec3f0e2955623b1">00016</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;*<link linkend="_classfc_runtime_exception_1ac9faee48241584efdec3f0e2955623b1">what</link>();
+<anchor xml:id="_fcexceptions_8hpp_source_1l00017"/>00017 };
+<anchor xml:id="_fcexceptions_8hpp_source_1l00018"/>00018 
+<anchor xml:id="_fcexceptions_8hpp_source_1l00019"/><link linkend="_classfc_runtime_error">00019</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classfc_runtime_error">fcRuntimeError</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_fcexceptions_8hpp_1a1ef7e03c22e6fee717ac6498e42a716c">fcexception</link>
+<anchor xml:id="_fcexceptions_8hpp_source_1l00020"/>00020 {
+<anchor xml:id="_fcexceptions_8hpp_source_1l00021"/>00021 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>:
+<anchor xml:id="_fcexceptions_8hpp_source_1l00022"/><link linkend="_classfc_runtime_error_1ac9d813f2db5d44fc2e470e5a475d5777">00022</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;*<link linkend="_classfc_runtime_error_1ac9d813f2db5d44fc2e470e5a475d5777">why</link>;
+<anchor xml:id="_fcexceptions_8hpp_source_1l00023"/>00023 
+<anchor xml:id="_fcexceptions_8hpp_source_1l00024"/>00024 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_fcexceptions_8hpp_source_1l00025"/><link linkend="_classfc_runtime_error_1a95cbb1f5c56e685a02680ea528350c83">00025</link> &#32;&#32;&#32;&#32;<link linkend="_classfc_runtime_error_1a95cbb1f5c56e685a02680ea528350c83">fcRuntimeError</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;*whyError&#32;=&#32;<emphasis role="stringliteral">&quot;runtime&#32;error&#32;occured&quot;</emphasis>)&#32;:&#32;<link linkend="_classfc_runtime_error_1ac9d813f2db5d44fc2e470e5a475d5777">why</link>(whyError)&#32;{};
+<anchor xml:id="_fcexceptions_8hpp_source_1l00026"/>00026 
+<anchor xml:id="_fcexceptions_8hpp_source_1l00027"/><link linkend="_classfc_runtime_error_1ab1dae6b6594dacd25ffa5928df751c3d">00027</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;*<link linkend="_classfc_runtime_error_1ab1dae6b6594dacd25ffa5928df751c3d">what</link>();
+<anchor xml:id="_fcexceptions_8hpp_source_1l00028"/>00028 };
+<anchor xml:id="_fcexceptions_8hpp_source_1l00029"/>00029 
+<anchor xml:id="_fcexceptions_8hpp_source_1l00030"/>00030 
+<anchor xml:id="_fcexceptions_8hpp_source_1l00031"/>00031 
+<anchor xml:id="_fcexceptions_8hpp_source_1l00032"/>00032 
+<anchor xml:id="_fcexceptions_8hpp_source_1l00033"/>00033 
+<anchor xml:id="_fcexceptions_8hpp_source_1l00034"/><link linkend="_classfc_calc_exception">00034</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classfc_calc_exception">fcCalcException</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_classfc_runtime_exception">fcRuntimeException</link>
+<anchor xml:id="_fcexceptions_8hpp_source_1l00035"/>00035 {
+<anchor xml:id="_fcexceptions_8hpp_source_1l00036"/>00036 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_fcexceptions_8hpp_source_1l00037"/><link linkend="_classfc_calc_exception_1ae56902d3f8c5ed62de60b4c909492971">00037</link> &#32;&#32;&#32;&#32;<link linkend="_classfc_calc_exception_1ae56902d3f8c5ed62de60b4c909492971">fcCalcException</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;*whyException&#32;=&#32;<emphasis role="stringliteral">&quot;calculation&#32;gets&#32;errors&quot;</emphasis>)&#32;:&#32;<link linkend="_classfc_runtime_exception">fcRuntimeException</link>(whyException)&#32;{};
+<anchor xml:id="_fcexceptions_8hpp_source_1l00038"/>00038 };
+<anchor xml:id="_fcexceptions_8hpp_source_1l00039"/>00039 
+<anchor xml:id="_fcexceptions_8hpp_source_1l00040"/><link linkend="_classfc_division_zero_exception">00040</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classfc_division_zero_exception">fcDivisionZeroException</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_classfc_calc_exception">fcCalcException</link>
+<anchor xml:id="_fcexceptions_8hpp_source_1l00041"/>00041 {
+<anchor xml:id="_fcexceptions_8hpp_source_1l00042"/>00042 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_fcexceptions_8hpp_source_1l00043"/><link linkend="_classfc_division_zero_exception_1a23f798f5c877917dad2cb478eec9c552">00043</link> &#32;&#32;&#32;&#32;<link linkend="_classfc_division_zero_exception_1a23f798f5c877917dad2cb478eec9c552">fcDivisionZeroException</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;*whyException&#32;=&#32;<emphasis role="stringliteral">&quot;calculation&#32;get&#32;errors&#32;when&#32;dividing&#32;a&#32;num&#32;with&#32;zero&quot;</emphasis>)&#32;:&#32;<link linkend="_classfc_calc_exception">fcCalcException</link>(whyException)&#32;{};
+<anchor xml:id="_fcexceptions_8hpp_source_1l00044"/>00044 };
+<anchor xml:id="_fcexceptions_8hpp_source_1l00045"/>00045 
+<anchor xml:id="_fcexceptions_8hpp_source_1l00046"/><link linkend="_classfc_syntax_exception">00046</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classfc_syntax_exception">fcSyntaxException</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_classfc_runtime_exception">fcRuntimeException</link>
+<anchor xml:id="_fcexceptions_8hpp_source_1l00047"/>00047 {
+<anchor xml:id="_fcexceptions_8hpp_source_1l00048"/>00048 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_fcexceptions_8hpp_source_1l00049"/><link linkend="_classfc_syntax_exception_1ac6230a5de6b286b4d62afeab5da45b38">00049</link> &#32;&#32;&#32;&#32;<link linkend="_classfc_syntax_exception_1ac6230a5de6b286b4d62afeab5da45b38">fcSyntaxException</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;*whyException&#32;=&#32;<emphasis role="stringliteral">&quot;the&#32;syntax&#32;isn&apos;t&#32;right&quot;</emphasis>)&#32;:&#32;<link linkend="_classfc_runtime_exception">fcRuntimeException</link>(whyException)&#32;{};
+<anchor xml:id="_fcexceptions_8hpp_source_1l00050"/>00050 };
+<anchor xml:id="_fcexceptions_8hpp_source_1l00051"/>00051 
+<anchor xml:id="_fcexceptions_8hpp_source_1l00052"/><link linkend="_classfc_array_index_out_of_bound_exception">00052</link> <emphasis role="keyword">class&#32;</emphasis><link linkend="_classfc_array_index_out_of_bound_exception">fcArrayIndexOutOfBoundException</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_classfc_runtime_exception">fcRuntimeException</link>
+<anchor xml:id="_fcexceptions_8hpp_source_1l00053"/>00053 {
+<anchor xml:id="_fcexceptions_8hpp_source_1l00054"/>00054 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+<anchor xml:id="_fcexceptions_8hpp_source_1l00055"/><link linkend="_classfc_array_index_out_of_bound_exception_1a53ae0a4c8b58386f5afe970d533b1ebc">00055</link> &#32;&#32;&#32;&#32;<link linkend="_classfc_array_index_out_of_bound_exception_1a53ae0a4c8b58386f5afe970d533b1ebc">fcArrayIndexOutOfBoundException</link>(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;*whyException&#32;=&#32;<emphasis role="stringliteral">&quot;the&#32;array&#32;index&#32;is&#32;out&#32;of&#32;bound.&quot;</emphasis>)&#32;:&#32;<link linkend="_classfc_runtime_exception">fcRuntimeException</link>(whyException)&#32;{};
+<anchor xml:id="_fcexceptions_8hpp_source_1l00056"/>00056 };
+<anchor xml:id="_fcexceptions_8hpp_source_1l00057"/>00057 
+<anchor xml:id="_fcexceptions_8hpp_source_1l00058"/>00058 <emphasis role="preprocessor">#endif</emphasis>
+</programlisting></section>

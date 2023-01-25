@@ -71,6 +71,7 @@ uuid::uuid(const uuid &dat)
 
 inline bool checksyntax(const Json::String &str)
 {
+    int i;
     if(str.length() != 36)
         return false;
     for(i=0; i <= 7; ++i)
@@ -99,7 +100,9 @@ uuid::uuid(const Json::String &str)
 {
     if(!checksyntax(str))
         throw fcSyntaxException("UUID format is not wanted");
-    data = str;
+    for(int i=0; i < str.length(); ++i)
+        data[i]=str[i];
+    data[str.length()]='\0';
 }
 
 uuid::operator Json::String(void) const
@@ -117,7 +120,8 @@ bool operator==(const Json::String &datL, const uuid &datR)
     return datR.data == datL;
 }
 
-uuid::operator=(const uuid &dat)
+const uuid &uuid::operator=(const uuid &dat)
 {
-    data = dat.data;
+    for(int i=0; i<37; ++i)
+        data[i] = dat.data[i];
 }

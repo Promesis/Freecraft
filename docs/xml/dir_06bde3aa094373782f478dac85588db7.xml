@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dir_06bde3aa094373782f478dac85588db7" kind="dir">
+    <compoundname>src/data/uuid</compoundname>
+    <innerfile refid="db/d37/uuid_8cpp">uuid.cpp</innerfile>
+    <innerfile refid="d7/db4/uuid_8hpp">uuid.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/data/uuid/"/>
+  </compounddef>
+</doxygen>

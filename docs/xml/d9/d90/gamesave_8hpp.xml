@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="d9/d90/gamesave_8hpp" kind="file" language="C++">
+    <compoundname>gamesave.hpp</compoundname>
+    <includes local="no">filesystem</includes>
+    <includes local="no">string</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">fstream</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>src/data/file/gamesave.hpp</label>
+        <link refid="d9/d90/gamesave_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cstdlib</label>
+      </node>
+      <node id="2">
+        <label>filesystem</label>
+      </node>
+      <node id="5">
+        <label>fstream</label>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="d3/d2b/structgamesave" prot="public">gamesave</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d9/d90/gamesave_8hpp_1a304c6be77f00248ee959a3cf70ef7328" prot="public" static="no">
+        <name>gamesave_hpp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/data/file/gamesave.hpp" line="13" column="9" bodyfile="src/data/file/gamesave.hpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="d9/d90/gamesave_8hpp_1adcf645e0a58ee7322595fd3d295a0c4a" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>fcGamesaveMode</name>
+        <enumvalue id="d9/d90/gamesave_8hpp_1adcf645e0a58ee7322595fd3d295a0c4aa9d7183f16acce70658f686ae7f1a4d20" prot="public">
+          <name>binary</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="d9/d90/gamesave_8hpp_1adcf645e0a58ee7322595fd3d295a0c4aa466deec76ecdf5fca6d38571f6324d54" prot="public">
+          <name>json</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/data/file/gamesave.hpp" line="20" column="1" bodyfile="src/data/file/gamesave.hpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>deal with filesystem. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Promesis (<ulink url="mailto:m3149154722@outlook.com">m3149154722@outlook.com</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2023-01-24</para>
+</simplesect>
+Promesis 2023 the Freecraft dev </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">ifndef<sp/><ref refid="d9/d90/gamesave_8hpp_1a304c6be77f00248ee959a3cf70ef7328" kindref="member">gamesave_hpp</ref></highlight></codeline>
+<codeline lineno="13" refid="d9/d90/gamesave_8hpp_1a304c6be77f00248ee959a3cf70ef7328" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>gamesave_hpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;filesystem&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="d9/d90/gamesave_8hpp_1adcf645e0a58ee7322595fd3d295a0c4a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum<sp/>struct</highlight><highlight class="normal"><sp/><ref refid="d9/d90/gamesave_8hpp_1adcf645e0a58ee7322595fd3d295a0c4a" kindref="member">fcGamesaveMode</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d90/gamesave_8hpp_1adcf645e0a58ee7322595fd3d295a0c4aa9d7183f16acce70658f686ae7f1a4d20" kindref="member">binary</ref>,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d90/gamesave_8hpp_1adcf645e0a58ee7322595fd3d295a0c4aa466deec76ecdf5fca6d38571f6324d54" kindref="member">json</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="d3/d2b/structgamesave" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="d3/d2b/structgamesave" kindref="compound">gamesave</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28" refid="d3/d2b/structgamesave_1ab66c6023f15ae831157583f296e7d244" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="d9/d90/gamesave_8hpp_1adcf645e0a58ee7322595fd3d295a0c4a" kindref="member">fcGamesaveMode</ref><sp/><ref refid="d3/d2b/structgamesave_1ab66c6023f15ae831157583f296e7d244" kindref="member">filemode</ref>;</highlight></codeline>
+<codeline lineno="29" refid="d3/d2b/structgamesave_1a8562b8561dc60bf9621d58f3fb5482c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::filesystem::path<sp/><ref refid="d3/d2b/structgamesave_1a8562b8561dc60bf9621d58f3fb5482c2" kindref="member">worldInfoFile</ref>;</highlight></codeline>
+<codeline lineno="30" refid="d3/d2b/structgamesave_1a69eb0d7b98821081aeb28eed17ef1f18" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::filesystem::path<sp/><ref refid="d3/d2b/structgamesave_1a69eb0d7b98821081aeb28eed17ef1f18" kindref="member">playerDataDirectory</ref>;</highlight></codeline>
+<codeline lineno="31" refid="d3/d2b/structgamesave_1af62526634c5c6ae2ce37aa34d17aebb1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::filesystem::path<sp/><ref refid="d3/d2b/structgamesave_1af62526634c5c6ae2ce37aa34d17aebb1" kindref="member">chunksFilesDirectory</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="src/data/file/gamesave.hpp"/>
+  </compounddef>
+</doxygen>

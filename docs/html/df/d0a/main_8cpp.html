@@ -31,7 +31,7 @@
  <tr id="projectrow">
   <td id="projectlogo"><img alt="Logo" src="../../icon64_glass.png"/></td>
   <td id="projectalign">
-   <div id="projectname">Freecraft<span id="projectnumber">&#160;00.01a03-dbg</span>
+   <div id="projectname">Freecraft<span id="projectnumber">&#160;00.01a07-dbg</span>
    </div>
    <div id="projectbrief">open source remake of Minecraft in C++ with Lua language support.</div>
   </td>
@@ -98,28 +98,126 @@ $(document).ready(function(){initNavTree('df/d0a/main_8cpp.html','../../'); init
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">main.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;cstdlib&gt;</code><br />
+<div class="textblock"><code>#include &quot;glad/glad.h&quot;</code><br />
+<code>#include &quot;glfw/glfw3.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d4d/fcglsl_8hpp_source.html">./graphics/fcglsl.hpp</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="../../closed.png" alt="+"/> Include dependency graph for main.cpp:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/dce/main_8cpp__incl.svg" width="184" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../da/dce/main_8cpp__incl.svg" width="527" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="../../df/d0a/main_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:ad6d843569f32c27dfe18045f65cfb06e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#ad6d843569f32c27dfe18045f65cfb06e">framebufferSizeCallback</a> (GLFWwindow *, int, int)</td></tr>
+<tr class="separator:ad6d843569f32c27dfe18045f65cfb06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c653c7d0cb3661d19a644ef5ad0b255"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a8c653c7d0cb3661d19a644ef5ad0b255">inputCallback</a> (GLFWwindow *)</td></tr>
+<tr class="separator:a8c653c7d0cb3661d19a644ef5ad0b255"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
 <tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a57ce80b3e26f48b9731da8dded2f940c"><td class="memItemLeft" align="right" valign="top">GLfloat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a57ce80b3e26f48b9731da8dded2f940c">coords</a> []</td></tr>
+<tr class="separator:a57ce80b3e26f48b9731da8dded2f940c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30b1bd2dfe6289dd76b7c4e168393201"><td class="memItemLeft" align="right" valign="top">const GLchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#a30b1bd2dfe6289dd76b7c4e168393201">fssrc</a> =&quot;#version 450 core\nout vec4 color;\nvoid <a class="el" href="../../df/d0a/main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>()\n{\n color = vec4(1.0, 0.5, 0.2, 1.0);\n}&quot;</td></tr>
+<tr class="separator:a30b1bd2dfe6289dd76b7c4e168393201"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8ff29895c50897860901df3234fb9a9"><td class="memItemLeft" align="right" valign="top">const GLchar *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d0a/main_8cpp.html#af8ff29895c50897860901df3234fb9a9">vssrc</a> =&quot;#version 450 core\nlayout (location=0) in vec3 pos;\nvoid <a class="el" href="../../df/d0a/main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>()\n{\n gl_Position = vec4(pos.x, pos.y, pos.z, 1.0);\n}&quot;</td></tr>
+<tr class="separator:af8ff29895c50897860901df3234fb9a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ad6d843569f32c27dfe18045f65cfb06e" name="ad6d843569f32c27dfe18045f65cfb06e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6d843569f32c27dfe18045f65cfb06e">&#9670;&#160;</a></span>framebufferSizeCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void framebufferSizeCallback </td>
+          <td>(</td>
+          <td class="paramtype">GLFWwindow *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>height</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00104">104</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  105</span>{</div>
+<div class="line"><span class="lineno">  106</span>    glViewport(0, 0, width, height);</div>
+<div class="line"><span class="lineno">  107</span>}</div>
+</div><!-- fragment --><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d0a/main_8cpp_ad6d843569f32c27dfe18045f65cfb06e_icgraph.svg" width="292" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a8c653c7d0cb3661d19a644ef5ad0b255" name="a8c653c7d0cb3661d19a644ef5ad0b255"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c653c7d0cb3661d19a644ef5ad0b255">&#9670;&#160;</a></span>inputCallback()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void inputCallback </td>
+          <td>(</td>
+          <td class="paramtype">GLFWwindow *&#160;</td>
+          <td class="paramname"><em>window</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00109">109</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  110</span>{</div>
+<div class="line"><span class="lineno">  111</span>    <span class="keywordflow">if</span>( glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS )</div>
+<div class="line"><span class="lineno">  112</span>    {</div>
+<div class="line"><span class="lineno">  113</span>        glfwSetWindowShouldClose(window, <span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">  114</span>    }</div>
+<div class="line"><span class="lineno">  115</span>}</div>
+</div><!-- fragment --><div id="dynsection-2" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-2-trigger" src="../../closed.png" alt="+"/> Here is the caller graph for this function:</div>
+<div id="dynsection-2-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-2-content" class="dyncontent" style="display:none;">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../df/d0a/main_8cpp_a8c653c7d0cb3661d19a644ef5ad0b255_icgraph.svg" width="223" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <a id="a3c04138a5bfe5d72780bb7e82a18e627" name="a3c04138a5bfe5d72780bb7e82a18e627"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&#160;</a></span>main()</h2>
 
@@ -146,13 +244,157 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00004">4</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    5</span>{</div>
-<div class="line"><span class="lineno">    6</span>    <span class="comment">//just an example</span></div>
-<div class="line"><span class="lineno">    7</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;hello world!&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">    8</span>    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
-<div class="line"><span class="lineno">    9</span>}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00021">21</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>{</div>
+<div class="line"><span class="lineno">   23</span>    glfwInit();</div>
+<div class="line"><span class="lineno">   24</span>    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);</div>
+<div class="line"><span class="lineno">   25</span>    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 5);</div>
+<div class="line"><span class="lineno">   26</span>    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);</div>
+<div class="line"><span class="lineno">   27</span>    <span class="comment">//glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);</span></div>
+<div class="line"><span class="lineno">   28</span>    GLFWwindow *window = glfwCreateWindow(800,600,<span class="stringliteral">&quot;test&quot;</span>,NULL,NULL);</div>
+<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">if</span> (window == NULL)</div>
+<div class="line"><span class="lineno">   30</span>    {</div>
+<div class="line"><span class="lineno">   31</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Failed to create GLFW window&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   32</span>        glfwTerminate();</div>
+<div class="line"><span class="lineno">   33</span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">   34</span>    }</div>
+<div class="line"><span class="lineno">   35</span>    glfwMakeContextCurrent(window);</div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="../../de/d21/glad_8c.html#af70e4674f75bd3bbfedf7979607c65ef">gladLoadGLLoader</a>((GLADloadproc)glfwGetProcAddress))</div>
+<div class="line"><span class="lineno">   37</span>    {</div>
+<div class="line"><span class="lineno">   38</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Failed to initialize GLAD&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   39</span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">   40</span>    }</div>
+<div class="line"><span class="lineno">   41</span>    glfwSetFramebufferSizeCallback(window, <a class="code hl_function" href="../../df/d0a/main_8cpp.html#ad6d843569f32c27dfe18045f65cfb06e">framebufferSizeCallback</a>);</div>
+<div class="line"><span class="lineno">   42</span>    glViewport(0, 0, 800, 600);</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span> </div>
+<div class="line"><span class="lineno">   46</span> </div>
+<div class="line"><span class="lineno">   47</span> </div>
+<div class="line"><span class="lineno">   48</span>    <span class="comment">//compile shader</span></div>
+<div class="line"><span class="lineno">   49</span>    <span class="comment">//GLuint fs, vs, program;</span></div>
+<div class="line"><span class="lineno">   50</span>    </div>
+<div class="line"><span class="lineno">   51</span>    <span class="comment">/*</span></div>
+<div class="line"><span class="lineno">   52</span><span class="comment">    fcgraphics::readGLSL(&quot;./shaders/fsMain.glsl&quot;, fsrc);</span></div>
+<div class="line"><span class="lineno">   53</span><span class="comment">    fcgraphics::readGLSL(&quot;./shaders/vsMain.glsl&quot;, vsrc);</span></div>
+<div class="line"><span class="lineno">   54</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">   55</span><span class="comment">    fcgraphics::compileGLSL((const GLchar *const *)fsrc.c_str(), fs, GL_FRAGMENT_SHADER);</span></div>
+<div class="line"><span class="lineno">   56</span><span class="comment">    fcgraphics::compileGLSL((const GLchar *const *)vsrc.c_str(), vs, GL_VERTEX_SHADER);</span></div>
+<div class="line"><span class="lineno">   57</span><span class="comment">    */</span></div>
+<div class="line"><span class="lineno">   58</span>    GLuint fs=glCreateShader(GL_FRAGMENT_SHADER), vs=glCreateShader(GL_VERTEX_SHADER);</div>
+<div class="line"><span class="lineno">   59</span>    glShaderSource(fs, 1, (<span class="keyword">const</span> GLchar *<span class="keyword">const</span> *)<a class="code hl_variable" href="../../df/d0a/main_8cpp.html#a30b1bd2dfe6289dd76b7c4e168393201">fssrc</a>, NULL);</div>
+<div class="line"><span class="lineno">   60</span>    glShaderSource(vs, 1, (<span class="keyword">const</span> GLchar *<span class="keyword">const</span> *)<a class="code hl_variable" href="../../df/d0a/main_8cpp.html#af8ff29895c50897860901df3234fb9a9">vssrc</a>, NULL);</div>
+<div class="line"><span class="lineno">   61</span> </div>
+<div class="line"><span class="lineno">   62</span>    glCompileShader(fs);</div>
+<div class="line"><span class="lineno">   63</span>    glCompileShader(vs);</div>
+<div class="line"><span class="lineno">   64</span>    GLuint program = glCreateProgram();</div>
+<div class="line"><span class="lineno">   65</span>    <span class="comment">//attach shader</span></div>
+<div class="line"><span class="lineno">   66</span>    glAttachShader(program, fs);</div>
+<div class="line"><span class="lineno">   67</span>    glAttachShader(program, vs);</div>
+<div class="line"><span class="lineno">   68</span>    <span class="comment">//link program</span></div>
+<div class="line"><span class="lineno">   69</span>    glLinkProgram(program);</div>
+<div class="line"><span class="lineno">   70</span>    glUseProgram(program);</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>    glDeleteShader(fs);</div>
+<div class="line"><span class="lineno">   73</span>    glDeleteShader(vs);</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>    GLuint vbo;</div>
+<div class="line"><span class="lineno">   77</span>    glGenBuffers(1, &amp;vbo);</div>
+<div class="line"><span class="lineno">   78</span>    GLuint vao;</div>
+<div class="line"><span class="lineno">   79</span>    glGenVertexArrays(1, &amp;vao);</div>
+<div class="line"><span class="lineno">   80</span>    glBindVertexArray(vao);</div>
+<div class="line"><span class="lineno">   81</span>    glBindBuffer(GL_ARRAY_BUFFER, vbo);</div>
+<div class="line"><span class="lineno">   82</span>    glBufferData(GL_ARRAY_BUFFER, <span class="keyword">sizeof</span>(<a class="code hl_variable" href="../../df/d0a/main_8cpp.html#a57ce80b3e26f48b9731da8dded2f940c">coords</a>), <a class="code hl_variable" href="../../df/d0a/main_8cpp.html#a57ce80b3e26f48b9731da8dded2f940c">coords</a>, GL_STATIC_DRAW);</div>
+<div class="line"><span class="lineno">   83</span>    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * <span class="keyword">sizeof</span>(<span class="keywordtype">float</span>), (<span class="keywordtype">void</span> *) 0);</div>
+<div class="line"><span class="lineno">   84</span>    <span class="comment">//location is 0 so first arg is 0, vertex attribute is a vec3 so 2nd arg is 3, type is float, not normalized so false, the </span></div>
+<div class="line"><span class="lineno">   85</span>    <span class="comment">//distance between vertexs and attributes are 3 sizes of floats, the offset is 0 because the vbo is declared before.</span></div>
+<div class="line"><span class="lineno">   86</span>    </div>
+<div class="line"><span class="lineno">   87</span> </div>
+<div class="line"><span class="lineno">   88</span>    <span class="keywordflow">while</span>( !glfwWindowShouldClose(window) ) <span class="comment">// basic render loop(actually i rendered nothing)</span></div>
+<div class="line"><span class="lineno">   89</span>    {</div>
+<div class="line"><span class="lineno">   90</span>        <a class="code hl_function" href="../../df/d0a/main_8cpp.html#a8c653c7d0cb3661d19a644ef5ad0b255">inputCallback</a>(window);</div>
+<div class="line"><span class="lineno">   91</span> </div>
+<div class="line"><span class="lineno">   92</span>        glEnableVertexAttribArray(0);        </div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>        glDrawArrays(GL_TRIANGLES, 0, 3);</div>
+<div class="line"><span class="lineno">   95</span> </div>
+<div class="line"><span class="lineno">   96</span>        glfwSwapBuffers(window);</div>
+<div class="line"><span class="lineno">   97</span>        glfwPollEvents();</div>
+<div class="line"><span class="lineno">   98</span>    }</div>
+<div class="line"><span class="lineno">   99</span> </div>
+<div class="line"><span class="lineno">  100</span>    glfwTerminate();</div>
+<div class="line"><span class="lineno">  101</span>    <span class="keywordflow">return</span> EXIT_SUCCESS;</div>
+<div class="line"><span class="lineno">  102</span>}</div>
+<div class="ttc" id="aglad_8c_html_af70e4674f75bd3bbfedf7979607c65ef"><div class="ttname"><a href="../../de/d21/glad_8c.html#af70e4674f75bd3bbfedf7979607c65ef">gladLoadGLLoader</a></div><div class="ttdeci">int gladLoadGLLoader(GLADloadproc load)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d21/glad_8c_source.html#l02490">glad.c:2490</a></div></div>
+<div class="ttc" id="amain_8cpp_html_a30b1bd2dfe6289dd76b7c4e168393201"><div class="ttname"><a href="../../df/d0a/main_8cpp.html#a30b1bd2dfe6289dd76b7c4e168393201">fssrc</a></div><div class="ttdeci">const GLchar * fssrc</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0a/main_8cpp_source.html#l00018">main.cpp:18</a></div></div>
+<div class="ttc" id="amain_8cpp_html_a57ce80b3e26f48b9731da8dded2f940c"><div class="ttname"><a href="../../df/d0a/main_8cpp.html#a57ce80b3e26f48b9731da8dded2f940c">coords</a></div><div class="ttdeci">GLfloat coords[]</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0a/main_8cpp_source.html#l00011">main.cpp:12</a></div></div>
+<div class="ttc" id="amain_8cpp_html_a8c653c7d0cb3661d19a644ef5ad0b255"><div class="ttname"><a href="../../df/d0a/main_8cpp.html#a8c653c7d0cb3661d19a644ef5ad0b255">inputCallback</a></div><div class="ttdeci">void inputCallback(GLFWwindow *)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0a/main_8cpp_source.html#l00109">main.cpp:109</a></div></div>
+<div class="ttc" id="amain_8cpp_html_ad6d843569f32c27dfe18045f65cfb06e"><div class="ttname"><a href="../../df/d0a/main_8cpp.html#ad6d843569f32c27dfe18045f65cfb06e">framebufferSizeCallback</a></div><div class="ttdeci">void framebufferSizeCallback(GLFWwindow *, int, int)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0a/main_8cpp_source.html#l00104">main.cpp:104</a></div></div>
+<div class="ttc" id="amain_8cpp_html_af8ff29895c50897860901df3234fb9a9"><div class="ttname"><a href="../../df/d0a/main_8cpp.html#af8ff29895c50897860901df3234fb9a9">vssrc</a></div><div class="ttdeci">const GLchar * vssrc</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d0a/main_8cpp_source.html#l00019">main.cpp:19</a></div></div>
+</div><!-- fragment --><div id="dynsection-3" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-3-trigger" src="../../closed.png" alt="+"/> Here is the call graph for this function:</div>
+<div id="dynsection-3-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-3-content" class="dyncontent" style="display:none;">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../df/d0a/main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a57ce80b3e26f48b9731da8dded2f940c" name="a57ce80b3e26f48b9731da8dded2f940c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57ce80b3e26f48b9731da8dded2f940c">&#9670;&#160;</a></span>coords</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GLfloat coords[]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">        -0.5, -0.5, 0.0,</div>
+<div class="line">         0.5, -0.5, 0.0,</div>
+<div class="line">         0.5,  0.5, 0.0</div>
+<div class="line">    }</div>
 </div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00011">11</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a30b1bd2dfe6289dd76b7c4e168393201" name="a30b1bd2dfe6289dd76b7c4e168393201"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30b1bd2dfe6289dd76b7c4e168393201">&#9670;&#160;</a></span>fssrc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const GLchar* fssrc =&quot;#version 450 core\nout vec4 color;\nvoid <a class="el" href="../../df/d0a/main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>()\n{\n color = vec4(1.0, 0.5, 0.2, 1.0);\n}&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00018">18</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af8ff29895c50897860901df3234fb9a9" name="af8ff29895c50897860901df3234fb9a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8ff29895c50897860901df3234fb9a9">&#9670;&#160;</a></span>vssrc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const GLchar * vssrc =&quot;#version 450 core\nlayout (location=0) in vec3 pos;\nvoid <a class="el" href="../../df/d0a/main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a>()\n{\n gl_Position = vec4(pos.x, pos.y, pos.z, 1.0);\n}&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d0a/main_8cpp_source.html#l00019">19</a> of file <a class="el" href="../../df/d0a/main_8cpp_source.html">main.cpp</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->
@@ -161,7 +403,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../df/d0a/main_8cpp.html">main.cpp</a></li>
-    <li class="footer">Generated on Tue Jan 17 2023 13:03:23 for Freecraft by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
+    <li class="footer">Generated on Wed Jan 25 2023 12:32:22 for Freecraft by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6 </li>
   </ul>
 </div>
 </body>

@@ -40,7 +40,7 @@ class fcCalcException : public fcRuntimeException
 class fcDivisionZeroException : public fcCalcException
 {
     public:
-    fcCalcException(const char *whyException = "calculation get errors when dividing a num with zero") : fcCalcException(whyException) {};
+    fcDivisionZeroException(const char *whyException = "calculation get errors when dividing a num with zero") : fcCalcException(whyException) {};
 };
 
 class fcSyntaxException : public fcRuntimeException
@@ -49,10 +49,10 @@ class fcSyntaxException : public fcRuntimeException
     fcSyntaxException(const char *whyException = "the syntax isn't right") : fcRuntimeException(whyException) {};
 };
 
-class fcArrayIndexOutOfBoundsException : public fcRuntimeException
+class fcArrayIndexOutOfBoundException : public fcRuntimeException
 {
     public:
-    fcArrayIndexOutOfBoundsException(const char *whyException = "the array index is out of bound.") : fcRuntimeException(whyException) {};
+    fcArrayIndexOutOfBoundException(const char *whyException = "the array index is out of bound.") : fcRuntimeException(whyException) {};
 };
 
 #endif

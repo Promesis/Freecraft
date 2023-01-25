@@ -4,16 +4,48 @@
     <title>Freecraft</title>
     </info>
 <chapter>
+    <title>Namespace Documentation</title>
+<xi:include href="d0/d95/namespacefcg.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
     <title>Class Documentation</title>
-    <xi:include href="d3/d1f/class_f_d_t_data.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="df/db4/class_f_d_t_float.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="d2/d1e/class_f_d_t_int.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="dc/deb/class_f_d_t_short.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d3/dd0/classblock.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d2/d2a/classfc_array_index_out_of_bound_exception.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d5/df9/classfc_calc_exception.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d9/dbc/classfc_division_zero_exception.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d1/da7/classfcitem.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d7/d02/classfc_runtime_error.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="da/de6/classfc_runtime_exception.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dc/dc4/classfc_syntax_exception.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d3/d2b/structgamesave.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d9/d4e/classuuid.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </chapter>
 <chapter>
     <title>File Documentation</title>
-    <xi:include href="df/d5b/_f_d_t_data_type_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="df/d5b/_f_d_t_data_type_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d9/d4d/block_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d9/d4d/block_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d9/db2/block_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d9/db2/block_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d9/d90/gamesave_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d9/d90/gamesave_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="de/de4/item_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="de/de4/item_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d7/db7/item_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d7/db7/item_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="db/d37/uuid_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="db/d37/uuid_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d7/db4/uuid_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d7/db4/uuid_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="db/d91/fcenums_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="db/d91/fcenums_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d5/d89/fcexceptions_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d5/d89/fcexceptions_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="de/d21/glad_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="de/d21/glad_8c_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d8/dd0/fcglsl_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d8/dd0/fcglsl_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d2/d4d/fcglsl_8hpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d2/d4d/fcglsl_8hpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="df/d0a/main_8cpp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="df/d0a/main_8cpp_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </chapter>

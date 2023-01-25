@@ -2,7 +2,11 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
   <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
     <compoundname>src</compoundname>
-    <innerfile refid="df/d5b/_f_d_t_data_type_8hpp">FDTDataType.hpp</innerfile>
+    <innerdir refid="dir_c1be8d27e7f84178e95f152701110b19">src/data</innerdir>
+    <innerdir refid="dir_46d51986cf182104f141ce630629e6f2">src/glad</innerdir>
+    <innerdir refid="dir_560415a5d2bc4999842279f4fc1debef">src/graphics</innerdir>
+    <innerfile refid="db/d91/fcenums_8hpp">fcenums.hpp</innerfile>
+    <innerfile refid="d5/d89/fcexceptions_8hpp">fcexceptions.hpp</innerfile>
     <innerfile refid="df/d0a/main_8cpp">main.cpp</innerfile>
     <briefdescription>
     </briefdescription>

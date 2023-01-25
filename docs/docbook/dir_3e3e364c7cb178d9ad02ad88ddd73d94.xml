@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_3e3e364c7cb178d9ad02ad88ddd73d94" xml:lang="en-US">
+<title>src/data/block Directory Reference</title>
+<indexterm><primary>src/data/block Directory Reference</primary></indexterm>
+Directory dependency graph for block:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_3e3e364c7cb178d9ad02ad88ddd73d94_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_block_8cpp">block.cpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_block_8hpp">block.hpp</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

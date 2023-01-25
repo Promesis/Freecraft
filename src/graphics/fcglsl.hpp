@@ -19,10 +19,10 @@
 #include "glad/glad.h"
 #include "glfw/glfw3.h"
 
-namespace fcgraphics
+namespace fcg
 {
     void readGLSL(const char * fileName, std::string &str);
-    void compileGLSL(const char *glsl, GLuint &shader, GLenum type);
+    void compileGLSL(const GLchar * const *glsl, GLuint &shader, GLenum type);
 };
 
 

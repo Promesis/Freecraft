@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structgamesave" xml:lang="en-US">
+<title>gamesave Struct Reference</title>
+<indexterm><primary>gamesave</primary></indexterm>
+<para>
+<computeroutput>#include &lt;gamesave.hpp&gt;</computeroutput>
+</para>
+Collaboration diagram for gamesave:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../de/d07/structgamesave__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_gamesave_8hpp_1adcf645e0a58ee7322595fd3d295a0c4a">fcGamesaveMode</link> <link linkend="_structgamesave_1ab66c6023f15ae831157583f296e7d244">filemode</link></para>
+</listitem>
+            <listitem><para>std::filesystem::path <link linkend="_structgamesave_1a8562b8561dc60bf9621d58f3fb5482c2">worldInfoFile</link></para>
+</listitem>
+            <listitem><para>std::filesystem::path <link linkend="_structgamesave_1a69eb0d7b98821081aeb28eed17ef1f18">playerDataDirectory</link></para>
+</listitem>
+            <listitem><para>std::filesystem::path <link linkend="_structgamesave_1af62526634c5c6ae2ce37aa34d17aebb1">chunksFilesDirectory</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_gamesave_8hpp_source_1l00026">26</link> of file <link linkend="_gamesave_8hpp_source">gamesave.hpp</link>.</para>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_structgamesave_1af62526634c5c6ae2ce37aa34d17aebb1"/><section>
+    <title>chunksFilesDirectory</title>
+<indexterm><primary>chunksFilesDirectory</primary><secondary>gamesave</secondary></indexterm>
+<indexterm><primary>gamesave</primary><secondary>chunksFilesDirectory</secondary></indexterm>
+<para><computeroutput>std::filesystem::path gamesave::chunksFilesDirectory</computeroutput></para><para>
+Definition at line <link linkend="_gamesave_8hpp_source_1l00031">31</link> of file <link linkend="_gamesave_8hpp_source">gamesave.hpp</link>.</para>
+</section>
+<anchor xml:id="_structgamesave_1ab66c6023f15ae831157583f296e7d244"/><section>
+    <title>filemode</title>
+<indexterm><primary>filemode</primary><secondary>gamesave</secondary></indexterm>
+<indexterm><primary>gamesave</primary><secondary>filemode</secondary></indexterm>
+<para><computeroutput><link linkend="_gamesave_8hpp_1adcf645e0a58ee7322595fd3d295a0c4a">fcGamesaveMode</link> gamesave::filemode</computeroutput></para><para>
+Definition at line <link linkend="_gamesave_8hpp_source_1l00028">28</link> of file <link linkend="_gamesave_8hpp_source">gamesave.hpp</link>.</para>
+</section>
+<anchor xml:id="_structgamesave_1a69eb0d7b98821081aeb28eed17ef1f18"/><section>
+    <title>playerDataDirectory</title>
+<indexterm><primary>playerDataDirectory</primary><secondary>gamesave</secondary></indexterm>
+<indexterm><primary>gamesave</primary><secondary>playerDataDirectory</secondary></indexterm>
+<para><computeroutput>std::filesystem::path gamesave::playerDataDirectory</computeroutput></para><para>
+Definition at line <link linkend="_gamesave_8hpp_source_1l00030">30</link> of file <link linkend="_gamesave_8hpp_source">gamesave.hpp</link>.</para>
+</section>
+<anchor xml:id="_structgamesave_1a8562b8561dc60bf9621d58f3fb5482c2"/><section>
+    <title>worldInfoFile</title>
+<indexterm><primary>worldInfoFile</primary><secondary>gamesave</secondary></indexterm>
+<indexterm><primary>gamesave</primary><secondary>worldInfoFile</secondary></indexterm>
+<para><computeroutput>std::filesystem::path gamesave::worldInfoFile</computeroutput></para><para>
+Definition at line <link linkend="_gamesave_8hpp_source_1l00029">29</link> of file <link linkend="_gamesave_8hpp_source">gamesave.hpp</link>.</para>
+</section>
+</section>
+</section>

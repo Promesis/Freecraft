@@ -1,0 +1,53 @@
+.TH "fcDivisionZeroException" 3 "Wed Jan 25 2023" "Version 00.01a07-dbg" "Freecraft" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+fcDivisionZeroException
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <fcexceptions\&.hpp>\fP
+.PP
+Inherits \fBfcCalcException\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBfcDivisionZeroException\fP (const char *whyException='calculation get errors when dividing a num with zero')"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBfcCalcException\fP
+.in +1c
+.ti -1c
+.RI "\fBfcCalcException\fP (const char *whyException='calculation gets errors')"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBfcRuntimeException\fP
+.in +1c
+.ti -1c
+.RI "\fBfcRuntimeException\fP (const char *whyException='runtime exception occured')"
+.br
+.ti -1c
+.RI "const char * \fBwhat\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB40\fP of file \fBfcexceptions\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "fcDivisionZeroException::fcDivisionZeroException (const char * whyException = \fC'calculation get errors when dividing a num with zero'\fP)\fC [inline]\fP"
+
+.PP
+Definition at line \fB43\fP of file \fBfcexceptions\&.hpp\fP\&..PP
+.nf
+43 : fcCalcException(whyException) {};
+.fi
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Freecraft from the source code\&.

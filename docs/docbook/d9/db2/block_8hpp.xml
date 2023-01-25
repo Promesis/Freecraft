@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_block_8hpp" xml:lang="en-US">
+<title>src/data/block/block.hpp File Reference</title>
+<indexterm><primary>src/data/block/block.hpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;../item/item.hpp&quot;<?linebreak?></programlisting>Include dependency graph for block.hpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../df/d31/block_8hpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classblock">block</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

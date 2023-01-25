@@ -2,10 +2,32 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_68267d1309a1af8e8297ef4c3efbcdba" xml:lang="en-US">
 <title>src Directory Reference</title>
 <indexterm><primary>src Directory Reference</primary></indexterm>
+Directory dependency graph for src:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_68267d1309a1af8e8297ef4c3efbcdba_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_c1be8d27e7f84178e95f152701110b19">data</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_46d51986cf182104f141ce630629e6f2">glad</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_560415a5d2bc4999842279f4fc1debef">graphics</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
 <simplesect>
     <title>Files    </title>
         <itemizedlist>
-            <listitem><para>file <link linkend="__f_d_t_data_type_8hpp">FDTDataType.hpp</link></para>
+            <listitem><para>file <link linkend="_fcenums_8hpp">fcenums.hpp</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_fcexceptions_8hpp">fcexceptions.hpp</link></para>
 </listitem>
             <listitem><para>file <link linkend="_main_8cpp">main.cpp</link></para>
 </listitem>

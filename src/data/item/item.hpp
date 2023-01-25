@@ -20,6 +20,11 @@
 #include <string>
 
 #include "../uuid/uuid.hpp"
+// #include "../structure/list.hpp"
+
+
+
+
 
 
 /**
@@ -49,13 +54,22 @@ class fcitem
      * 
      */
     unsigned int count;
-
+    /**
+     * @brief is this item unbreakable?
+     * 
+     */
     bool unbreakable;
-
+    /**
+     * @brief slot of item.
+     * 
+     */
     unsigned int slot;//TODO : edit it when completed inventory part
+    /**
+     * @brief tags of item.
+     * 
+     */
+    Json::Value tags;
 
-
-    
     public:
 
     /**

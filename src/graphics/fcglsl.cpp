@@ -21,7 +21,7 @@ void fcgraphics::readGLSL(const char *filename, std::string &str)
         str += s+'\n';
 }
 
-void fcgraphics::compileGLSL(const GLchar *GLSL, GLuint &shader, GLenum type)
+void fcgraphics::compileGLSL(const GLchar * const *GLSL, GLuint &shader, GLenum type)
 {
     shader = glCreateShader(type);
     glShaderSource(shader, 1, GLSL, NULL);

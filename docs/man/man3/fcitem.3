@@ -1,0 +1,127 @@
+.TH "fcitem" 3 "Wed Jan 25 2023" "Version 00.01a07-dbg" "Freecraft" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+fcitem \- defines item\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <item\&.hpp>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "virtual Json::Value \fBtoJson\fP (void) const"
+.br
+.RI "convert to jsoncpp object\&. "
+.in -1c
+.SS "Protected Attributes"
+
+.in +1c
+.ti -1c
+.RI "std::string \fBname\fP"
+.br
+.RI "name of current item\&. "
+.ti -1c
+.RI "std::string \fBitemID\fP"
+.br
+.RI "namespace ID for current item\&. "
+.ti -1c
+.RI "std::string \fBcategoryID\fP"
+.br
+.RI "namespace ID of current item type\&. "
+.ti -1c
+.RI "unsigned int \fBcount\fP"
+.br
+.RI "count of item in inventory\&. "
+.ti -1c
+.RI "bool \fBunbreakable\fP"
+.br
+.RI "is this item unbreakable? "
+.ti -1c
+.RI "unsigned int \fBslot\fP"
+.br
+.RI "slot of item\&. "
+.ti -1c
+.RI "Json::Value \fBtags\fP"
+.br
+.RI "tags of item\&. "
+.in -1c
+.SH "Detailed Description"
+.PP 
+defines item\&. 
+.PP
+Definition at line \fB34\fP of file \fBitem\&.hpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "Json::Value fcitem::toJson (void) const\fC [virtual]\fP"
+
+.PP
+convert to jsoncpp object\&. 
+.PP
+\fBReturns\fP
+.RS 4
+Json::value 
+.RE
+.PP
+
+.PP
+Definition at line \fB15\fP of file \fBitem\&.cpp\fP\&..PP
+.nf
+16 {
+17     Json::Value retVal;
+18     //TODO : complete it
+19     return retVal;
+20 }
+.fi
+
+.SH "Member Data Documentation"
+.PP 
+.SS "std::string fcitem::categoryID\fC [protected]\fP"
+
+.PP
+namespace ID of current item type\&. 
+.PP
+Definition at line \fB51\fP of file \fBitem\&.hpp\fP\&.
+.SS "unsigned int fcitem::count\fC [protected]\fP"
+
+.PP
+count of item in inventory\&. 
+.PP
+Definition at line \fB56\fP of file \fBitem\&.hpp\fP\&.
+.SS "std::string fcitem::itemID\fC [protected]\fP"
+
+.PP
+namespace ID for current item\&. 
+.PP
+Definition at line \fB46\fP of file \fBitem\&.hpp\fP\&.
+.SS "std::string fcitem::name\fC [protected]\fP"
+
+.PP
+name of current item\&. 
+.PP
+Definition at line \fB41\fP of file \fBitem\&.hpp\fP\&.
+.SS "unsigned int fcitem::slot\fC [protected]\fP"
+
+.PP
+slot of item\&. 
+.PP
+Definition at line \fB66\fP of file \fBitem\&.hpp\fP\&.
+.SS "Json::Value fcitem::tags\fC [protected]\fP"
+
+.PP
+tags of item\&. 
+.PP
+Definition at line \fB71\fP of file \fBitem\&.hpp\fP\&.
+.SS "bool fcitem::unbreakable\fC [protected]\fP"
+
+.PP
+is this item unbreakable? 
+.PP
+Definition at line \fB61\fP of file \fBitem\&.hpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Freecraft from the source code\&.

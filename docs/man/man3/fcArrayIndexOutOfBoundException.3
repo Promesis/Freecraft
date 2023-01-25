@@ -1,0 +1,46 @@
+.TH "fcArrayIndexOutOfBoundException" 3 "Wed Jan 25 2023" "Version 00.01a07-dbg" "Freecraft" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+fcArrayIndexOutOfBoundException
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <fcexceptions\&.hpp>\fP
+.PP
+Inherits \fBfcRuntimeException\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBfcArrayIndexOutOfBoundException\fP (const char *whyException='the array index is out of bound\&.')"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBfcRuntimeException\fP
+.in +1c
+.ti -1c
+.RI "\fBfcRuntimeException\fP (const char *whyException='runtime exception occured')"
+.br
+.ti -1c
+.RI "const char * \fBwhat\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB52\fP of file \fBfcexceptions\&.hpp\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "fcArrayIndexOutOfBoundException::fcArrayIndexOutOfBoundException (const char * whyException = \fC'the array index is out of bound\&.'\fP)\fC [inline]\fP"
+
+.PP
+Definition at line \fB55\fP of file \fBfcexceptions\&.hpp\fP\&..PP
+.nf
+55 : fcRuntimeException(whyException) {};
+.fi
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Freecraft from the source code\&.

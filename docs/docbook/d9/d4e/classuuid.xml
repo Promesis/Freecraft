@@ -1,0 +1,376 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classuuid" xml:lang="en-US">
+<title>uuid Class Reference</title>
+<indexterm><primary>uuid</primary></indexterm>
+<para>
+<computeroutput>#include &lt;uuid.hpp&gt;</computeroutput>
+</para>
+Collaboration diagram for uuid:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../da/d66/classuuid__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_classuuid_1a26da1fd9a1991859c54aceb9f88492e2">setrandomly</link> (void)</para>
+
+<para>set uuid randomly. </para>
+</listitem>
+            <listitem><para><link linkend="_classuuid_1ab1dafae8a5a3a3efc326afaf607a4747">uuid</link> (void)</para>
+
+<para>Construct a new uuid object. </para>
+</listitem>
+            <listitem><para><link linkend="_classuuid_1acde47d8530b0858c2b48a7a54766b739">uuid</link> (const <link linkend="_classuuid">uuid</link> &amp;dat)</para>
+
+<para>Construct a new uuid object. </para>
+</listitem>
+            <listitem><para><link linkend="_classuuid_1a1306d76a4a807950b7ba1bd9e2f6f8e0">uuid</link> (const Json::String &amp;str)</para>
+
+<para>Construct a new uuid object. </para>
+</listitem>
+            <listitem><para>const <link linkend="_classuuid">uuid</link> &amp; <link linkend="_classuuid_1a070227fb137d354bf8b909d87a06af14">operator=</link> (const <link linkend="_classuuid">uuid</link> &amp;dat)</para>
+
+<para>assignment operator overloading. </para>
+</listitem>
+            <listitem><para>bool <link linkend="_classuuid_1ad65f173ce0d832fdd8689174007be1cb">operator==</link> (const <link linkend="_classuuid">uuid</link> &amp;dat) const</para>
+
+<para>check if two uuids is equal. </para>
+</listitem>
+            <listitem><para><link linkend="_classuuid_1a8dfc88410c5724700833169dc0293763">operator Json::String</link> (void) const</para>
+
+<para>conversation function. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para>char <link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link> [37]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Friends    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_classuuid_1adb36eb924610352d2d838c1226d70b70">operator==</link> (const Json::String &amp;datL, const <link linkend="_classuuid">uuid</link> &amp;datR)</para>
+
+<para>same. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_uuid_8hpp_source_1l00011">11</link> of file <link linkend="_uuid_8hpp_source">uuid.hpp</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classuuid_1ab1dafae8a5a3a3efc326afaf607a4747"/><section>
+    <title>uuid()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>uuid</primary><secondary>uuid</secondary></indexterm>
+<indexterm><primary>uuid</primary><secondary>uuid</secondary></indexterm>
+<para><computeroutput>uuid::uuid (void )</computeroutput></para><para>
+
+<para>Construct a new uuid object. </para>
+</para>
+<para>
+Definition at line <link linkend="_uuid_8cpp_source_1l00060">60</link> of file <link linkend="_uuid_8cpp_source">uuid.cpp</link>.</para>
+<programlisting linenumbering="unnumbered">00061 {
+00062 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>(<emphasis role="keywordtype">int</emphasis>&#32;i=0;&#32;i&#32;&lt;&#32;37;&#32;++i)
+00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>[i]=0;
+00064 }
+</programlisting></section>
+<anchor xml:id="_classuuid_1acde47d8530b0858c2b48a7a54766b739"/><section>
+    <title>uuid()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>uuid</primary><secondary>uuid</secondary></indexterm>
+<indexterm><primary>uuid</primary><secondary>uuid</secondary></indexterm>
+<para><computeroutput>uuid::uuid (const <link linkend="_classuuid">uuid</link> &amp; dat)</computeroutput></para><para>
+
+<para>Construct a new uuid object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>dat</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_uuid_8cpp_source_1l00066">66</link> of file <link linkend="_uuid_8cpp_source">uuid.cpp</link>.</para>
+<programlisting linenumbering="unnumbered">00067 {
+00068 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>(<emphasis role="keywordtype">int</emphasis>&#32;i=0;&#32;i&#32;&lt;&#32;37;&#32;++i)
+00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>[i]=dat.<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>[i];
+00070 }
+</programlisting></section>
+<anchor xml:id="_classuuid_1a1306d76a4a807950b7ba1bd9e2f6f8e0"/><section>
+    <title>uuid()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>uuid</primary><secondary>uuid</secondary></indexterm>
+<indexterm><primary>uuid</primary><secondary>uuid</secondary></indexterm>
+<para><computeroutput>uuid::uuid (const Json::String &amp; str)</computeroutput></para><para>
+
+<para>Construct a new uuid object. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>str</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Definition at line <link linkend="_uuid_8cpp_source_1l00099">99</link> of file <link linkend="_uuid_8cpp_source">uuid.cpp</link>.</para>
+<programlisting linenumbering="unnumbered">00100 {
+00101 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(!<link linkend="_uuid_8cpp_1a8429edbb20216a3072d6f6fc1617dae2">checksyntax</link>(str))
+00102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">throw</emphasis>&#32;<link linkend="_classfc_syntax_exception">fcSyntaxException</link>(<emphasis role="stringliteral">&quot;UUID&#32;format&#32;is&#32;not&#32;wanted&quot;</emphasis>);
+00103 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>(<emphasis role="keywordtype">int</emphasis>&#32;i=0;&#32;i&#32;&lt;&#32;str.length();&#32;++i)
+00104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>[i]=str[i];
+00105 &#32;&#32;&#32;&#32;<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>[str.length()]=<emphasis role="charliteral">&apos;\0&apos;</emphasis>;
+00106 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d9/d4e/classuuid_a1306d76a4a807950b7ba1bd9e2f6f8e0_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classuuid_1a8dfc88410c5724700833169dc0293763"/><section>
+    <title>operator Json::String()</title>
+<indexterm><primary>operator Json::String</primary><secondary>uuid</secondary></indexterm>
+<indexterm><primary>uuid</primary><secondary>operator Json::String</secondary></indexterm>
+<para><computeroutput>uuid::operator Json::String (void ) const</computeroutput></para><para>
+
+<para>conversation function. </para>
+</para>
+<para>
+Definition at line <link linkend="_uuid_8cpp_source_1l00108">108</link> of file <link linkend="_uuid_8cpp_source">uuid.cpp</link>.</para>
+<programlisting linenumbering="unnumbered">00109 {
+00110 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;Json::String(<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>);
+00111 }
+</programlisting></section>
+<anchor xml:id="_classuuid_1a070227fb137d354bf8b909d87a06af14"/><section>
+    <title>operator=()</title>
+<indexterm><primary>operator=</primary><secondary>uuid</secondary></indexterm>
+<indexterm><primary>uuid</primary><secondary>operator=</secondary></indexterm>
+<para><computeroutput>const <link linkend="_classuuid">uuid</link> &amp; uuid::operator= (const <link linkend="_classuuid">uuid</link> &amp; dat)</computeroutput></para><para>
+
+<para>assignment operator overloading. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>dat</entry><entry>
+<para>uuid to assign. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>const uuid&amp; </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_uuid_8cpp_source_1l00123">123</link> of file <link linkend="_uuid_8cpp_source">uuid.cpp</link>.</para>
+<programlisting linenumbering="unnumbered">00124 {
+00125 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>(<emphasis role="keywordtype">int</emphasis>&#32;i=0;&#32;i&lt;37;&#32;++i)
+00126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>[i]&#32;=&#32;dat.<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>[i];
+00127 }
+</programlisting></section>
+<anchor xml:id="_classuuid_1ad65f173ce0d832fdd8689174007be1cb"/><section>
+    <title>operator==()</title>
+<indexterm><primary>operator==</primary><secondary>uuid</secondary></indexterm>
+<indexterm><primary>uuid</primary><secondary>operator==</secondary></indexterm>
+<para><computeroutput>bool uuid::operator== (const <link linkend="_classuuid">uuid</link> &amp; dat) const</computeroutput></para><para>
+
+<para>check if two uuids is equal. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>dat</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>true equal. </para>
+
+<para>false not equal. </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_uuid_8cpp_source_1l00113">113</link> of file <link linkend="_uuid_8cpp_source">uuid.cpp</link>.</para>
+<programlisting linenumbering="unnumbered">00114 {
+00115 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;dat.<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>&#32;==&#32;<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>;
+00116 }
+</programlisting></section>
+<anchor xml:id="_classuuid_1a26da1fd9a1991859c54aceb9f88492e2"/><section>
+    <title>setrandomly()</title>
+<indexterm><primary>setrandomly</primary><secondary>uuid</secondary></indexterm>
+<indexterm><primary>uuid</primary><secondary>setrandomly</secondary></indexterm>
+<para><computeroutput>void uuid::setrandomly (void )</computeroutput></para><para>
+
+<para>set uuid randomly. </para>
+</para>
+<para>
+Definition at line <link linkend="_uuid_8cpp_source_1l00039">39</link> of file <link linkend="_uuid_8cpp_source">uuid.cpp</link>.</para>
+<programlisting linenumbering="unnumbered">00040 {
+00041 &#32;&#32;&#32;&#32;std::default_random_engine&#32;e;<emphasis role="keywordtype">int</emphasis>&#32;i=0;
+00042 &#32;&#32;&#32;&#32;std::uniform_int_distribution&lt;unsigned&#32;int&gt;&#32;u(0,15);
+00043 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>(i=0;&#32;i&#32;&lt;=&#32;7;&#32;++i)
+00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>[i]=<link linkend="_uuid_8cpp_1a43613b6633f421b8128a9407737df105">uitchex</link>(u(e));
+00045 &#32;&#32;&#32;&#32;<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>[8]=<emphasis role="charliteral">&apos;-&apos;</emphasis>;
+00046 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>(i=9;&#32;i&#32;&lt;=&#32;12;&#32;++i)
+00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>[i]=<link linkend="_uuid_8cpp_1a43613b6633f421b8128a9407737df105">uitchex</link>(u(e));
+00048 &#32;&#32;&#32;&#32;<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>[13]=<emphasis role="charliteral">&apos;-&apos;</emphasis>;
+00049 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>(i=14;&#32;i&#32;&lt;=&#32;17;&#32;++i)
+00050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>[i]=<link linkend="_uuid_8cpp_1a43613b6633f421b8128a9407737df105">uitchex</link>(u(e));
+00051 &#32;&#32;&#32;&#32;<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>[18]=<emphasis role="charliteral">&apos;-&apos;</emphasis>;
+00052 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>(i=19;&#32;i&#32;&lt;=&#32;22;&#32;++i)
+00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>[i]=<link linkend="_uuid_8cpp_1a43613b6633f421b8128a9407737df105">uitchex</link>(u(e));
+00054 &#32;&#32;&#32;&#32;<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>[23]=<emphasis role="charliteral">&apos;-&apos;</emphasis>;
+00055 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>(i=24;&#32;i&#32;&lt;=&#32;35;&#32;++i)
+00056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>[i]=<link linkend="_uuid_8cpp_1a43613b6633f421b8128a9407737df105">uitchex</link>(u(e));
+00057 &#32;&#32;&#32;&#32;<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>[36]=<emphasis role="charliteral">&apos;\0&apos;</emphasis>;
+00058 }
+</programlisting>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d9/d4e/classuuid_a26da1fd9a1991859c54aceb9f88492e2_cgraph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Friends And Related Function Documentation</title>
+<anchor xml:id="_classuuid_1adb36eb924610352d2d838c1226d70b70"/><section>
+    <title>operator==</title>
+<indexterm><primary>operator==</primary><secondary>uuid</secondary></indexterm>
+<indexterm><primary>uuid</primary><secondary>operator==</secondary></indexterm>
+<para><computeroutput>bool operator== (const Json::String &amp; datL, const <link linkend="_classuuid">uuid</link> &amp; datR)<computeroutput>[friend]</computeroutput></computeroutput></para><para>
+
+<para>same. </para>
+</para>
+
+<para>reversed.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>dat</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+<entry>dat</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>true </para>
+
+<para>false </para>
+</formalpara>
+</para>
+<para>
+Definition at line <link linkend="_uuid_8cpp_source_1l00118">118</link> of file <link linkend="_uuid_8cpp_source">uuid.cpp</link>.</para>
+<programlisting linenumbering="unnumbered">00119 {
+00120 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;datR.<link linkend="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13">data</link>&#32;==&#32;datL;
+00121 }
+</programlisting></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classuuid_1aad814226a0ef1188e55780c0d6b4ca13"/><section>
+    <title>data</title>
+<indexterm><primary>data</primary><secondary>uuid</secondary></indexterm>
+<indexterm><primary>uuid</primary><secondary>data</secondary></indexterm>
+<para><computeroutput>char uuid::data[37]<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+Definition at line <link linkend="_uuid_8hpp_source_1l00014">14</link> of file <link linkend="_uuid_8hpp_source">uuid.hpp</link>.</para>
+</section>
+</section>
+</section>

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="d3/d2b/structgamesave" kind="struct" language="C++" prot="public">
+    <compoundname>gamesave</compoundname>
+    <includes refid="d9/d90/gamesave_8hpp" local="no">gamesave.hpp</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="d3/d2b/structgamesave_1ab66c6023f15ae831157583f296e7d244" prot="public" static="no" mutable="no">
+        <type><ref refid="d9/d90/gamesave_8hpp_1adcf645e0a58ee7322595fd3d295a0c4a" kindref="member">fcGamesaveMode</ref></type>
+        <definition>fcGamesaveMode gamesave::filemode</definition>
+        <argsstring></argsstring>
+        <name>filemode</name>
+        <qualifiedname>gamesave::filemode</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/data/file/gamesave.hpp" line="28" column="20" bodyfile="src/data/file/gamesave.hpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d2b/structgamesave_1a8562b8561dc60bf9621d58f3fb5482c2" prot="public" static="no" mutable="no">
+        <type>std::filesystem::path</type>
+        <definition>std::filesystem::path gamesave::worldInfoFile</definition>
+        <argsstring></argsstring>
+        <name>worldInfoFile</name>
+        <qualifiedname>gamesave::worldInfoFile</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/data/file/gamesave.hpp" line="29" column="27" bodyfile="src/data/file/gamesave.hpp" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d2b/structgamesave_1a69eb0d7b98821081aeb28eed17ef1f18" prot="public" static="no" mutable="no">
+        <type>std::filesystem::path</type>
+        <definition>std::filesystem::path gamesave::playerDataDirectory</definition>
+        <argsstring></argsstring>
+        <name>playerDataDirectory</name>
+        <qualifiedname>gamesave::playerDataDirectory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/data/file/gamesave.hpp" line="30" column="27" bodyfile="src/data/file/gamesave.hpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d2b/structgamesave_1af62526634c5c6ae2ce37aa34d17aebb1" prot="public" static="no" mutable="no">
+        <type>std::filesystem::path</type>
+        <definition>std::filesystem::path gamesave::chunksFilesDirectory</definition>
+        <argsstring></argsstring>
+        <name>chunksFilesDirectory</name>
+        <qualifiedname>gamesave::chunksFilesDirectory</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/data/file/gamesave.hpp" line="31" column="27" bodyfile="src/data/file/gamesave.hpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>gamesave</label>
+        <link refid="d3/d2b/structgamesave"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/data/file/gamesave.hpp" line="26" column="1" bodyfile="src/data/file/gamesave.hpp" bodystart="27" bodyend="32"/>
+    <listofallmembers>
+      <member refid="d3/d2b/structgamesave_1af62526634c5c6ae2ce37aa34d17aebb1" prot="public" virt="non-virtual"><scope>gamesave</scope><name>chunksFilesDirectory</name></member>
+      <member refid="d3/d2b/structgamesave_1ab66c6023f15ae831157583f296e7d244" prot="public" virt="non-virtual"><scope>gamesave</scope><name>filemode</name></member>
+      <member refid="d3/d2b/structgamesave_1a69eb0d7b98821081aeb28eed17ef1f18" prot="public" virt="non-virtual"><scope>gamesave</scope><name>playerDataDirectory</name></member>
+      <member refid="d3/d2b/structgamesave_1a8562b8561dc60bf9621d58f3fb5482c2" prot="public" virt="non-virtual"><scope>gamesave</scope><name>worldInfoFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

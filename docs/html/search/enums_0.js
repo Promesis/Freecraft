@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['fdtdatatag_0',['FDTDataTag',['../df/d5b/_f_d_t_data_type_8hpp.html#af9bab541d03027fc4165078590fe916a',1,'FDTDataType.hpp']]]
+  ['fcenum_0',['fcEnum',['../db/d91/fcenums_8hpp.html#a8e157762b53e9739cece73388653451f',1,'fcenums.hpp']]],
+  ['fcgamesavemode_1',['fcGamesaveMode',['../d9/d90/gamesave_8hpp.html#adcf645e0a58ee7322595fd3d295a0c4a',1,'gamesave.hpp']]]
 ];

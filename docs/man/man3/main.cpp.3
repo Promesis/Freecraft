@@ -1,4 +1,4 @@
-.TH "src/main.cpp" 3 "Tue Jan 17 2023" "Version 00.01a03-dbg" "Freecraft" \" -*- nroff -*-
+.TH "src/main.cpp" 3 "Wed Jan 25 2023" "Version 00.01a07-dbg" "Freecraft" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -6,32 +6,176 @@ src/main.cpp
 .SH SYNOPSIS
 .br
 .PP
-\fC#include <iostream>\fP
+\fC#include 'glad/glad\&.h'\fP
 .br
-\fC#include <cstdlib>\fP
+\fC#include 'glfw/glfw3\&.h'\fP
+.br
+\fC#include '\&./graphics/fcglsl\&.hpp'\fP
+.br
+\fC#include <iostream>\fP
 .br
 
 .SS "Functions"
 
 .in +1c
 .ti -1c
+.RI "void \fBframebufferSizeCallback\fP (GLFWwindow *, int, int)"
+.br
+.ti -1c
+.RI "void \fBinputCallback\fP (GLFWwindow *)"
+.br
+.ti -1c
 .RI "int \fBmain\fP (int argc, char **argv)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "GLfloat \fBcoords\fP []"
+.br
+.ti -1c
+.RI "const GLchar * \fBfssrc\fP ='#version 450 core\\nout vec4 color;\\nvoid \fBmain\fP()\\n{\\n color = vec4(1\&.0, 0\&.5, 0\&.2, 1\&.0);\\n}'"
+.br
+.ti -1c
+.RI "const GLchar * \fBvssrc\fP ='#version 450 core\\nlayout (location=0) in vec3 pos;\\nvoid \fBmain\fP()\\n{\\n gl_Position = vec4(pos\&.x, pos\&.y, pos\&.z, 1\&.0);\\n}'"
 .br
 .in -1c
 .SH "Function Documentation"
 .PP 
+.SS "void framebufferSizeCallback (GLFWwindow * window, int width, int height)"
+
+.PP
+Definition at line \fB104\fP of file \fBmain\&.cpp\fP\&..PP
+.nf
+105 {
+106     glViewport(0, 0, width, height);
+107 }
+.fi
+
+.SS "void inputCallback (GLFWwindow * window)"
+
+.PP
+Definition at line \fB109\fP of file \fBmain\&.cpp\fP\&..PP
+.nf
+110 {
+111     if( glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS )
+112     {
+113         glfwSetWindowShouldClose(window, true);
+114     }
+115 }
+.fi
+
 .SS "int main (int argc, char ** argv)"
 
 .PP
-Definition at line \fB4\fP of file \fBmain\&.cpp\fP\&..PP
+Definition at line \fB21\fP of file \fBmain\&.cpp\fP\&..PP
 .nf
-5 {
-6     //just an example
-7     std::cout << "hello world!" << std::endl;
-8     return EXIT_SUCCESS;
-9 }
+22 {
+23     glfwInit();
+24     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
+25     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 5);
+26     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+27     //glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+28     GLFWwindow *window = glfwCreateWindow(800,600,"test",NULL,NULL);
+29     if (window == NULL)
+30     {
+31         std::cout << "Failed to create GLFW window" << std::endl;
+32         glfwTerminate();
+33         return \-1;
+34     }
+35     glfwMakeContextCurrent(window);
+36     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
+37     {
+38         std::cout << "Failed to initialize GLAD" << std::endl;
+39         return \-1;
+40     }
+41     glfwSetFramebufferSizeCallback(window, framebufferSizeCallback);
+42     glViewport(0, 0, 800, 600);
+43 
+44 
+45 
+46 
+47 
+48     //compile shader
+49     //GLuint fs, vs, program;
+50     
+51     /*
+52     fcgraphics::readGLSL("\&./shaders/fsMain\&.glsl", fsrc);
+53     fcgraphics::readGLSL("\&./shaders/vsMain\&.glsl", vsrc);
+54 
+55     fcgraphics::compileGLSL((const GLchar *const *)fsrc\&.c_str(), fs, GL_FRAGMENT_SHADER);
+56     fcgraphics::compileGLSL((const GLchar *const *)vsrc\&.c_str(), vs, GL_VERTEX_SHADER);
+57     */
+58     GLuint fs=glCreateShader(GL_FRAGMENT_SHADER), vs=glCreateShader(GL_VERTEX_SHADER);
+59     glShaderSource(fs, 1, (const GLchar *const *)fssrc, NULL);
+60     glShaderSource(vs, 1, (const GLchar *const *)vssrc, NULL);
+61 
+62     glCompileShader(fs);
+63     glCompileShader(vs);
+64     GLuint program = glCreateProgram();
+65     //attach shader
+66     glAttachShader(program, fs);
+67     glAttachShader(program, vs);
+68     //link program
+69     glLinkProgram(program);
+70     glUseProgram(program);
+71 
+72     glDeleteShader(fs);
+73     glDeleteShader(vs);
+74 
+75 
+76     GLuint vbo;
+77     glGenBuffers(1, &vbo);
+78     GLuint vao;
+79     glGenVertexArrays(1, &vao);
+80     glBindVertexArray(vao);
+81     glBindBuffer(GL_ARRAY_BUFFER, vbo);
+82     glBufferData(GL_ARRAY_BUFFER, sizeof(coords), coords, GL_STATIC_DRAW);
+83     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *) 0);
+84     //location is 0 so first arg is 0, vertex attribute is a vec3 so 2nd arg is 3, type is float, not normalized so false, the 
+85     //distance between vertexs and attributes are 3 sizes of floats, the offset is 0 because the vbo is declared before\&.
+86     
+87 
+88     while( !glfwWindowShouldClose(window) ) // basic render loop(actually i rendered nothing)
+89     {
+90         inputCallback(window);
+91 
+92         glEnableVertexAttribArray(0);        
+93 
+94         glDrawArrays(GL_TRIANGLES, 0, 3);
+95 
+96         glfwSwapBuffers(window);
+97         glfwPollEvents();
+98     }
+99 
+100     glfwTerminate();
+101     return EXIT_SUCCESS;
+102 }
 .fi
 
+.SH "Variable Documentation"
+.PP 
+.SS "GLfloat coords[]"
+\fBInitial value:\fP.PP
+.nf
+{
+        \-0\&.5, \-0\&.5, 0\&.0,
+         0\&.5, \-0\&.5, 0\&.0,
+         0\&.5,  0\&.5, 0\&.0
+    }
+.fi
+
+.PP
+Definition at line \fB11\fP of file \fBmain\&.cpp\fP\&.
+.SS "const GLchar* fssrc ='#version 450 core\\nout vec4 color;\\nvoid \fBmain\fP()\\n{\\n color = vec4(1\&.0, 0\&.5, 0\&.2, 1\&.0);\\n}'"
+
+.PP
+Definition at line \fB18\fP of file \fBmain\&.cpp\fP\&.
+.SS "const GLchar * vssrc ='#version 450 core\\nlayout (location=0) in vec3 pos;\\nvoid \fBmain\fP()\\n{\\n gl_Position = vec4(pos\&.x, pos\&.y, pos\&.z, 1\&.0);\\n}'"
+
+.PP
+Definition at line \fB19\fP of file \fBmain\&.cpp\fP\&.
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for Freecraft from the source code\&.

@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.6" xml:lang="en-US">
+  <compounddef id="dc/dc4/classfc_syntax_exception" kind="class" language="C++" prot="public">
+    <compoundname>fcSyntaxException</compoundname>
+    <basecompoundref refid="da/de6/classfc_runtime_exception" prot="public" virt="non-virtual">fcRuntimeException</basecompoundref>
+    <includes refid="d5/d89/fcexceptions_8hpp" local="no">fcexceptions.hpp</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="dc/dc4/classfc_syntax_exception_1ac6230a5de6b286b4d62afeab5da45b38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>fcSyntaxException::fcSyntaxException</definition>
+        <argsstring>(const char *whyException=&quot;the syntax isn&apos;t right&quot;)</argsstring>
+        <name>fcSyntaxException</name>
+        <qualifiedname>fcSyntaxException::fcSyntaxException</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>whyException</declname>
+          <defval>&quot;the syntax isn&apos;t right&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/fcexceptions.hpp" line="49" column="5" bodyfile="src/fcexceptions.hpp" bodystart="49" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>fcRuntimeException</label>
+        <link refid="da/de6/classfc_runtime_exception"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>fcSyntaxException</label>
+        <link refid="dc/dc4/classfc_syntax_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>fcexception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>fcRuntimeException</label>
+        <link refid="da/de6/classfc_runtime_exception"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>fcSyntaxException</label>
+        <link refid="dc/dc4/classfc_syntax_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>fcexception</label>
+      </node>
+    </collaborationgraph>
+    <location file="src/fcexceptions.hpp" line="46" column="1" bodyfile="src/fcexceptions.hpp" bodystart="47" bodyend="50"/>
+    <listofallmembers>
+      <member refid="da/de6/classfc_runtime_exception_1a264ae184e45fbc84cc58952ba062c5f5" prot="public" virt="non-virtual"><scope>fcSyntaxException</scope><name>fcRuntimeException</name></member>
+      <member refid="dc/dc4/classfc_syntax_exception_1ac6230a5de6b286b4d62afeab5da45b38" prot="public" virt="non-virtual"><scope>fcSyntaxException</scope><name>fcSyntaxException</name></member>
+      <member refid="da/de6/classfc_runtime_exception_1ac9faee48241584efdec3f0e2955623b1" prot="public" virt="non-virtual"><scope>fcSyntaxException</scope><name>what</name></member>
+      <member refid="da/de6/classfc_runtime_exception_1a9ff8cb869b4a75cf3c5f6660d3d5e109" prot="private" virt="non-virtual"><scope>fcSyntaxException</scope><name>why</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

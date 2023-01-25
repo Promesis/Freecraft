@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_8102366fe802bf7b0bdcf67ea8d3daab" xml:lang="en-US">
+<title>src/data/file Directory Reference</title>
+<indexterm><primary>src/data/file Directory Reference</primary></indexterm>
+Directory dependency graph for file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_8102366fe802bf7b0bdcf67ea8d3daab_dep.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_gamesave_8hpp">gamesave.hpp</link></para>
+
+<para>deal with filesystem. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

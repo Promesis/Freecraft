@@ -2,10 +2,10 @@
 <doxyfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="doxyfile.xsd" version="1.9.6" xml:lang="en-US">
   <option  id='DOXYFILE_ENCODING' default='yes' type='string'><value><![CDATA[UTF-8]]></value></option>
   <option  id='PROJECT_NAME' default='no' type='string'><value><![CDATA[Freecraft]]></value></option>
-  <option  id='PROJECT_NUMBER' default='no' type='string'><value><![CDATA[00.01a03-dbg]]></value></option>
+  <option  id='PROJECT_NUMBER' default='no' type='string'><value><![CDATA[00.01a07-dbg]]></value></option>
   <option  id='PROJECT_BRIEF' default='no' type='string'><value><![CDATA["open source remake of Minecraft in C++ with Lua language support."]]></value></option>
-  <option  id='PROJECT_LOGO' default='no' type='string'><value><![CDATA[C:/Users/M3149/Documents/Freecraft/social/icon64_glass.png]]></value></option>
-  <option  id='OUTPUT_DIRECTORY' default='no' type='string'><value><![CDATA[C:/Users/M3149/Documents/Freecraft/docs]]></value></option>
+  <option  id='PROJECT_LOGO' default='no' type='string'><value><![CDATA[C:/Users/Administrator/Documents/Freecraft/social/icon64_glass.png]]></value></option>
+  <option  id='OUTPUT_DIRECTORY' default='no' type='string'><value><![CDATA[docs]]></value></option>
   <option  id='CREATE_SUBDIRS' default='no' type='bool'><value>YES</value></option>
   <option  id='CREATE_SUBDIRS_LEVEL' default='yes' type='int'><value>8</value></option>
   <option  id='ALLOW_UNICODE_NAMES' default='no' type='bool'><value>YES</value></option>
@@ -119,8 +119,7 @@
   <option  id='WARN_LINE_FORMAT' default='yes' type='string'><value><![CDATA["at line $line of file $file"]]></value></option>
   <option  id='WARN_LOGFILE' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='INPUT' default='no' type='stringlist'>
-    <value><![CDATA[C:/Users/M3149/Documents/Freecraft/src]]></value>
-    <value><![CDATA[C:/Users/M3149/Documents/Freecraft/shader]]></value>
+    <value><![CDATA[src]]></value>
   </option>
   <option  id='INPUT_ENCODING' default='yes' type='string'><value><![CDATA[UTF-8]]></value></option>
   <option  id='INPUT_FILE_ENCODING' default='yes' type='stringlist'>
@@ -343,7 +342,7 @@
   <option  id='ALLEXTERNALS' default='yes' type='bool'><value>NO</value></option>
   <option  id='EXTERNAL_GROUPS' default='yes' type='bool'><value>YES</value></option>
   <option  id='EXTERNAL_PAGES' default='yes' type='bool'><value>YES</value></option>
-  <option  id='DIA_PATH' default='no' type='string'><value><![CDATA[C:/Users/M3149/Documents/Freecraft/docs/diagrams]]></value></option>
+  <option  id='DIA_PATH' default='no' type='string'><value><![CDATA[diagrams]]></value></option>
   <option  id='HIDE_UNDOC_RELATIONS' default='yes' type='bool'><value>YES</value></option>
   <option  id='HAVE_DOT' default='no' type='bool'><value>YES</value></option>
   <option  id='DOT_NUM_THREADS' default='no' type='int'><value>2</value></option>
@@ -375,7 +374,7 @@
   </option>
   <option  id='DIAFILE_DIRS' default='yes' type='stringlist'>
   </option>
-  <option  id='PLANTUML_JAR_PATH' default='no' type='string'><value><![CDATA[C:/plantuml.jar]]></value></option>
+  <option  id='PLANTUML_JAR_PATH' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='PLANTUML_CFG_FILE' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='PLANTUML_INCLUDE_PATH' default='yes' type='stringlist'>
   </option>
