@@ -55,7 +55,11 @@
 			"stdexcept": "cpp",
 			"streambuf": "cpp",
 			"cinttypes": "cpp",
-			"typeinfo": "cpp"
+			"typeinfo": "cpp",
+			"chrono": "cpp",
+			"ctime": "cpp",
+			"iomanip": "cpp",
+			"ratio": "cpp"
 		},
 		"editor.cursorSmoothCaretAnimation": true,
 		"cmake.buildTask": false,
